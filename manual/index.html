@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>User Manual | HomeBook</title>
+<meta name="description" content="Every screen in HomeBook, what's on it, and how to get there — organized module by module.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="User Manual | HomeBook">
+<meta property="og:description" content="Every screen in HomeBook, what's on it, and how to get there.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <g id="i-mark"><path d="M4 11.5L12 4l8 7.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M6.5 14h11M6.5 17h11M6.5 20h11" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" fill="none"/></g>
+    <g id="i-door"><path d="M12 3l8 4v13.5c0 .8-.7 1.5-1.5 1.5h-13A1.5 1.5 0 0 1 4 20.5V7l8-4z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" fill="none"/><circle cx="14.5" cy="13" r="1" fill="currentColor"/></g>
+    <g id="i-home"><path d="M4 11.5L12 4l8 7.5V20a1 1 0 0 1-1 1h-4v-6h-6v6H5a1 1 0 0 1-1-1v-8.5z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" fill="none"/></g>
+    <g id="i-box"><path d="M3 8l9-4 9 4-9 4-9-4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" fill="none"/><path d="M3 8v9l9 4 9-4V8" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" fill="none"/><path d="M12 12v9" stroke="currentColor" stroke-width="1.6"/></g>
+    <g id="i-car"><path d="M3.5 15.5l1.6-5.2a2 2 0 0 1 1.9-1.4h9.6a2 2 0 0 1 1.9 1.4l1.6 5.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/><rect x="2.5" y="15.5" width="19" height="4.2" rx="1.4" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="7" cy="19.6" r="1.5" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="17" cy="19.6" r="1.5" stroke="currentColor" stroke-width="1.6" fill="none"/></g>
+    <g id="i-doc"><path d="M6 3h8l5 5v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" fill="none"/><path d="M14 3v5h5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" fill="none"/></g>
+    <g id="i-shield"><path d="M12 3l7 3v5.5c0 4.6-3 7.7-7 9.5-4-1.8-7-4.9-7-9.5V6l7-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" fill="none"/><path d="M9 12l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
+    <g id="i-wrench"><path d="M14.7 6.3a4 4 0 0 0-5.4 4.9L4 16.5V20h3.5l5.3-5.3a4 4 0 0 0 4.9-5.4l-2.8 2.8-2-2 2.8-2.8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" fill="none"/></g>
+    <g id="i-bell"><path d="M6 17h12l-1.6-2.3a2 2 0 0 1-.4-1.2V10a4.2 4.2 0 1 0-8.4 0v3.5a2 2 0 0 1-.4 1.2L6 17z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" fill="none"/><path d="M10 19.5a2 2 0 0 0 4 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></g>
+    <g id="i-wallet"><rect x="3" y="6.5" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M7 6.5V5.2a1.4 1.4 0 0 1 1.6-1.4l9.4 1.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/><circle cx="16.3" cy="13" r="1.3" stroke="currentColor" stroke-width="1.5" fill="none"/></g>
+    <g id="i-receipt"><path d="M6 3h12v18l-2-1.3L14 21l-2-1.3L10 21l-2-1.3L6 21V3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" fill="none"/><path d="M8.5 8h7M8.5 11.5h7M8.5 15h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></g>
+    <g id="i-scan"><path d="M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/><path d="M5 12h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></g>
+    <g id="i-repeat"><path d="M4 8h11a3 3 0 0 1 3 3v1M9 5L4 8l5 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M20 16H9a3 3 0 0 1-3-3v-1M15 19l5-3-5-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
+    <g id="i-piggy"><path d="M4.5 12a5.5 5.5 0 0 1 5.5-5.5h5c2.5 0 4.5 2 4.5 4.5v.3l2 .7-2 .7A4.6 4.6 0 0 1 15.5 16H14v2.5h-2.5V16H10a5.5 5.5 0 0 1-5.5-4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/><circle cx="14.5" cy="10.5" r=".9" fill="currentColor"/><path d="M6.5 9.5L5 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></g>
+    <g id="i-trend"><path d="M4 16l5-5 4 3 7-8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M15 6h5v5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
+    <g id="i-search"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="1.7" fill="none"/><path d="M20 20l-5-5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></g>
+    <g id="i-family"><circle cx="8.5" cy="8" r="3" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="16" cy="9" r="2.4" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M3.2 19.5c.5-3.4 2.6-5 5.3-5s4.8 1.6 5.3 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/><path d="M14.5 14.8c2.2.2 3.9 1.7 4.3 4.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></g>
+    <g id="i-cloud"><path d="M7 18a4 4 0 0 1-.5-7.97A5 5 0 0 1 16.2 8.1 4.5 4.5 0 0 1 17 18H7z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" fill="none"/><path d="M12 11v6M9.5 14.5L12 12l2.5 2.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
+    <g id="i-gear"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M12 3.5v2M12 18.5v2M20.5 12h-2M5.5 12h-2M17.7 6.3l-1.4 1.4M7.7 16.3l-1.4 1.4M17.7 17.7l-1.4-1.4M7.7 7.7L6.3 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></g>
+    <g id="i-lock"><rect x="5" y="10.5" width="14" height="9.5" rx="1.8" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="12" cy="15" r="1.3" fill="currentColor"/></g>
+    <g id="i-scale"><path d="M12 3v18M7 21h10M5 7h6M13 7h6M5 7l-2.5 5.5a3 3 0 0 0 5 0L5 7zM19 7l-2.5 5.5a3 3 0 0 0 5 0L19 7z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
+  </defs>
+</svg>
+
+<header class="topbar">
+  <div class="shell topbar-inner">
+    <a class="brand-lockup" href="../index.html">
+      <div class="mark"><svg viewBox="0 0 24 24"><use href="#i-mark"/></svg></div>
+      <span>HomeBook</span>
+    </a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../manual/" aria-current="page">Manual</a>
+      <a href="../privacy/">Privacy</a>
+      <a href="../delete-account/">Delete Account</a>
+      <a href="../terms/">Terms</a>
+      <a href="../contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="manual-layout">
+
+  <aside class="side-nav">
+    <p class="label">Contents</p>
+    <ol>
+      <li><a href="#nav-structure"><span class="n">·</span>Getting oriented</a></li>
+      <li><a href="#g01"><span class="n">01</span>Onboarding &amp; Auth</a></li>
+      <li><a href="#g02"><span class="n">02</span>Home dashboard</a></li>
+      <li><a href="#g03"><span class="n">03</span>Things</a></li>
+      <li><a href="#g04"><span class="n">04</span>Vehicles</a></li>
+      <li><a href="#g05"><span class="n">05</span>Documents</a></li>
+      <li><a href="#g06"><span class="n">06</span>Warranties</a></li>
+      <li><a href="#g07"><span class="n">07</span>Maintenance</a></li>
+      <li><a href="#g08"><span class="n">08</span>Reminders</a></li>
+      <li><a href="#g09"><span class="n">09</span>Money hub</a></li>
+      <li><a href="#g10"><span class="n">10</span>Expenses</a></li>
+      <li><a href="#g11"><span class="n">11</span>Smart Capture</a></li>
+      <li><a href="#g12"><span class="n">12</span>Recurring</a></li>
+      <li><a href="#g13"><span class="n">13</span>Savings</a></li>
+      <li><a href="#g14"><span class="n">14</span>Income</a></li>
+      <li><a href="#g15"><span class="n">15</span>Search</a></li>
+      <li><a href="#g16"><span class="n">16</span>Family</a></li>
+      <li><a href="#g17"><span class="n">17</span>Backup &amp; Restore</a></li>
+      <li><a href="#g18"><span class="n">18</span>Settings &amp; Profile</a></li>
+      <li><a href="#g19"><span class="n">19</span>App Lock</a></li>
+      <li><a href="#g20"><span class="n">20</span>Legal</a></li>
+    </ol>
+  </aside>
+
+  <main>
+    <div class="manual-intro">
+      <p class="eyebrow mono">Reference · v1.0.0</p>
+      <h1 class="page-title">HomeBook User Manual</h1>
+      <p class="lede" style="max-width:62ch;font-size:18px;color:var(--ink-soft);">Every screen in HomeBook, what it shows, and how to get there. Organized in the order you'd actually meet each screen — start with how the app is laid out, then work through each module.</p>
+      <select class="jump" style="margin-top:16px;" onchange="if(this.value) location.hash=this.value">
+        <option value="">Jump to screen…</option>
+        <option value="#nav-structure">How the app is organized</option>
+        <option value="#g01">01 · Onboarding &amp; Auth</option>
+        <option value="#g02">02 · Home dashboard</option>
+        <option value="#g03">03 · Things</option>
+        <option value="#g04">04 · Vehicles</option>
+        <option value="#g05">05 · Documents</option>
+        <option value="#g06">06 · Warranties</option>
+        <option value="#g07">07 · Maintenance</option>
+        <option value="#g08">08 · Reminders</option>
+        <option value="#g09">09 · Money hub</option>
+        <option value="#g10">10 · Expenses</option>
+        <option value="#g11">11 · Smart Expense Capture</option>
+        <option value="#g12">12 · Recurring Payments</option>
+        <option value="#g13">13 · Savings</option>
+        <option value="#g14">14 · Income</option>
+        <option value="#g15">15 · Search</option>
+        <option value="#g16">16 · Family</option>
+        <option value="#g17">17 · Backup &amp; Restore</option>
+        <option value="#g18">18 · Settings &amp; Profile</option>
+        <option value="#g19">19 · App Lock</option>
+        <option value="#g20">20 · Legal</option>
+      </select>
+    </div>
+
+    <section id="nav-structure" class="grp" style="border-top:none; padding-top:0;">
+      <div class="grp-head"><div class="grp-icon"><svg width="19" height="19"><use href="#i-home"/></svg></div><h2>How the app is organized</h2></div>
+      <p class="grp-purpose">Four tabs anchor everything. A floating "+" on Home opens Quick Add — the fastest way into any module without hunting through menus.</p>
+      <div class="nav-card">
+        <h2>Bottom navigation — 4 tabs, always visible</h2>
+        <div class="tab-row">
+          <span class="tab-chip"><svg width="14" height="14"><use href="#i-home"/></svg>Home</span>
+          <span class="tab-chip"><svg width="14" height="14"><use href="#i-box"/></svg>Things</span>
+          <span class="tab-chip"><svg width="14" height="14"><use href="#i-bell"/></svg>Reminders</span>
+          <span class="tab-chip"><svg width="14" height="14"><use href="#i-family"/></svg>Profile</span>
+        </div>
+        <p style="font-size:13px;color:var(--ink-soft);margin-bottom:18px;">Pressing system Back from Things, Reminders, or Profile returns to Home first — it never closes the app from those tabs.</p>
+        <h2>Quick Add sheet — the floating "+" (Home tab only)</h2>
+        <div class="qa-grid">
+          <div class="qa-group"><p class="qg-label">Home</p><ul><li>Thing</li><li>Vehicle</li><li>Document</li><li>Warranty</li><li>Service</li></ul></div>
+          <div class="qa-group"><p class="qg-label">Money</p><ul><li>Expense</li><li>Recurring</li><li>Income</li><li>Savings</li></ul></div>
+          <div class="qa-group"><p class="qg-label">Planning</p><ul><li>Reminder</li></ul></div>
+          <div class="qa-group"><p class="qg-label">Smart</p><ul><li>Smart Capture</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="g01" class="grp">
+      <div class="grp-head"><span class="n mono">01</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-door"/></svg></div><h2>Onboarding &amp; Auth</h2></div>
+      <p class="grp-purpose">What you see before you're using the app day to day. Sign-in is opt-in throughout — HomeBook works fully without ever reaching Login.</p>
+
+      <div class="screen">
+        <div class="screen-head"><h3>Welcome</h3><span class="route-tag">welcome</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>House illustration, "HomeBook" title, tagline</li><li>5 checkmarked value props (track things, warranties, maintenance, documents, family sharing)</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Get Started" → Onboarding</li></ul></div>
+        </div>
+        <div class="from-line">First screen on install.</div>
+      </div>
+
+      <div class="screen">
+        <div class="screen-head"><h3>Onboarding</h3><span class="route-tag">onboarding</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>4-page swipeable carousel (Home / Organize / Money / Family themes)</li><li>Dot page indicator</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Skip" (hidden on last page)</li><li>"Next" → advances; "Get started" on last page → Success</li></ul></div>
+        </div>
+      </div>
+
+      <div class="screen">
+        <div class="screen-head"><h3>Login</h3><span class="route-tag">login</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Email, Password fields (show/hide toggle)</li><li>Mode toggle: Login ↔ Create Account</li><li>"Continue with Google" (real Google logo)</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Forgot password?" → reset-link dialog</li><li>Submit → pops back on success; errors show in a red banner</li></ul></div>
+        </div>
+        <div class="from-line">Reached only from <strong>Profile → Sign in &amp; sync</strong> — never forced on you.</div>
+      </div>
+
+      <div class="screen">
+        <div class="screen-head"><h3>Success</h3><span class="route-tag">success</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Illustration + title + message</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Single CTA button (e.g. "Go to Home")</li></ul></div>
+        </div>
+        <div class="from-line">A reusable confirmation screen — shown at the end of onboarding, and reserved for other first-run moments.</div>
+      </div>
+    </section>
+
+    <section id="g02" class="grp">
+      <div class="grp-head"><span class="n mono">02</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-home"/></svg></div><h2>Home dashboard</h2><span class="route-tag">home</span></div>
+      <p class="grp-purpose">Tab 1. A rolled-up view of your whole household — every section below only appears when it has something to show.</p>
+      <div class="screen">
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">Header</p><ul><li>Time-of-day greeting + "Your Home"</li><li>Search icon → Search</li><li>"Needs attention" badge when things are overdue</li></ul></div>
+          <div class="col"><p class="lbl">Sections, top to bottom</p><ul><li>Needs attention (overdue reminders)</li><li>Smart Capture pending review</li><li>Quick access (Things/Vehicles/Documents/Reminders counts)</li><li>Money overview + monthly spending + insights</li><li>Upcoming reminders · Recent purchases</li><li>Active recurring payments · Savings goals</li><li>Recently added things</li></ul></div>
+        </div>
+        <div class="from-line">Each section has a "See all" link to its full screen. This is where the Quick Add "+" lives.</div>
+      </div>
+    </section>
+
+    <section id="g03" class="grp">
+      <div class="grp-head"><span class="n mono">03</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-box"/></svg></div><h2>Things</h2><span class="route-tag">things</span></div>
+      <p class="grp-purpose">Tab 2. Appliances, furniture, electronics — anything you own that's worth tracking.</p>
+
+      <div class="screen">
+        <div class="screen-head"><h3>Things list</h3></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Search field</li><li>Category filter chips: All / Appliances / Electronics / Vehicles (jumps to Vehicles) / Furniture / Other</li><li>Filtered card list</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Header "+" → Add Thing</li><li>Tap a card → Thing detail</li></ul></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Add / Edit Thing</h3><span class="route-tag">addThing</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">Fields</p><ul><li>Name · Category (dropdown)</li><li>Brand · Model</li><li>Purchase date · Purchase price</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Save / Update Thing"</li></ul></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Thing detail</h3><span class="route-tag">thingDetail</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Photo hero, name, brand/model</li><li>"Active" warranty pill if applicable</li><li>Purchase · Warranty · Maintenance (last/next service) sections</li><li>Linked Expenses (total + recent 3)</li><li>Documents · Reminders sections</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Add service" / "Edit thing"</li><li>Per-section "+ Add" (warranty/expense/document/reminder)</li><li>AppBar delete</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="g04" class="grp">
+      <div class="grp-head"><span class="n mono">04</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-car"/></svg></div><h2>Vehicles</h2><span class="route-tag">vehicles</span></div>
+      <p class="grp-purpose">Cars, bikes, anything with insurance, PUC, and its own running costs.</p>
+
+      <div class="screen">
+        <div class="screen-head"><h3>Vehicles list</h3></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Vehicle cards</li><li>"Upcoming" section — insurance/PUC expiries sorted by date</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Header "+" → Add Vehicle</li><li>Tap a card → Vehicle detail</li></ul></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Add / Edit Vehicle</h3><span class="route-tag">addVehicle</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">Fields</p><ul><li>Photo (optional, camera/gallery)</li><li>Name · Registration number</li><li>Make · Model</li><li>Purchase date</li><li>Insurance expiry · PUC expiry</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Save / Update Vehicle"</li></ul></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Vehicle detail</h3><span class="route-tag">vehicleDetail</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Photo hero, name, registration number</li><li>"Vehicle health" — Insurance/PUC status</li><li>5 tabs: Overview · Service · Documents · Expenses · Reminders</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Add service" / "Edit vehicle"</li><li>Per-tab "+ Add"</li><li>AppBar delete</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="g05" class="grp">
+      <div class="grp-head"><span class="n mono">05</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-doc"/></svg></div><h2>Documents</h2><span class="route-tag">documents</span></div>
+      <p class="grp-purpose">Any file worth keeping — attach once, find it later.</p>
+      <div class="screen">
+        <div class="screen-head"><h3>Documents list</h3></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Search field</li><li>Document cards, swipe/inline delete</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Header "+" → Add Document</li></ul></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Add / Edit Document</h3><span class="route-tag">addDocument</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">Fields</p><ul><li>Document type (dropdown) · Document name</li><li>Issue date · Expiry date · Document number</li><li>Attach file — camera / gallery / file picker</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Replace / Remove attached file</li><li>"Save / Update Document"</li></ul></div>
+        </div>
+        <div class="from-line">Shows a silent "Linked to [Thing/Vehicle]" note when opened from that record's "+ Add document".</div>
+      </div>
+    </section>
+
+    <section id="g06" class="grp">
+      <div class="grp-head"><span class="n mono">06</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-shield"/></svg></div><h2>Warranties</h2><span class="route-tag">warranties</span></div>
+      <p class="grp-purpose">Know exactly when coverage runs out, before it does.</p>
+      <div class="screen">
+        <div class="screen-head"><h3>Warranties list</h3></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>"OK" section</li><li>"Expiring soon" section</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Header "+" → Add Warranty</li><li>Delete via confirmation dialog</li></ul></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Add / Edit Warranty</h3><span class="route-tag">addWarranty</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">Fields</p><ul><li>Thing (dropdown — locked if opened from a Thing, or editing)</li><li>Provider</li><li>Start date · End date</li><li>Warranty number (optional)</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Save / Update Warranty"</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="g07" class="grp">
+      <div class="grp-head"><span class="n mono">07</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-wrench"/></svg></div><h2>Maintenance</h2><span class="route-tag">maintenance</span></div>
+      <p class="grp-purpose">A service log for anything that needs upkeep — Things and Vehicles both feed the same list.</p>
+      <div class="screen">
+        <div class="screen-head"><h3>Maintenance list</h3></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>"Upcoming" tiles</li><li>"Recent services" tiles</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Header "+" → Add Service</li><li>Delete</li></ul></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Add / Edit Service</h3><span class="route-tag">addService</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">Fields</p><ul><li>Thing / Vehicle (combined dropdown — locked if preset or editing)</li><li>Service date · Service type · Cost</li><li>Provider · Notes</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Save / Update Service"</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="g08" class="grp">
+      <div class="grp-head"><span class="n mono">08</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-bell"/></svg></div><h2>Reminders</h2><span class="route-tag">reminders</span></div>
+      <p class="grp-purpose">Tab 3. Renewal dates, service due dates — anything with a deadline.</p>
+      <div class="screen">
+        <div class="screen-head"><h3>Reminders list</h3></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Segmented toggle: Upcoming / Completed</li><li>Cards with a mark-complete circle toggle</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Header "+" → Add Reminder</li><li>Tap card → edit; toggle → complete/reopen; swipe → delete</li></ul></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Add / Edit Reminder</h3><span class="route-tag">addReminder</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">Fields</p><ul><li>Title · Date</li><li>Remind me (minutes-before dropdown)</li><li>Repeat (stored for future use, not yet acted on)</li><li>Related to — Thing/Vehicle (locked if preset)</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Save / Update Reminder"</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="g09" class="grp">
+      <div class="grp-head"><span class="n mono">09</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-wallet"/></svg></div><h2>Money hub</h2><span class="route-tag">money</span></div>
+      <p class="grp-purpose">The one screen that ties Expenses, Recurring, Savings, and Income together for the month.</p>
+      <div class="screen">
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Month switcher (can't advance past current month)</li><li>Money overview card</li><li>Budget progress card · Insights</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Tap budget card → set-budget dialog</li><li>4 link rows (this month's amount) → Expenses / Recurring / Savings / Income</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="g10" class="grp">
+      <div class="grp-head"><span class="n mono">10</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-receipt"/></svg></div><h2>Expenses</h2><span class="route-tag">expenses</span></div>
+      <p class="grp-purpose">Every expense, grouped by day, against your budget.</p>
+      <div class="screen">
+        <div class="screen-head"><h3>Expenses list</h3></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Month switcher · Budget progress card</li><li>"Category budgets" link</li><li>Category breakdown · day-grouped list with daily totals</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Add Expense" button</li></ul></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Add / Edit Expense</h3><span class="route-tag">addExpense</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">Fields</p><ul><li>Amount · Merchant · Category (dropdown)</li><li>Date · Payment method (UPI/Cash/Card/Net Banking)</li><li>Related to — Thing/Vehicle (optional)</li><li>Odometer (fuel entries only) · Notes</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Save / Update Expense"</li></ul></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Expense detail</h3><span class="route-tag">expenseDetail</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Category icon + amount header</li><li>Merchant, date, payment method, odometer</li><li>Related record card (tappable) · Notes</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>AppBar edit · AppBar delete</li></ul></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Category budgets</h3><span class="route-tag">categoryBudgets</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>One row per active category — icon, spent-of-budget (red if over)</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Inline amount field + checkmark to save, per row</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="g11" class="grp">
+      <div class="grp-head"><span class="n mono">11</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-scan"/></svg></div><h2>Smart Expense Capture</h2><span class="route-tag">smartCapture</span></div>
+      <p class="grp-purpose">Turn a receipt or payment message into an Expense without typing it in — parsed entirely on-device.</p>
+      <div class="screen">
+        <div class="screen-head"><h3>Capture entry</h3></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>2×2 action grid: Scan Receipt · Paste Transaction · Share to HomeBook · Add Manually</li><li>"Needs review" list of pending candidates</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Scan Receipt → camera/gallery → OCR parse</li><li>Paste Transaction → text dialog</li><li>Share to HomeBook → instructions (actually triggered from another app's share sheet)</li><li>Add Manually → Add Expense</li></ul></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Review capture</h3><span class="route-tag">smartCaptureReview</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Confidence label · duplicate-detection banner if flagged</li><li>Editable pre-filled fields: Amount, Merchant, Category, Date, Payment method, Notes</li><li>Raw source text shown in a muted box</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Ignore"</li><li>"Confirm &amp; Add" (or "Add anyway" if a duplicate was flagged)</li><li>Duplicate banner: "View existing" / "Ignore"</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="g12" class="grp">
+      <div class="grp-head"><span class="n mono">12</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-repeat"/></svg></div><h2>Recurring Payments</h2><span class="route-tag">recurring</span></div>
+      <p class="grp-purpose">Subscriptions and bills that repeat — with an option to auto-create the Expense when due.</p>
+      <div class="screen">
+        <div class="screen-head"><h3>Recurring list</h3></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Monthly total card</li><li>"Upcoming" (next 3) · full list</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Per-row 3-dot menu: Edit / Pause-Resume / Delete</li><li>"Add Recurring Payment" button</li></ul></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Add / Edit Recurring</h3><span class="route-tag">addRecurring / editRecurring</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">Fields</p><ul><li>Name · Amount · Category · Frequency</li><li>Due day (1–31) · Start date · End date (optional)</li><li>Recipient/Provider · Notes</li></ul></div>
+          <div class="col"><p class="lbl">Switches</p><ul><li>"Reminder enabled" (+ days-before dropdown)</li><li>"Auto-create expense"</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="g13" class="grp">
+      <div class="grp-head"><span class="n mono">13</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-piggy"/></svg></div><h2>Savings</h2><span class="route-tag">savings</span></div>
+      <p class="grp-purpose">Goals with a target amount, a monthly plan, and progress you can top up any time.</p>
+      <div class="screen">
+        <div class="screen-head"><h3>Savings list</h3></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Monthly-allocation total card</li><li>Goal cards with progress</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Add allocation" dialog per goal</li><li>Per-row 3-dot menu: Edit / Pause-Resume / Delete</li><li>"Add Savings Goal" button</li></ul></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Add / Edit Savings Goal</h3><span class="route-tag">addSavings / editSavings</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">Fields</p><ul><li>Name · Category</li><li>Target amount · Monthly target</li><li>Target date · Notes</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Save / Update Goal"</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="g14" class="grp">
+      <div class="grp-head"><span class="n mono">14</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-trend"/></svg></div><h2>Income</h2><span class="route-tag">income</span></div>
+      <p class="grp-purpose">What's coming in, month by month.</p>
+      <div class="screen">
+        <div class="screen-head"><h3>Income list</h3></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Month switcher · monthly total card</li><li>Income tiles</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Per-row 3-dot menu: Edit / Delete</li><li>"Add Income" button</li></ul></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Add / Edit Income</h3><span class="route-tag">addIncome / editIncome</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">Fields</p><ul><li>Source · Amount · Frequency</li><li>Date · Notes</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Save / Update Income"</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="g15" class="grp">
+      <div class="grp-head"><span class="n mono">15</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-search"/></svg></div><h2>Search</h2><span class="route-tag">search</span></div>
+      <p class="grp-purpose">One search box across everything in your home.</p>
+      <div class="screen">
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Autofocus search field</li><li>Results grouped by type: Things / Vehicles / Documents / Warranties / Service / Reminders</li><li>Status chips where relevant</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Tap a result → its detail screen, or the matching tab</li></ul></div>
+        </div>
+        <div class="from-line">Reached from the search icon on Home.</div>
+      </div>
+    </section>
+
+    <section id="g16" class="grp">
+      <div class="grp-head"><span class="n mono">16</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-family"/></svg></div><h2>Family</h2><span class="route-tag">family</span></div>
+      <p class="grp-purpose">Who's sharing this household, and what they can do.</p>
+      <div class="screen">
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Member list — avatar initial, name, role</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Header "+" or tap a member → Member sheet (Name, Email, Role: owner/editor/viewer)</li><li>Delete button per row</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="g17" class="grp">
+      <div class="grp-head"><span class="n mono">17</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-cloud"/></svg></div><h2>Backup &amp; Restore</h2><span class="route-tag">backup</span></div>
+      <p class="grp-purpose">A portable export of your records — independent of cloud sync.</p>
+      <div class="screen">
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>"Last backup" card (date + record/file count)</li><li>Illustration shown only if never backed up</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Back up now" → exports and shares a file</li><li>"Restore from backup" → pick file → confirm (shows home name, record count, export date) → restore</li></ul></div>
+        </div>
+        <div class="from-line">Restoring is additive/overwrite-matching — it never deletes existing records. Photos and files stay device-local and aren't included in the backup file.</div>
+      </div>
+    </section>
+
+    <section id="g18" class="grp">
+      <div class="grp-head"><span class="n mono">18</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-gear"/></svg></div><h2>Settings &amp; Profile</h2><span class="route-tag">profile / settings</span></div>
+      <p class="grp-purpose">Tab 4, plus everything nested one level under it.</p>
+      <div class="screen">
+        <div class="screen-head"><h3>Profile</h3></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Avatar (tappable if signed in) + home name</li></ul></div>
+          <div class="col"><p class="lbl">Rows</p><ul><li>My Home (rename) · Warranties · Maintenance · Money</li><li>Sign in &amp; sync (or Sync now/Sign out if signed in)</li><li>Family members · Backup &amp; restore · App lock · Settings</li></ul></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Settings</h3></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">Preferences</p><ul><li>Language (English/Telugu/Hindi)</li><li>Reminder defaults · Notifications (switch)</li><li>Appearance (System/Light/Dark)</li></ul></div>
+          <div class="col"><p class="lbl">Security, storage &amp; account</p><ul><li>App lock · Storage usage (read-only)</li><li>About HomeBook · Privacy Policy · Terms &amp; Conditions</li><li>Delete account (signed-in users only)</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="g19" class="grp">
+      <div class="grp-head"><span class="n mono">19</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-lock"/></svg></div><h2>App Lock</h2><span class="route-tag">appLock</span></div>
+      <p class="grp-purpose">An on-device PIN gate — separate from and unrelated to your cloud sign-in.</p>
+      <div class="screen">
+        <div class="screen-head"><h3>App lock settings</h3></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>"App lock" switch</li><li>"Change PIN" row (visible once enabled)</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Enable → set PIN, then confirm it (min 4 digits)</li><li>Disable / change → requires entering the current PIN first</li></ul></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Lock screen</h3></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Lock illustration · PIN field</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Unlock" — inline error on a wrong PIN</li></ul></div>
+        </div>
+        <div class="from-line">Shown in place of the whole app on cold start/resume while locked. There is no recovery path — the PIN is a local salted hash only, not tied to your account.</div>
+      </div>
+    </section>
+
+    <section id="g20" class="grp">
+      <div class="grp-head"><span class="n mono">20</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-scale"/></svg></div><h2>Legal</h2><span class="route-tag">privacyPolicy / termsOfService</span></div>
+      <p class="grp-purpose">One reusable screen for both documents.</p>
+      <div class="screen">
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Heading + body sections, scrollable</li></ul></div>
+          <div class="col"><p class="lbl">Behavior</p><ul><li>Shows the Firestore-synced version when available</li><li>Falls back to the bundled copy offline, with a visible note</li></ul></div>
+        </div>
+        <div class="from-line">See also the standalone <a href="../privacy/">Privacy Policy</a> and <a href="../delete-account/">Delete Account</a> pages.</div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <span>HomeBook User Manual — reflects the app as built, screen by screen.</span>
+    <div class="foot-links">
+      <a href="../index.html">Home</a>
+      <a href="../privacy/">Privacy Policy</a>
+      <a href="../delete-account/">Delete Account</a>
+      <a href="../contact/">Contact</a>
+    </div>
+    <span class="mono">v1.0.0</span>
+  </div>
+</footer>
+
+</body>
+</html>
