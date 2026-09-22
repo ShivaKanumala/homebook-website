@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy | HomeBook</title>
+<meta name="description" content="HomeBook's privacy policy — local-first by default, what's collected if you sign in and sync, and how to request deletion.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Privacy Policy | HomeBook">
+<meta property="og:description" content="Local-first by default. Here's exactly what HomeBook collects if you choose to sign in and sync.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+  <g id="i-mark"><path d="M4 11.5L12 4l8 7.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M6.5 14h11M6.5 17h11M6.5 20h11" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" fill="none"/></g>
+</defs></svg>
+
+<header class="topbar">
+  <div class="shell topbar-inner">
+    <a class="brand-lockup" href="../index.html">
+      <div class="mark"><svg viewBox="0 0 24 24"><use href="#i-mark"/></svg></div>
+      <span>HomeBook</span>
+    </a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../privacy/" aria-current="page">Privacy</a>
+      <a href="../delete-account/">Delete Account</a>
+      <a href="../terms/">Terms</a>
+      <a href="../contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="doc-wrap">
+  <div class="page-head">
+    <p class="eyebrow mono">Legal · HomeBook</p>
+    <h1 class="page-title">Privacy Policy</h1>
+    <div class="meta-row mono">
+      <span>Effective 22 September 2026</span>
+      <span>&middot;</span>
+      <span><a href="mailto:support@homebook.app">support@homebook.app</a></span>
+    </div>
+  </div>
+
+  <p class="lede" style="max-width:62ch;font-size:18px;color:var(--ink-soft);margin:18px 0 0;">HomeBook is a household management app for tracking the things, documents, vehicles, expenses, and reminders that make up running a home. HomeBook is local-first: every record you add is stored on your device whether or not you ever create an account. This policy explains what happens if you choose to sign in and sync.</p>
+
+  <nav class="toc" aria-label="Table of contents">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#introduction"><span class="num">01</span>Introduction</a></li>
+      <li><a href="#collect"><span class="num">02</span>Information we collect</a></li>
+      <li><a href="#use"><span class="num">03</span>How we use your information</a></li>
+      <li><a href="#visibility"><span class="num">04</span>Who can see your data</a></li>
+      <li><a href="#storage"><span class="num">05</span>Data storage and security</a></li>
+      <li><a href="#retention"><span class="num">06</span>Data retention</a></li>
+      <li><a href="#thirdparty"><span class="num">07</span>Third-party services we use</a></li>
+      <li><a href="#advertising"><span class="num">08</span>Advertising</a></li>
+      <li><a href="#choices"><span class="num">09</span>Your choices &amp; rights</a></li>
+      <li><a href="#children"><span class="num">10</span>Children's privacy</a></li>
+      <li><a href="#changes"><span class="num">11</span>Changes to this policy</a></li>
+      <li><a href="#contact"><span class="num">12</span>Contact us</a></li>
+    </ol>
+  </nav>
+</div>
+
+<section class="clause" id="introduction">
+  <h2 class="clause-title"><span class="num">01</span>Introduction</h2>
+  <p>HomeBook is a household management app for tracking the things, documents, vehicles, expenses, and reminders that make up running a home. HomeBook is local-first: every record you add is stored on your device whether or not you ever create an account. This policy explains what happens if you choose to sign in and sync.</p>
+</section>
+
+<section class="clause" id="collect">
+  <h2 class="clause-title"><span class="num">02</span>Information we collect</h2>
+  <p>If you use HomeBook without signing in, we collect nothing — all your data stays on your device. If you choose to sign in (email/password or Google), we store your email address, display name, and a unique account identifier, provided by Firebase Authentication. If you enable cloud sync, the household records you create (Things, Vehicles, Documents, Warranties, Maintenance, Reminders, Expenses, Income, Savings, Recurring Payments, Budgets, and Family Member entries) are copied to a private cloud data store tied to your account. If a crash occurs, diagnostic crash reports (device model, OS version, stack trace) are sent via Firebase Crashlytics — never your household data.</p>
+</section>
+
+<section class="clause" id="use">
+  <h2 class="clause-title"><span class="num">03</span>How we use your information</h2>
+  <p>Your account and household data are used solely to provide sign-in, cloud backup, and multi-device sync for your own household, and crash reports are used solely to fix bugs. We do not sell your data, use it for advertising, or share it with third parties beyond the infrastructure providers (Google Firebase) that host it.</p>
+</section>
+
+<section class="clause" id="visibility">
+  <h2 class="clause-title"><span class="num">04</span>Who can see your data</h2>
+  <p>Your household's cloud data is only accessible to accounts you explicitly add as family members, according to the role (owner, editor, viewer) you assign them. Nobody outside your household — including us — has a way to browse your data through the app.</p>
+</section>
+
+<section class="clause" id="storage">
+  <h2 class="clause-title"><span class="num">05</span>Data storage and security</h2>
+  <p>Local data lives in an on-device SQLite database and is never transmitted anywhere unless you sign in and sync. Cloud data is stored in Google Cloud Firestore and Firebase Storage (for photos/document files), protected by security rules that restrict every read and write to authenticated members of the relevant household. Receipt scanning (Smart Expense Capture) runs entirely on-device via Google ML Kit — no photo or text is ever sent anywhere to parse it.</p>
+</section>
+
+<section class="clause" id="retention">
+  <h2 class="clause-title"><span class="num">06</span>Data retention</h2>
+  <p>Local data stays on your device until you delete a record yourself or uninstall the app. Cloud data persists for as long as your account exists and you remain part of a household. When you delete your account (see <a href="../delete-account/">Delete Account</a>), your account profile and household membership are removed immediately; a small amount of information may be retained where we are legally required to (for example, financial or security logs required for fraud prevention), but this does not apply to ordinary household records, which are deleted as described on that page.</p>
+</section>
+
+<section class="clause" id="thirdparty">
+  <h2 class="clause-title"><span class="num">07</span>Third-party services we use</h2>
+  <p>HomeBook uses the following Google Firebase services, only when you choose to sign in: <strong>Firebase Authentication</strong> and <strong>Google Sign-In</strong> (account creation and login), <strong>Cloud Firestore</strong> (household record sync), <strong>Firebase Storage</strong> (photo/document file sync), <strong>Firebase Crashlytics</strong> (crash diagnostics), and <strong>Firebase Remote Config</strong> (app version/feature flags — no personal data). None of these are used unless you sign in, except Crashlytics, which may report an anonymous crash even for a signed-out session so we can fix bugs that affect everyone.</p>
+</section>
+
+<section class="clause" id="advertising">
+  <h2 class="clause-title"><span class="num">08</span>Advertising</h2>
+  <p>HomeBook shows no ads and includes no advertising SDK. We do not use an Advertising ID for tracking or personalization. Google Play's Data Safety form may still list Advertising ID as a technically-available identifier because Firebase Analytics' underlying library can access it on the device — HomeBook does not read or use it for any purpose.</p>
+</section>
+
+<section class="clause" id="choices">
+  <h2 class="clause-title"><span class="num">09</span>Your choices &amp; rights</h2>
+  <p>You can use HomeBook fully offline without ever creating an account. You can sign out at any time — your local data is unaffected. Uninstalling the app deletes all local data from your device. You can request a copy or deletion of your cloud account and data at any time — see <a href="../delete-account/">Delete Account</a> for exactly how.</p>
+</section>
+
+<section class="clause" id="children">
+  <h2 class="clause-title"><span class="num">10</span>Children's privacy</h2>
+  <p>HomeBook is not directed at children and we do not knowingly collect information from children.</p>
+</section>
+
+<section class="clause" id="changes">
+  <h2 class="clause-title"><span class="num">11</span>Changes to this policy</h2>
+  <p>We may update this policy from time to time. Material changes will be reflected here with an updated effective date.</p>
+</section>
+
+<div class="callout">
+  <strong>In short:</strong> nothing leaves your device unless you choose to sign in. No ads, no data sale, no tracking beyond what running your account requires.
+</div>
+
+<section class="clause" id="contact">
+  <h2 class="clause-title"><span class="num">12</span>Contact us</h2>
+  <p>Questions about this policy, or a request to access or delete your cloud account and data? Reach out at <a href="mailto:support@homebook.app">support@homebook.app</a>.</p>
+</section>
+
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <span>HomeBook — everything about your home, one place.</span>
+    <div class="foot-links">
+      <a href="../index.html">Home</a>
+      <a href="../delete-account/">Delete Account</a>
+      <a href="../terms/">Terms</a>
+      <a href="../contact/">Contact</a>
+    </div>
+    <span class="mono">v1.0.0</span>
+  </div>
+</footer>
+
+</body>
+</html>
