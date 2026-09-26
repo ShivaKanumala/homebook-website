@@ -42,7 +42,7 @@
     <p class="eyebrow mono">Legal · HomeBook</p>
     <h1 class="page-title">Privacy Policy</h1>
     <div class="meta-row mono">
-      <span>Effective 22 September 2026</span>
+      <span>Effective 22 September 2026 · Updated 26 September 2026</span>
       <span>&middot;</span>
       <span><a href="mailto:support@homebook.app">support@homebook.app</a></span>
     </div>
@@ -76,7 +76,7 @@
 
 <section class="clause" id="collect">
   <h2 class="clause-title"><span class="num">02</span>Information we collect</h2>
-  <p>If you use HomeBook without signing in, we collect nothing — all your data stays on your device. If you choose to sign in (email/password or Google), we store your email address, display name, and a unique account identifier, provided by Firebase Authentication. If you enable cloud sync, the household records you create (Things, Vehicles, Documents, Warranties, Maintenance, Reminders, Expenses, Income, Savings, Recurring Payments, Budgets, and Family Member entries) are copied to a private cloud data store tied to your account. If a crash occurs, diagnostic crash reports (device model, OS version, stack trace) are sent via Firebase Crashlytics — never your household data.</p>
+  <p>If you use HomeBook without signing in, we collect nothing — all your data stays on your device. If you choose to sign in (email/password or Google), we store your email address, display name, and a unique account identifier, provided by Firebase Authentication. If you enable cloud sync, the household records you create (Things, Vehicles, Documents, Warranties, Maintenance, Reminders, Expenses, Income, Savings, Recurring Payments, Budgets, Transfers, Lending &amp; Borrowing records, Planned Expenses, Family Member entries, and Family Occasions) are copied to a private cloud data store tied to your account, together with any photos and PDF files you attach to those records. If a crash occurs, diagnostic crash reports (device model, OS version, stack trace) are sent via Firebase Crashlytics — never your household data.</p>
 </section>
 
 <section class="clause" id="use">
@@ -91,7 +91,7 @@
 
 <section class="clause" id="storage">
   <h2 class="clause-title"><span class="num">05</span>Data storage and security</h2>
-  <p>Local data lives in an on-device SQLite database and is never transmitted anywhere unless you sign in and sync. Cloud data is stored in Google Cloud Firestore and Firebase Storage (for photos/document files), protected by security rules that restrict every read and write to authenticated members of the relevant household. Receipt scanning (Smart Expense Capture) runs entirely on-device via Google ML Kit — no photo or text is ever sent anywhere to parse it.</p>
+  <p>Local data lives in an on-device SQLite database and is never transmitted anywhere unless you sign in and sync. Cloud data is stored in Google Cloud Firestore and Firebase Storage (for photos/document files), protected by security rules that restrict every read and write to authenticated members of the relevant household. Receipt scanning (Smart Expense Capture) runs entirely on-device via Google ML Kit — no photo or text is ever sent anywhere to parse it. The same applies to payment messages you share or paste into HomeBook: they're read on your phone only. Notifications (budget alerts, reminders, festival and occasion heads-ups) are worked out on your phone from your own records — no server decides or sends them.</p>
 </section>
 
 <section class="clause" id="retention">
@@ -143,7 +143,7 @@
       <a href="../terms/">Terms</a>
       <a href="../contact/">Contact</a>
     </div>
-    <span class="mono">v1.0.0</span>
+    <span class="mono">v1.2.0</span>
   </div>
 </footer>
 
