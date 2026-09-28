@@ -72,7 +72,7 @@
 <section class="clause" id="short">
   <h2 class="clause-title"><span class="num">01</span>In short</h2>
   <p>Your records and files are stored on your phone first. If you sign in, they're copied to your household's private space on Google Firebase, sent over encrypted connections, and protected by rules that only let members of your household read them. HomeBook doesn't create public links to your documents, doesn't show ads, and doesn't send your documents or amounts to analytics.</p>
-  <p>No system is perfectly secure. Keep your phone locked, turn on HomeBook's App Lock if others use your phone, and sign out and uninstall HomeBook before giving your phone to someone else.</p>
+  <p>No system is perfectly secure. Keep your phone locked, turn on HomeBook's App Lock if others use your phone, and before giving your phone to someone else, sign out and choose to remove HomeBook's data from it (or uninstall HomeBook).</p>
 </section>
 
 <section class="clause" id="where">
@@ -117,32 +117,30 @@
     <li><strong>App Lock</strong> — a PIN required every time HomeBook opens (Profile → App lock).</li>
     <li><strong>Show amounts and names</strong> — turn off to keep notifications vague on the lock screen.</li>
     <li><strong>Remove a file</strong> — from its ⋮ menu; it's removed from the cloud as well.</li>
-    <li><strong>Sign out</strong> — stops syncing on this phone.</li>
+    <li><strong>Sign out</strong> — stops syncing on this phone; tick <em>Also remove HomeBook's data from this phone</em> to clear its records and files too.</li>
     <li><strong>Delete account</strong> — see <a href="../delete-account/">Delete Account</a> for exactly what is removed.</li>
   </ul>
 </section>
 
 <section class="clause" id="shared">
   <h2 class="clause-title"><span class="num">08</span>Shared or handed-over phones</h2>
-  <p>HomeBook is built to work offline, so your records and downloaded files stay on the phone after you sign out. If other people use your phone:</p>
+  <p>HomeBook is built to work offline, so unless you choose otherwise your records and downloaded files stay on the phone after you sign out. If another account signs in on the same phone, HomeBook keeps the two households apart — one account's records are never merged into another's. If other people use your phone:</p>
   <ul>
     <li>Turn on App Lock.</li>
-    <li>Don't sign into a different HomeBook account on a phone that holds your household's records.</li>
-    <li>Before selling or giving away your phone, <strong>uninstall HomeBook</strong> — that removes everything it stored on the device.</li>
+    <li>When you sign out, tick <strong>Also remove HomeBook's data from this phone</strong> if you won't be using it again.</li>
+    <li>Before selling or giving away your phone, remove HomeBook's data that way or <strong>uninstall HomeBook</strong>.</li>
   </ul>
 </section>
 
 <section class="clause" id="account">
   <h2 class="clause-title"><span class="num">09</span>Signing out and deleting your account</h2>
-  <p>Signing out stops cloud access from this phone; your records stay on the device. Deleting your account removes your sign-in, your account profile and your household membership on the server — the <a href="../delete-account/">Delete Account</a> page lists what goes and what stays. To have your household's cloud records and files removed as well, email <a href="mailto:support@homebook.app">support@homebook.app</a> from your account's address.</p>
+  <p>Signing out stops cloud access from this phone, and can also remove HomeBook's records and files from it. Deleting your account removes your sign-in, your account profile and photo, and your household's cloud records and files — the <a href="../delete-account/">Delete Account</a> page lists exactly what goes and what stays. If the cloud data can't all be removed, the account isn't deleted, so nothing is left behind half-removed.</p>
 </section>
 
 <section class="clause" id="improving">
   <h2 class="clause-title"><span class="num">10</span>What we're improving</h2>
   <p>We review HomeBook's security regularly. Work currently planned includes:</p>
   <ul>
-    <li>Stronger separation when different accounts are used on the same phone, and an option to remove this phone's HomeBook data when signing out.</li>
-    <li>Deleting a household's cloud records and files automatically when its owner deletes their account.</li>
     <li>Tighter handling of temporary files and device backups.</li>
     <li>Firebase App Check, which helps ensure cloud requests come from the genuine HomeBook app.</li>
     <li>Automated tests for the security rules on every change.</li>
