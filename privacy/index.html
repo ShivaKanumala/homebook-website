@@ -7,7 +7,7 @@
 <meta name="description" content="HomeBook's privacy policy — local-first by default, what's collected if you sign in and sync, and how to request deletion.">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <meta property="og:title" content="Privacy Policy | HomeBook">
-<meta property="og:description" content="Local-first by default. Here's exactly what HomeBook collects if you choose to sign in and sync.">
+<meta property="og:description" content="Local-first by default. Here's exactly what HomeBook collects, with and without signing in.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="../assets/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,13 +43,13 @@
     <p class="eyebrow mono">Legal · HomeBook</p>
     <h1 class="page-title">Privacy Policy</h1>
     <div class="meta-row mono">
-      <span>Effective 22 September 2026 · Updated 26 September 2026</span>
+      <span>Effective 22 September 2026 · Updated 28 September 2026</span>
       <span>&middot;</span>
       <span><a href="mailto:support@homebook.app">support@homebook.app</a></span>
     </div>
   </div>
 
-  <p class="lede" style="max-width:62ch;font-size:18px;color:var(--ink-soft);margin:18px 0 0;">HomeBook is a household management app for tracking the things, documents, vehicles, expenses, and reminders that make up running a home. HomeBook is local-first: every record you add is stored on your device whether or not you ever create an account. This policy explains what happens if you choose to sign in and sync.</p>
+  <p class="lede" style="max-width:62ch;font-size:18px;color:var(--ink-soft);margin:18px 0 0;">HomeBook is a household management app for tracking the things, documents, vehicles, expenses, and reminders that make up running a home. HomeBook is local-first: every record you add is stored on your device whether or not you ever create an account. This policy explains what leaves your device, and when.</p>
 
   <nav class="toc" aria-label="Table of contents">
     <p>On this page</p>
@@ -72,37 +72,37 @@
 
 <section class="clause" id="introduction">
   <h2 class="clause-title"><span class="num">01</span>Introduction</h2>
-  <p>HomeBook is a household management app for tracking the things, documents, vehicles, expenses, and reminders that make up running a home. HomeBook is local-first: every record you add is stored on your device whether or not you ever create an account. This policy explains what happens if you choose to sign in and sync.</p>
+  <p>HomeBook is a household management app for tracking the things, documents, vehicles, expenses, and reminders that make up running a home. HomeBook is local-first: every record you add is stored on your device whether or not you ever create an account. This policy explains what leaves your device, and when.</p>
 </section>
 
 <section class="clause" id="collect">
   <h2 class="clause-title"><span class="num">02</span>Information we collect</h2>
-  <p>If you use HomeBook without signing in, we collect nothing — all your data stays on your device. If you choose to sign in (email/password or Google), we store your email address, display name, and a unique account identifier, provided by Firebase Authentication. If you enable cloud sync, the household records you create (Things, Vehicles, Documents, Warranties, Maintenance, Reminders, Expenses, Income, Savings, Recurring Payments, Budgets, Transfers, Lending &amp; Borrowing records, Planned Expenses, Family Member entries, and Family Occasions) are copied to a private cloud data store tied to your account, together with any photos and PDF files you attach to those records. If a crash occurs, diagnostic crash reports (device model, OS version, stack trace) are sent via Firebase Crashlytics — never your household data.</p>
+  <p>If you use HomeBook without signing in, your household records and files stay on your device. Whether or not you sign in, HomeBook sends two kinds of technical data: crash reports through Firebase Crashlytics (device model, OS version, the technical error) and anonymous usage events through Firebase Analytics (for example "an expense was added" — never amounts, names, file names or document contents). If you choose to sign in (email/password or Google), we store your email address, display name, and a unique account identifier, provided by Firebase Authentication. If you enable cloud sync, the household records you create (Things, Vehicles, Documents, Warranties, Maintenance, Reminders, Expenses, Income, Savings, Recurring Payments, Budgets, Transfers, Lending &amp; Borrowing records, Planned Expenses, Family Member entries, and Family Occasions) are copied to a private cloud data store tied to your account, together with any photos and PDF files you attach to those records, and a profile photo if you set one.</p>
 </section>
 
 <section class="clause" id="use">
   <h2 class="clause-title"><span class="num">03</span>How we use your information</h2>
-  <p>Your account and household data are used solely to provide sign-in, cloud backup, and multi-device sync for your own household, and crash reports are used solely to fix bugs. We do not sell your data, use it for advertising, or share it with third parties beyond the infrastructure providers (Google Firebase) that host it.</p>
+  <p>Your account and household data are used solely to provide sign-in, cloud backup, and multi-device sync for your own household. Crash reports are used solely to fix bugs, and usage events solely to understand which features are used. We do not sell your data, use it for advertising, or share it with third parties beyond the infrastructure providers (Google Firebase) that host it.</p>
 </section>
 
 <section class="clause" id="visibility">
   <h2 class="clause-title"><span class="num">04</span>Who can see your data</h2>
-  <p>Your household's cloud data is only accessible to accounts you explicitly add as family members, according to the role (owner, editor, viewer) you assign them. Nobody outside your household — including us — has a way to browse your data through the app.</p>
+  <p>Your household's cloud data is readable only by the signed-in account that created the household; security rules on the server enforce this. Adding someone under Family Members records them (for example, who paid an expense) — it does not give their account access. Nobody else has a way to browse your data through the app. As with any cloud service, the people who operate HomeBook's Firebase project have administrative access to the underlying storage; we do not browse household data.</p>
 </section>
 
 <section class="clause" id="storage">
   <h2 class="clause-title"><span class="num">05</span>Data storage and security</h2>
-  <p>Local data lives in an on-device SQLite database and is never transmitted anywhere unless you sign in and sync. Cloud data is stored in Google Cloud Firestore and Firebase Storage (for photos/document files), protected by security rules that restrict every read and write to authenticated members of the relevant household. Receipt scanning (Smart Expense Capture) runs entirely on-device via Google ML Kit — no photo or text is ever sent anywhere to parse it. The same applies to payment messages you share or paste into HomeBook: they're read on your phone only. Notifications (budget alerts, reminders, festival and occasion heads-ups) are worked out on your phone from your own records — no server decides or sends them.</p>
+  <p>Local data lives in an on-device SQLite database, and your records are never transmitted anywhere unless you sign in and sync. Cloud data is stored in Google Cloud Firestore and Firebase Storage (for photos/document files), protected by security rules that restrict every read and write to authenticated members of the relevant household. Receipt scanning (Smart Expense Capture) runs entirely on-device via Google ML Kit — no photo or text is ever sent anywhere to parse it. The same applies to payment messages you share or paste into HomeBook: they're read on your phone only. Notifications (budget alerts, reminders, festival and occasion heads-ups) are worked out on your phone from your own records — no server decides or sends them.</p>
 </section>
 
 <section class="clause" id="retention">
   <h2 class="clause-title"><span class="num">06</span>Data retention</h2>
-  <p>Local data stays on your device until you delete a record yourself or uninstall the app. Cloud data persists for as long as your account exists and you remain part of a household. When you delete your account (see <a href="../delete-account/">Delete Account</a>), your account profile and household membership are removed immediately; a small amount of information may be retained where we are legally required to (for example, financial or security logs required for fraud prevention), but this does not apply to ordinary household records, which are deleted as described on that page.</p>
+  <p>Local data stays on your device until you delete a record yourself or uninstall the app. Cloud data is kept while your account exists. When you delete your account (see <a href="../delete-account/">Delete Account</a>), your account profile and household membership are removed immediately, and you can email us to have the household's cloud records and files removed too; a small amount of information may be retained where we are legally required to (for example, financial or security logs required for fraud prevention), but this does not apply to ordinary household records, which are deleted as described on that page.</p>
 </section>
 
 <section class="clause" id="thirdparty">
   <h2 class="clause-title"><span class="num">07</span>Third-party services we use</h2>
-  <p>HomeBook uses the following Google Firebase services, only when you choose to sign in: <strong>Firebase Authentication</strong> and <strong>Google Sign-In</strong> (account creation and login), <strong>Cloud Firestore</strong> (household record sync), <strong>Firebase Storage</strong> (photo/document file sync), <strong>Firebase Crashlytics</strong> (crash diagnostics), and <strong>Firebase Remote Config</strong> (app version/feature flags — no personal data). None of these are used unless you sign in, except Crashlytics, which may report an anonymous crash even for a signed-out session so we can fix bugs that affect everyone.</p>
+  <p>HomeBook uses these Google Firebase services. <strong>Always, signed in or not:</strong> <strong>Firebase Crashlytics</strong> (crash diagnostics), <strong>Firebase Analytics</strong> (anonymous usage events) and <strong>Firebase Remote Config</strong> (app version and feature settings — no personal data). <strong>Only when you sign in:</strong> <strong>Firebase Authentication</strong> and <strong>Google Sign-In</strong> (account creation and login), <strong>Cloud Firestore</strong> (household record sync) and <strong>Firebase Storage</strong> (photo and document file sync).</p>
 </section>
 
 <section class="clause" id="advertising">
@@ -126,7 +126,7 @@
 </section>
 
 <div class="callout">
-  <strong>In short:</strong> nothing leaves your device unless you choose to sign in. No ads, no data sale, no tracking beyond what running your account requires.
+  <strong>In short:</strong> your records stay on your device unless you choose to sign in; only anonymous crash reports and usage counts are sent without it. No ads, no data sale, no tracking beyond what running the app requires.
 </div>
 
 <section class="clause" id="contact">
