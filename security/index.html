@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Security | HomeBook</title>
+<meta name="description" content="How HomeBook protects your household records and documents — where data lives, who can see it, what never reaches logs, and how to keep your phone safe.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Security | HomeBook">
+<meta property="og:description" content="How HomeBook protects your household records and documents.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+  <g id="i-mark"><path d="M4 11.5L12 4l8 7.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M6.5 14h11M6.5 17h11M6.5 20h11" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" fill="none"/></g>
+</defs></svg>
+
+<header class="topbar">
+  <div class="shell topbar-inner">
+    <a class="brand-lockup" href="../index.html">
+      <div class="mark"><svg viewBox="0 0 24 24"><use href="#i-mark"/></svg></div>
+      <span>HomeBook</span>
+    </a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../manual/">Manual</a>
+      <a href="../security/" aria-current="page">Security</a>
+      <a href="../privacy/">Privacy</a>
+      <a href="../delete-account/">Delete Account</a>
+      <a href="../terms/">Terms</a>
+      <a href="../contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="doc-wrap">
+  <div class="page-head">
+    <p class="eyebrow mono">Trust · HomeBook</p>
+    <h1 class="page-title">Security</h1>
+    <div class="meta-row mono">
+      <span>Last reviewed 28 September 2026 · HomeBook 1.2.0</span>
+      <span>&middot;</span>
+      <span><a href="mailto:support@homebook.app">support@homebook.app</a></span>
+    </div>
+  </div>
+
+  <p class="lede" style="max-width:62ch;font-size:18px;color:var(--ink-soft);margin:18px 0 0;">HomeBook holds things that matter — vehicle papers, insurance, ID proofs, receipts and your household's money. This page explains, plainly, how that information is protected, what HomeBook deliberately doesn't do, and what you can do to keep it safe. It describes the app as it actually works today.</p>
+
+  <nav class="toc" aria-label="Table of contents">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#short"><span class="num">01</span>In short</a></li>
+      <li><a href="#where"><span class="num">02</span>Where your data lives</a></li>
+      <li><a href="#who"><span class="num">03</span>Who can see your household's data</a></li>
+      <li><a href="#files"><span class="num">04</span>Photos and documents</a></li>
+      <li><a href="#logs"><span class="num">05</span>What never goes into logs or analytics</a></li>
+      <li><a href="#permissions"><span class="num">06</span>Phone permissions</a></li>
+      <li><a href="#controls"><span class="num">07</span>Your controls</a></li>
+      <li><a href="#shared"><span class="num">08</span>Shared or handed-over phones</a></li>
+      <li><a href="#account"><span class="num">09</span>Signing out and deleting your account</a></li>
+      <li><a href="#improving"><span class="num">10</span>What we're improving</a></li>
+      <li><a href="#report"><span class="num">11</span>Reporting a security issue</a></li>
+    </ol>
+  </nav>
+</div>
+
+<section class="clause" id="short">
+  <h2 class="clause-title"><span class="num">01</span>In short</h2>
+  <p>Your records and files are stored on your phone first. If you sign in, they're copied to your household's private space on Google Firebase, sent over encrypted connections, and protected by rules that only let members of your household read them. HomeBook doesn't create public links to your documents, doesn't show ads, and doesn't send your documents or amounts to analytics.</p>
+  <p>No system is perfectly secure. Keep your phone locked, turn on HomeBook's App Lock if others use your phone, and sign out and uninstall HomeBook before giving your phone to someone else.</p>
+</section>
+
+<section class="clause" id="where">
+  <h2 class="clause-title"><span class="num">02</span>Where your data lives</h2>
+  <p><strong>On your phone.</strong> Every record and attached file is kept in HomeBook's private app storage, which other apps on your phone can't read. HomeBook works fully without an account.</p>
+  <p><strong>In the cloud, only if you sign in.</strong> Your household's records sync to Google Cloud Firestore and your attached photos and PDFs to Firebase Cloud Storage. All traffic uses encrypted connections (HTTPS) — the app contains no unencrypted network addresses — and Google encrypts this data at rest.</p>
+  <p><strong>Backups you export</strong> from Backup &amp; Restore are a plain file of your records (not your photos or PDFs). Wherever you save or send that file, treat it like the documents themselves.</p>
+</section>
+
+<section class="clause" id="who">
+  <h2 class="clause-title"><span class="num">03</span>Who can see your household's data</h2>
+  <p>In the cloud, every read and write is checked by server-side security rules — not by the app. A request is only allowed when the signed-in account is recorded as a member of that exact household, and only owners and editors can change anything. Knowing a household's or a file's identifier is never enough on its own; there is no public or anonymous access to household records or files.</p>
+  <p>Today, a household's cloud data is accessible to the account that created it. Adding someone to <em>Family Members</em> in the app records them for things like "Paid by" — it does not give their account access to your household.</p>
+  <p>As with any cloud service, the people who operate HomeBook's Firebase project have administrative access to the underlying storage; we don't browse household data.</p>
+</section>
+
+<section class="clause" id="files">
+  <h2 class="clause-title"><span class="num">04</span>Photos and documents</h2>
+  <ul>
+    <li>Only photos (JPG, PNG, WebP) and PDFs up to 10 MB can be attached — checked by the file's actual contents, and enforced again by the server rules.</li>
+    <li>Files are opened inside HomeBook through your signed-in session. HomeBook doesn't generate shareable download links for your attachments.</li>
+    <li>On another of your devices, files download only when you open them.</li>
+    <li>Removing a file removes it from your devices and from cloud storage.</li>
+    <li>Reading receipts and payment messages (Smart Capture) happens entirely on your phone — nothing is sent anywhere to be read.</li>
+  </ul>
+</section>
+
+<section class="clause" id="logs">
+  <h2 class="clause-title"><span class="num">05</span>What never goes into logs or analytics</h2>
+  <p>HomeBook uses Firebase Crashlytics to fix crashes and Firebase Analytics to count feature usage, and these may run whether or not you sign in. They are built to carry no personal household content: no document contents, file names, file links or storage locations, amounts, ID or registration numbers, or family details. Events record things like "a document was added" and its general type; analytics identifies an install or a signed-in account by an anonymous ID, never your email.</p>
+  <p>Notifications are prepared on your phone from your own records — no server decides or sends them. <em>Settings → Show amounts and names</em> keeps money details off your lock screen when turned off.</p>
+</section>
+
+<section class="clause" id="permissions">
+  <h2 class="clause-title"><span class="num">06</span>Phone permissions</h2>
+  <p>HomeBook doesn't ask for access to your photo library, videos, files or camera. When you attach something, Android's own Photo Picker, file picker or camera app hands HomeBook only the single item you chose. HomeBook asks for notification permission only when a notification is actually useful to you — never at startup — and uses the internet only to sync and check for updates.</p>
+</section>
+
+<section class="clause" id="controls">
+  <h2 class="clause-title"><span class="num">07</span>Your controls</h2>
+  <ul>
+    <li><strong>App Lock</strong> — a PIN required every time HomeBook opens (Profile → App lock).</li>
+    <li><strong>Show amounts and names</strong> — turn off to keep notifications vague on the lock screen.</li>
+    <li><strong>Remove a file</strong> — from its ⋮ menu; it's removed from the cloud as well.</li>
+    <li><strong>Sign out</strong> — stops syncing on this phone.</li>
+    <li><strong>Delete account</strong> — see <a href="../delete-account/">Delete Account</a> for exactly what is removed.</li>
+  </ul>
+</section>
+
+<section class="clause" id="shared">
+  <h2 class="clause-title"><span class="num">08</span>Shared or handed-over phones</h2>
+  <p>HomeBook is built to work offline, so your records and downloaded files stay on the phone after you sign out. If other people use your phone:</p>
+  <ul>
+    <li>Turn on App Lock.</li>
+    <li>Don't sign into a different HomeBook account on a phone that holds your household's records.</li>
+    <li>Before selling or giving away your phone, <strong>uninstall HomeBook</strong> — that removes everything it stored on the device.</li>
+  </ul>
+</section>
+
+<section class="clause" id="account">
+  <h2 class="clause-title"><span class="num">09</span>Signing out and deleting your account</h2>
+  <p>Signing out stops cloud access from this phone; your records stay on the device. Deleting your account removes your sign-in, your account profile and your household membership on the server — the <a href="../delete-account/">Delete Account</a> page lists what goes and what stays. To have your household's cloud records and files removed as well, email <a href="mailto:support@homebook.app">support@homebook.app</a> from your account's address.</p>
+</section>
+
+<section class="clause" id="improving">
+  <h2 class="clause-title"><span class="num">10</span>What we're improving</h2>
+  <p>We review HomeBook's security regularly. Work currently planned includes:</p>
+  <ul>
+    <li>Stronger separation when different accounts are used on the same phone, and an option to remove this phone's HomeBook data when signing out.</li>
+    <li>Deleting a household's cloud records and files automatically when its owner deletes their account.</li>
+    <li>Tighter handling of temporary files and device backups.</li>
+    <li>Firebase App Check, which helps ensure cloud requests come from the genuine HomeBook app.</li>
+    <li>Automated tests for the security rules on every change.</li>
+  </ul>
+</section>
+
+<div class="callout">
+  <strong>Our promise:</strong> we'll describe HomeBook's security as it actually is — including its limits — and keep this page updated as it improves.
+</div>
+
+<section class="clause" id="report">
+  <h2 class="clause-title"><span class="num">11</span>Reporting a security issue</h2>
+  <p>Found something that looks like a security or privacy problem? Please email <a href="mailto:support@homebook.app">support@homebook.app</a> with the details and give us a chance to fix it before sharing it publicly. We'll acknowledge your report and keep you updated.</p>
+</section>
+
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <span>HomeBook — everything about your home, one place.</span>
+    <div class="foot-links">
+      <a href="../index.html">Home</a>
+      <a href="../manual/">Manual</a>
+      <a href="../privacy/">Privacy Policy</a>
+      <a href="../delete-account/">Delete Account</a>
+      <a href="../terms/">Terms</a>
+      <a href="../contact/">Contact</a>
+    </div>
+    <span class="mono">v1.2.0</span>
+  </div>
+</footer>
+
+</body>
+</html>
