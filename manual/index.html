@@ -104,10 +104,10 @@
 
   <main>
     <div class="manual-intro">
-      <p class="eyebrow mono">Reference · v1.2.0</p>
+      <p class="eyebrow mono">Reference · v1.3.0</p>
       <h1 class="page-title">HomeBook User Manual</h1>
       <p class="lede" style="max-width:62ch;font-size:18px;color:var(--ink-soft);">Every screen in HomeBook, what it shows, and how to get there. Organized in the order you'd actually meet each screen — start with how the app is laid out, then work through each module.</p>
-      <p style="max-width:62ch;font-size:14px;color:var(--ink-soft);margin-top:10px;">Updated for version 1.2 — anything added since 1.0 is marked <span class="new-tag">NEW</span>.</p>
+      <p style="max-width:62ch;font-size:14px;color:var(--ink-soft);margin-top:10px;">Updated for version 1.3 — anything added since 1.0 is marked <span class="new-tag">NEW</span>.</p>
       <select class="jump" style="margin-top:16px;" onchange="if(this.value) location.hash=this.value">
         <option value="">Jump to screen…</option>
         <option value="#nav-structure">How the app is organized</option>
@@ -209,7 +209,7 @@
       <div class="screen">
         <div class="screen-cols">
           <div class="col"><p class="lbl">Header</p><ul><li>Time-of-day greeting + "Your Home"</li><li>Bell → Notifications <span class="new-tag">NEW</span> (dot when something is unread)</li><li>Search icon → Search</li><li>"Needs attention" badge when things are overdue</li></ul></div>
-          <div class="col"><p class="lbl">Sections, top to bottom</p><ul><li>Keep your HomeBook safe / sync status card <span class="new-tag">NEW</span> — suggests signing in when you have data only on this phone; after sign-in shows "Syncing…" or "Waiting to sync" with Retry, and disappears once everything is synced</li><li>Home banner — around a festival or family occasion it turns into a warm festive card <span class="new-tag">NEW</span> (see Family &amp; Occasions)</li><li>Needs attention (overdue reminders)</li><li>Smart Capture pending review</li><li>Quick access (Things/Vehicles/Documents/Reminders counts)</li><li>Money overview + monthly spending + insights</li><li>Upcoming reminders · Recent purchases</li><li>Active recurring payments · Savings goals</li><li>Recently added things</li></ul></div>
+          <div class="col"><p class="lbl">Sections, top to bottom</p><ul><li>Keep your HomeBook safe / sync status card <span class="new-tag">NEW</span> — suggests signing in when you have data only on this phone; after sign-in shows "Syncing…" or "Waiting to sync" with Retry, and disappears once everything is synced</li><li>Home banner — around a festival or family occasion it turns into a warm festive card <span class="new-tag">NEW</span> (see Family &amp; Occasions)</li><li>Needs attention (overdue reminders)</li><li>Smart Capture pending review — with a line saying how many came from payment notifications <span class="new-tag">NEW</span></li><li>Quick access (Things/Vehicles/Documents/Reminders counts)</li><li>Money overview + monthly spending + insights</li><li>Upcoming reminders · Recent purchases</li><li>Active recurring payments · Savings goals</li><li>Recently added things</li></ul></div>
         </div>
         <div class="from-line">Each section has a "See all" link to its full screen. This is where the Quick Add "+" lives. When a new version is on Google Play, HomeBook offers the update in-app <span class="new-tag">NEW</span>.</div>
       </div>
@@ -394,19 +394,27 @@
 
     <section id="g11" class="grp">
       <div class="grp-head"><span class="n mono">11</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-scan"/></svg></div><h2>Smart Expense Capture</h2><span class="route-tag">smartCapture</span></div>
-      <p class="grp-purpose">Turn a receipt or payment message into an Expense without typing it in — parsed entirely on-device.</p>
+      <p class="grp-purpose">Turn a receipt, payment message or (optionally) a payment notification into an Expense without typing it in — parsed entirely on-device, and always reviewed before it's added.</p>
       <div class="screen">
         <div class="screen-head"><h3>Capture entry</h3></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>2×2 action grid: Scan Receipt · Paste Transaction · Share to HomeBook · Add Manually</li><li>"Needs review" list of pending candidates</li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>Scan Receipt → camera/gallery → OCR parse</li><li>Paste Transaction → text dialog</li><li>Share to HomeBook → instructions (actually triggered from another app's share sheet)</li><li>Add Manually → Add Expense</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>2×2 action grid: Scan Receipt · Paste Transaction · Share to HomeBook · Add Manually</li><li>"Detect payment notifications" row with its status (Android) <span class="new-tag">NEW</span></li><li>"Needs review" list of pending candidates</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Scan Receipt → camera/gallery → OCR parse</li><li>Paste Transaction → text dialog</li><li>Share to HomeBook → instructions (actually triggered from another app's share sheet)</li><li>Add Manually → Add Expense</li><li>Detect payment notifications → Smart Expense Detection</li></ul></div>
         </div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Smart Expense Detection</h3><span class="route-tag">smartDetection</span><span class="new-tag">NEW</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Switch with status: Off · On — watching for payment notifications · "Notification access is currently disabled." with Enable</li><li>How it works</li><li>Privacy — notification text processed in memory on the phone, never saved or uploaded; only amount, merchant, date, payment method, category and a hashed reference kept until you review</li><li>Turn off (when on)</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Switch on → HomeBook's explanation sheet → "Enable Notification Access" opens Android's Notification access page for "HomeBook payment detection"; "Not now" changes nothing</li><li>Enable → Android's page again (only when you tap it)</li><li>Turn off → stops immediately; a snackbar offers Android Settings to also remove the access</li></ul></div>
+        </div>
+        <div class="from-line">Off by default; Android only. Reached from Settings or the Smart Capture screen. Only notifications from supported payment and bank apps (Google Pay, PhonePe, Paytm, BHIM, Amazon, CRED, MobiKwik and major banks) are looked at; chat notifications and SMS are never read. Detected payments appear under "Needs review". It turns off when you sign out or another account signs in.</div>
       </div>
       <div class="screen">
         <div class="screen-head"><h3>Review capture</h3><span class="route-tag">smartCaptureReview</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Confidence label · duplicate-detection banner if flagged</li><li>Editable pre-filled fields: Amount, Merchant, Category, Subcategory, Date, Payment method, Notes</li><li>Payment method read from the message — UPI, credit or debit card, NEFT/IMPS/RTGS as bank transfer <span class="new-tag">NEW</span></li><li>Merchant memory: a merchant you've categorised before comes pre-filled with the same category and subcategory <span class="new-tag">NEW</span></li><li>Raw source text shown in a muted box</li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>"Ignore"</li><li>"Confirm &amp; Add" (or "Add anyway" if a duplicate was flagged)</li><li>Duplicate banner: "View existing" / "Ignore"</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Confidence label — or, for a payment notification, what it looks like: Expense / Income / Refund / Transfer detected, or "Review transaction" <span class="new-tag">NEW</span></li><li>"Source: payment notification" line, and a hint for transfers and refunds <span class="new-tag">NEW</span></li><li>Duplicate-detection banner if flagged</li><li>Editable pre-filled fields: Amount, Merchant, Category, Subcategory, Date, Payment method, Notes</li><li>Payment method read from the message — UPI, credit or debit card, NEFT/IMPS/RTGS as bank transfer <span class="new-tag">NEW</span></li><li>Merchant memory: a merchant you've categorised before comes pre-filled with the same category and subcategory <span class="new-tag">NEW</span></li><li>"Suggested category — please check" when the category guess is uncertain <span class="new-tag">NEW</span></li><li>Raw source text shown in a muted box (pasted/shared/scanned only — notification text is never kept)</li><li>Money received from a notification is reviewed as Income: Amount, Source, Date, Notes <span class="new-tag">NEW</span></li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Ignore"</li><li>"Confirm &amp; Add" (or "Add anyway" if a duplicate was flagged) · "Add income" for money received</li><li>Duplicate banner: "View existing" / "Use existing" <span class="new-tag">NEW</span></li></ul></div>
         </div>
       </div>
     </section>
@@ -648,7 +656,7 @@
       <div class="screen">
         <div class="screen-head"><h3>Settings</h3></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">Preferences</p><ul><li>Language (English/Telugu/Hindi)</li><li>Reminder defaults · Notifications (switch)</li><li>Notification types — one switch each, plus Quiet hours and "Show amounts and names" <span class="new-tag">NEW</span> (see Notifications)</li><li>Appearance (System/Light/Dark)</li></ul></div>
+          <div class="col"><p class="lbl">Preferences</p><ul><li>Language (English/Telugu/Hindi)</li><li>Reminder defaults · Notifications (switch)</li><li>Notification types — one switch each, plus Quiet hours and "Show amounts and names" <span class="new-tag">NEW</span> (see Notifications)</li><li>Smart Expense Detection — Off / On / "Notification access is currently disabled." → its own screen <span class="new-tag">NEW</span> (see Smart Expense Capture)</li><li>Appearance (System/Light/Dark)</li></ul></div>
           <div class="col"><p class="lbl">Security, storage &amp; account</p><ul><li>App lock · Storage usage (read-only)</li><li>About HomeBook · Privacy Policy · Terms &amp; Conditions</li><li>Delete account (signed-in users only) — also removes your household's cloud backup and files; records on this phone stay <span class="new-tag">NEW</span></li></ul></div>
         </div>
       </div>
@@ -699,7 +707,7 @@
       <a href="../delete-account/">Delete Account</a>
       <a href="../contact/">Contact</a>
     </div>
-    <span class="mono">v1.2.0</span>
+    <span class="mono">v1.3.0</span>
   </div>
 </footer>
 
