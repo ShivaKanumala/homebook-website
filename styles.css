@@ -145,6 +145,7 @@ section { padding-block: 52px; border-top: 1px solid var(--line); }
 .news-list li svg { flex: none; width: 20px; height: 20px; color: var(--brand-deep); margin-top: 2px; }
 .news-list strong { display: block; font-size: 15px; margin-bottom: 2px; }
 .news-list span { font-size: 14px; color: var(--ink-soft); }
+.news-list .new-tag { font-size: 10.5px; color: var(--stamp); margin-left: 6px; vertical-align: 1px; }
 .mod-card p { margin: 0; font-size: 14px; color: var(--ink-soft); }
 
 /* feature split rows */
@@ -201,6 +202,7 @@ section.clause:last-of-type { border-bottom: none; }
 h2.clause-title { font-size: 20px; font-weight: 600; margin: 0 0 10px; display: flex; align-items: baseline; gap: 10px; }
 h2.clause-title .num { font-family: 'IBM Plex Mono', monospace; font-size: 13.5px; color: var(--brand-deep); font-weight: 500; }
 section.clause p, section.clause li { margin: 0; max-width: 68ch; color: var(--ink-soft); }
+section.clause p + p { margin-top: 12px; }
 section.clause ul { padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
 
 .callout { background: var(--brand-tint); border-radius: 12px; padding: 18px 22px; margin: 36px auto; max-width: 720px; font-size: 14.5px; color: var(--ink); }
