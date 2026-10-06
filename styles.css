@@ -243,6 +243,8 @@ section.clause ul { padding-left: 20px; display: flex; flex-direction: column; g
 
 /* ---- manual page ---- */
 .manual-layout { max-width: 1120px; margin: 0 auto; padding: 32px 20px 100px; display: grid; grid-template-columns: 220px 1fr; gap: 40px; align-items: start; }
+/* A grid item won't shrink below its content's min width unless told to; without this the manual overflows a phone screen. */
+.manual-layout > main { min-width: 0; }
 @media (max-width: 860px) { .manual-layout { grid-template-columns: 1fr; } }
 select.jump {
   font-family: 'Work Sans', sans-serif; font-size: 13.5px; padding: 8px 12px; border-radius: 8px;
@@ -269,7 +271,7 @@ aside.side-nav a .n { font-family: 'IBM Plex Mono', monospace; font-size: 11px; 
 
 section.grp { padding-block: 34px; border-bottom: 1px solid var(--line); scroll-margin-top: 74px; }
 section.grp:last-of-type { border-bottom: none; }
-.grp-head { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; }
+.grp-head { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; flex-wrap: wrap; }
 .grp-icon { width: 36px; height: 36px; border-radius: 9px; background: var(--brand-tint); display: flex; align-items: center; justify-content: center; flex: 0 0 auto; }
 .grp-icon svg { width: 19px; height: 19px; color: var(--brand-deep); }
 .grp-head h2 { font-size: 21px; font-weight: 600; }
