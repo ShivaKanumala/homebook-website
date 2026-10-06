@@ -104,10 +104,10 @@
 
   <main>
     <div class="manual-intro">
-      <p class="eyebrow mono">Reference · v1.2.0</p>
+      <p class="eyebrow mono">Reference · v1.4.0</p>
       <h1 class="page-title">HomeBook User Manual</h1>
       <p class="lede" style="max-width:62ch;font-size:18px;color:var(--ink-soft);">Every screen in HomeBook, what it shows, and how to get there. Organized in the order you'd actually meet each screen — start with how the app is laid out, then work through each module.</p>
-      <p style="max-width:62ch;font-size:14px;color:var(--ink-soft);margin-top:10px;">Updated for version 1.2 — anything added since 1.0 is marked <span class="new-tag">NEW</span>.</p>
+      <p style="max-width:62ch;font-size:14px;color:var(--ink-soft);margin-top:10px;">Updated for version 1.4 — anything added since 1.0 is marked <span class="new-tag">NEW</span>.</p>
       <select class="jump" style="margin-top:16px;" onchange="if(this.value) location.hash=this.value">
         <option value="">Jump to screen…</option>
         <option value="#nav-structure">How the app is organized</option>
@@ -143,16 +143,17 @@
 
     <section id="nav-structure" class="grp" style="border-top:none; padding-top:0;">
       <div class="grp-head"><div class="grp-icon"><svg width="19" height="19"><use href="#i-home"/></svg></div><h2>How the app is organized</h2></div>
-      <p class="grp-purpose">Four tabs anchor everything. A floating "+" on Home opens Quick Add — the fastest way into any module without hunting through menus.</p>
+      <p class="grp-purpose">Five tabs anchor everything. A floating "+" on Home opens Quick Add — the fastest way into any module without hunting through menus.</p>
       <div class="nav-card">
-        <h2>Bottom navigation — 4 tabs, always visible</h2>
+        <h2>Bottom navigation — 5 tabs, always visible</h2>
         <div class="tab-row">
           <span class="tab-chip"><svg width="14" height="14"><use href="#i-home"/></svg>Home</span>
+          <span class="tab-chip"><svg width="14" height="14"><use href="#i-wallet"/></svg>Money <span class="new-tag">NEW</span></span>
           <span class="tab-chip"><svg width="14" height="14"><use href="#i-box"/></svg>Things</span>
           <span class="tab-chip"><svg width="14" height="14"><use href="#i-bell"/></svg>Reminders</span>
           <span class="tab-chip"><svg width="14" height="14"><use href="#i-family"/></svg>Profile</span>
         </div>
-        <p style="font-size:13px;color:var(--ink-soft);margin-bottom:18px;">Pressing system Back from Things, Reminders, or Profile returns to Home first — it never closes the app from those tabs.</p>
+        <p style="font-size:13px;color:var(--ink-soft);margin-bottom:18px;">Pressing system Back from Money, Things, Reminders, or Profile returns to Home first — it never closes the app from those tabs.</p>
         <h2>Quick Add sheet — the floating "+" (Home tab only)</h2>
         <div class="qa-grid">
           <div class="qa-group"><p class="qg-label">Home</p><ul><li>Thing</li><li>Vehicle</li><li>Document</li><li>Warranty</li><li>Service</li></ul></div>
@@ -209,7 +210,7 @@
       <div class="screen">
         <div class="screen-cols">
           <div class="col"><p class="lbl">Header</p><ul><li>Time-of-day greeting + "Your Home"</li><li>Bell → Notifications <span class="new-tag">NEW</span> (dot when something is unread)</li><li>Search icon → Search</li><li>"Needs attention" badge when things are overdue</li></ul></div>
-          <div class="col"><p class="lbl">Sections, top to bottom</p><ul><li>Keep your HomeBook safe / sync status card <span class="new-tag">NEW</span> — suggests signing in when you have data only on this phone; after sign-in shows "Syncing…" or "Waiting to sync" with Retry, and disappears once everything is synced</li><li>Home banner — around a festival or family occasion it turns into a warm festive card <span class="new-tag">NEW</span> (see Family &amp; Occasions)</li><li>Needs attention (overdue reminders)</li><li>Smart Capture pending review</li><li>Quick access (Things/Vehicles/Documents/Reminders counts)</li><li>Money overview + monthly spending + insights</li><li>Upcoming reminders · Recent purchases</li><li>Active recurring payments · Savings goals</li><li>Recently added things</li></ul></div>
+          <div class="col"><p class="lbl">Sections, top to bottom</p><ul><li>Keep your HomeBook safe / sync status card <span class="new-tag">NEW</span> — suggests signing in when you have data only on this phone; after sign-in shows "Syncing…" or "Waiting to sync" with Retry, and disappears once everything is synced</li><li>Home banner — around a festival or family occasion it turns into a warm festive card <span class="new-tag">NEW</span> (see Family &amp; Occasions)</li><li>Needs attention (overdue reminders)</li><li>Smart Capture pending review — with a line saying how many came from payment notifications <span class="new-tag">NEW</span></li><li>Quick access (Things/Vehicles/Documents/Reminders counts)</li><li>Money overview + monthly spending + insights</li><li>Upcoming reminders · Recent purchases</li><li>Active recurring payments · Savings goals</li><li>Recently added things</li></ul></div>
         </div>
         <div class="from-line">Each section has a "See all" link to its full screen. This is where the Quick Add "+" lives. When a new version is on Google Play, HomeBook offers the update in-app <span class="new-tag">NEW</span>.</div>
       </div>
@@ -348,11 +349,11 @@
 
     <section id="g09" class="grp">
       <div class="grp-head"><span class="n mono">09</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-wallet"/></svg></div><h2>Money hub</h2><span class="route-tag">money</span></div>
-      <p class="grp-purpose">The one screen that ties all your household money together for the month. Reached from Profile → Money.</p>
+      <p class="grp-purpose">The one screen that ties all your household money together for the month. It's the Money tab <span class="new-tag">NEW</span> (also reachable from Profile → Money).</p>
       <div class="screen">
         <div class="screen-cols">
           <div class="col"><p class="lbl">On this screen</p><ul><li>Month switcher (can't advance past current month)</li><li>Monthly Overview — Available, Income, Committed, Saved, Spent</li><li>Budget progress card · Insights</li></ul></div>
-          <div class="col"><p class="lbl">Link rows</p><ul><li>Upcoming Money · Next 7 days (with the amount to keep aside) <span class="new-tag">NEW</span></li><li>Planned expenses <span class="new-tag">NEW</span></li><li>Money Calendar · Money Timeline <span class="new-tag">NEW</span></li><li>Expenses · Recurring · Savings · Income</li><li>Transfers <span class="new-tag">NEW</span></li><li>Money waiting for you · Money you owe <span class="new-tag">NEW</span></li></ul></div>
+          <div class="col"><p class="lbl">Link rows</p><ul><li>Upcoming Money · Next 7 days (with the amount to keep aside) <span class="new-tag">NEW</span></li><li>Planned expenses <span class="new-tag">NEW</span></li><li>Money Calendar · Money Timeline <span class="new-tag">NEW</span></li><li>Expenses · Spending analytics <span class="new-tag">NEW</span> · Recurring · Savings · Income</li><li>Transfers <span class="new-tag">NEW</span></li><li>Money waiting for you · Money you owe <span class="new-tag">NEW</span></li></ul></div>
         </div>
         <div class="from-line">Tap the budget card to set this month's budget.</div>
       </div>
@@ -364,7 +365,7 @@
       <div class="screen">
         <div class="screen-head"><h3>Expenses list</h3></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Month switcher · Budget progress card</li><li>"Category budgets" link</li><li>Category breakdown · day-grouped list with daily totals</li><li>"Filter" button <span class="new-tag">NEW</span> — active filters show as removable chips with a "N expenses · ₹total" summary</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Month switcher · Budget progress card</li><li>"Category budgets" link</li><li>Category breakdown · day-grouped list with daily totals</li><li>Header buttons: Spending analytics and PDF statement <span class="new-tag">NEW</span></li><li>Well-known merchants show their initials, and rows show "Category · Subcategory" <span class="new-tag">NEW</span></li><li>"Filter" button <span class="new-tag">NEW</span> — active filters show as removable chips with a "N expenses · ₹total" summary</li></ul></div>
           <div class="col"><p class="lbl">Filter sheet <span class="new-tag">NEW</span></p><ul><li>Category · Subcategory</li><li>Amount range (min / max)</li><li>Payment method · Merchant name</li><li>Related Thing/Vehicle · Paid by</li><li>Added from: Manually / Shared / Receipt / Recurring</li><li>"Reset" / "Show N expenses"</li></ul></div>
         </div>
         <div class="from-line">Only choices that actually appear in this month's expenses are offered, so the sheet stays short.</div>
@@ -384,6 +385,22 @@
         </div>
       </div>
       <div class="screen">
+        <div class="screen-head"><h3>Spending analytics</h3><span class="route-tag">expenseAnalytics</span><span class="new-tag">NEW</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Month switcher (back to your first month with expenses)</li><li>Month total · transactions · average per day · highest expense · no-spend days</li><li>Change from last month, shown only once there's enough history; a month in progress is compared with the same days of last month</li><li>Six-month trend (tap a month to open it)</li><li>Categories chart with a ranked list</li><li>Top merchants · Monthly insights</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Tap a category → its expenses for the month</li><li>Tap a merchant → its whole history: total, count, average, last paid, trend</li><li>"Statement" → PDF statement for what you're looking at</li></ul></div>
+        </div>
+        <div class="from-line">Opened from Money → Spending analytics, or the chart icon on Expenses. Everything is worked out on your phone, offline.</div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>PDF statement</h3><span class="route-tag">expenseStatement</span><span class="new-tag">NEW</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">Choose</p><ul><li>Period: this month, last month, an earlier month, custom dates, or all time</li><li>Filters: the same as the Expenses filter sheet</li><li>Live count and total as you change them</li></ul></div>
+          <div class="col"><p class="lbl">The statement</p><ul><li>Summary, categories and merchants, then every expense with page numbers</li><li>"Preview" opens it in your phone's PDF viewer</li><li>"Share" · "Save"</li></ul></div>
+        </div>
+        <div class="from-line">Created on your phone in its temporary storage. It leaves the phone only if you share it or save it somewhere.</div>
+      </div>
+      <div class="screen">
         <div class="screen-head"><h3>Category budgets</h3><span class="route-tag">categoryBudgets</span></div>
         <div class="screen-cols">
           <div class="col"><p class="lbl">On this screen</p><ul><li>One row per active category — icon, spent-of-budget (red if over)</li></ul></div>
@@ -394,19 +411,27 @@
 
     <section id="g11" class="grp">
       <div class="grp-head"><span class="n mono">11</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-scan"/></svg></div><h2>Smart Expense Capture</h2><span class="route-tag">smartCapture</span></div>
-      <p class="grp-purpose">Turn a receipt or payment message into an Expense without typing it in — parsed entirely on-device.</p>
+      <p class="grp-purpose">Turn a receipt, payment message or (optionally) a payment notification into an Expense without typing it in — parsed entirely on-device, and always reviewed before it's added.</p>
       <div class="screen">
         <div class="screen-head"><h3>Capture entry</h3></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>2×2 action grid: Scan Receipt · Paste Transaction · Share to HomeBook · Add Manually</li><li>"Needs review" list of pending candidates</li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>Scan Receipt → camera/gallery → OCR parse</li><li>Paste Transaction → text dialog</li><li>Share to HomeBook → instructions (actually triggered from another app's share sheet)</li><li>Add Manually → Add Expense</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>2×2 action grid: Scan Receipt · Paste Transaction · Share to HomeBook · Add Manually</li><li>"Detect payment notifications" row with its status (Android) <span class="new-tag">NEW</span></li><li>"Needs review" list of pending candidates</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Scan Receipt → camera/gallery → OCR parse</li><li>Paste Transaction → text dialog</li><li>Share to HomeBook → instructions (actually triggered from another app's share sheet)</li><li>Add Manually → Add Expense</li><li>Detect payment notifications → Smart Expense Detection</li></ul></div>
         </div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Smart Expense Detection <span class="new-tag">NEW</span></h3><span class="route-tag">smartDetection</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Switch with status: Off · On — watching for payment notifications · "Notification access is currently disabled." with Enable</li><li>How it works</li><li>Privacy — notification text processed in memory on the phone, never saved or uploaded; only amount, merchant, date, payment method, category and a hashed reference kept until you review</li><li>Turn off (when on)</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Switch on → HomeBook's explanation sheet → "Enable Notification Access" opens Android's Notification access page for "HomeBook payment detection"; "Not now" changes nothing</li><li>Enable → Android's page again (only when you tap it)</li><li>Turn off → stops immediately; a snackbar offers Android Settings to also remove the access</li></ul></div>
+        </div>
+        <div class="from-line">Off by default; Android only. Reached from Settings or the Smart Capture screen. Only notifications from supported payment and bank apps (Google Pay, PhonePe, Paytm, BHIM, Amazon, CRED, MobiKwik and major banks) are looked at; chat notifications and SMS are never read. Detected payments appear under "Needs review". It turns off when you sign out or another account signs in.</div>
       </div>
       <div class="screen">
         <div class="screen-head"><h3>Review capture</h3><span class="route-tag">smartCaptureReview</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Confidence label · duplicate-detection banner if flagged</li><li>Editable pre-filled fields: Amount, Merchant, Category, Subcategory, Date, Payment method, Notes</li><li>Payment method read from the message — UPI, credit or debit card, NEFT/IMPS/RTGS as bank transfer <span class="new-tag">NEW</span></li><li>Merchant memory: a merchant you've categorised before comes pre-filled with the same category and subcategory <span class="new-tag">NEW</span></li><li>Raw source text shown in a muted box</li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>"Ignore"</li><li>"Confirm &amp; Add" (or "Add anyway" if a duplicate was flagged)</li><li>Duplicate banner: "View existing" / "Ignore"</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Confidence label — or, for a payment notification, what it looks like: Expense / Income / Refund / Transfer detected, or "Review transaction" <span class="new-tag">NEW</span></li><li>"Source: payment notification" line, and a hint for transfers and refunds <span class="new-tag">NEW</span></li><li>Duplicate-detection banner if flagged</li><li>Editable pre-filled fields: Amount, Merchant, Category, Subcategory, Date, Payment method, Notes</li><li>Payment method read from the message — UPI, credit or debit card, NEFT/IMPS/RTGS as bank transfer <span class="new-tag">NEW</span></li><li>Merchant memory: a merchant you've categorised before comes pre-filled with the same category and subcategory <span class="new-tag">NEW</span></li><li>"Suggested category — please check" when the category guess is uncertain <span class="new-tag">NEW</span></li><li>Raw source text shown in a muted box (pasted/shared/scanned only — notification text is never kept)</li><li>Money received from a notification is reviewed as Income: Amount, Source, Date, Notes <span class="new-tag">NEW</span></li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Ignore"</li><li>"Confirm &amp; Add" (or "Add anyway" if a duplicate was flagged) · "Add income" for money received</li><li>Duplicate banner: "View existing" / "Use existing" <span class="new-tag">NEW</span></li></ul></div>
         </div>
       </div>
     </section>
@@ -568,8 +593,8 @@
       <div class="screen">
         <div class="screen-head"><h3>Notification Center</h3></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Recent notifications grouped Today / Yesterday / Earlier</li><li>Unread ones highlighted</li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>Tap → the screen it's about</li><li>"Mark all as read" · swipe/Dismiss</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Recent notifications grouped Today / Yesterday / Earlier, each with its time or date</li><li>Unread ones tinted, with a dot</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Tap → the screen it's about</li><li>"Mark all as read" · swipe to dismiss, with Undo</li></ul></div>
         </div>
         <div class="from-line">Opened from the bell on Home.</div>
       </div>
@@ -648,7 +673,7 @@
       <div class="screen">
         <div class="screen-head"><h3>Settings</h3></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">Preferences</p><ul><li>Language (English/Telugu/Hindi)</li><li>Reminder defaults · Notifications (switch)</li><li>Notification types — one switch each, plus Quiet hours and "Show amounts and names" <span class="new-tag">NEW</span> (see Notifications)</li><li>Appearance (System/Light/Dark)</li></ul></div>
+          <div class="col"><p class="lbl">Preferences</p><ul><li>Language (English/Telugu/Hindi)</li><li>Reminder defaults · Notifications (switch)</li><li>Notification types — one switch each, plus Quiet hours and "Show amounts and names" <span class="new-tag">NEW</span> (see Notifications)</li><li>Smart Expense Detection — Off / On / "Notification access is currently disabled." → its own screen <span class="new-tag">NEW</span> (see Smart Expense Capture)</li><li>Appearance (System/Light/Dark)</li></ul></div>
           <div class="col"><p class="lbl">Security, storage &amp; account</p><ul><li>App lock · Storage usage (read-only)</li><li>About HomeBook · Privacy Policy · Terms &amp; Conditions</li><li>Delete account (signed-in users only) — also removes your household's cloud backup and files; records on this phone stay <span class="new-tag">NEW</span></li></ul></div>
         </div>
       </div>
@@ -699,7 +724,7 @@
       <a href="../delete-account/">Delete Account</a>
       <a href="../contact/">Contact</a>
     </div>
-    <span class="mono">v1.2.0</span>
+    <span class="mono">v1.4.0</span>
   </div>
 </footer>
 

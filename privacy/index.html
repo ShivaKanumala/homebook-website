@@ -43,7 +43,7 @@
     <p class="eyebrow mono">Legal · HomeBook</p>
     <h1 class="page-title">Privacy Policy</h1>
     <div class="meta-row mono">
-      <span>Effective 22 September 2026 · Updated 28 September 2026</span>
+      <span>Effective 22 September 2026 · Updated 6 October 2026</span>
       <span>&middot;</span>
       <span><a href="mailto:support@homebook.app">support@homebook.app</a></span>
     </div>
@@ -59,13 +59,14 @@
       <li><a href="#use"><span class="num">03</span>How we use your information</a></li>
       <li><a href="#visibility"><span class="num">04</span>Who can see your data</a></li>
       <li><a href="#storage"><span class="num">05</span>Data storage and security</a></li>
-      <li><a href="#retention"><span class="num">06</span>Data retention</a></li>
-      <li><a href="#thirdparty"><span class="num">07</span>Third-party services we use</a></li>
-      <li><a href="#advertising"><span class="num">08</span>Advertising</a></li>
-      <li><a href="#choices"><span class="num">09</span>Your choices &amp; rights</a></li>
-      <li><a href="#children"><span class="num">10</span>Children's privacy</a></li>
-      <li><a href="#changes"><span class="num">11</span>Changes to this policy</a></li>
-      <li><a href="#contact"><span class="num">12</span>Contact us</a></li>
+      <li><a href="#notification-detection"><span class="num">06</span>Notification-based transaction detection</a></li>
+      <li><a href="#retention"><span class="num">07</span>Data retention</a></li>
+      <li><a href="#thirdparty"><span class="num">08</span>Third-party services we use</a></li>
+      <li><a href="#advertising"><span class="num">09</span>Advertising</a></li>
+      <li><a href="#choices"><span class="num">10</span>Your choices &amp; rights</a></li>
+      <li><a href="#children"><span class="num">11</span>Children's privacy</a></li>
+      <li><a href="#changes"><span class="num">12</span>Changes to this policy</a></li>
+      <li><a href="#contact"><span class="num">13</span>Contact us</a></li>
     </ol>
   </nav>
 </div>
@@ -92,36 +93,45 @@
 
 <section class="clause" id="storage">
   <h2 class="clause-title"><span class="num">05</span>Data storage and security</h2>
-  <p>Local data lives in an on-device SQLite database, and your records are never transmitted anywhere unless you sign in and sync. Cloud data is stored in Google Cloud Firestore and Firebase Storage (for photos/document files), protected by security rules that restrict every read and write to authenticated members of the relevant household. Receipt scanning (Smart Expense Capture) runs entirely on-device via Google ML Kit — no photo or text is ever sent anywhere to parse it. The same applies to payment messages you share or paste into HomeBook: they're read on your phone only. Notifications (budget alerts, reminders, festival and occasion heads-ups) are worked out on your phone from your own records — no server decides or sends them.</p>
+  <p>Local data lives in an on-device SQLite database, and your records are never transmitted anywhere unless you sign in and sync. Cloud data is stored in Google Cloud Firestore and Firebase Storage (for photos/document files), protected by security rules that restrict every read and write to authenticated members of the relevant household. Receipt scanning (Smart Expense Capture) runs entirely on-device via Google ML Kit — no photo or text is ever sent anywhere to parse it. The same applies to payment messages you share or paste into HomeBook: they're read on your phone only, and so are payment notifications if you turn on Smart Expense Detection (see <a href="#notification-detection">Notification-based transaction detection</a>). Notifications (budget alerts, reminders, festival and occasion heads-ups) are worked out on your phone from your own records — no server decides or sends them. Spending analytics, monthly insights and PDF statements are worked out on your phone too. A statement is created in your phone's temporary storage and leaves your phone only if you choose to share it or save it somewhere.</p>
+</section>
+
+<section class="clause" id="notification-detection">
+  <h2 class="clause-title"><span class="num">06</span>Notification-based transaction detection</h2>
+  <p><strong>Optional and off by default.</strong> Smart Expense Detection works on Android only, and only after you turn it on in HomeBook, read HomeBook's in-app explanation, and then allow HomeBook's notification access in Android Settings. HomeBook uses this access for one purpose: to help you record your household's transactions.</p>
+  <p><strong>What HomeBook looks at.</strong> Only notifications from supported payment and banking apps (such as Google Pay, PhonePe, Paytm, BHIM and bank apps). Notifications from any other app are skipped without their content being read. Chat and conversation notifications are excluded, notifications you already had before turning the feature on are not read, and HomeBook does not read SMS.</p>
+  <p><strong>What happens on your phone.</strong> A supported app's notification is checked on your device, in memory, for a completed payment. OTPs, offers, payment requests, and pending or failed payments are skipped. For a detected payment, HomeBook keeps only the amount, the merchant or payee name, the date, the payment method, a suggested category and type (for example expense or refund), and a one-way scrambled (hashed) copy of the transaction reference number, used only to avoid showing the same payment twice. The notification's text is never saved. Account numbers, card numbers and UPI IDs are not kept. Detected payments wait on your device for you to review them; they are not uploaded or synced.</p>
+  <p><strong>What leaves your phone.</strong> Nothing is added automatically. Only an expense or income you review and confirm is saved, just like one you entered yourself. If you are signed in, it is then synced to your household's cloud copy (see <a href="#collect">Information we collect</a>), with its source shown as "payment notification". Notification content is never sent to HomeBook's servers, to analytics, to crash reports, or to any AI service.</p>
+  <p><strong>Turning it off.</strong> Turn Smart Expense Detection off in HomeBook's Settings: HomeBook stops receiving notifications immediately and discards anything not yet processed. You can also remove HomeBook's notification access in Android Settings at any time. The feature also turns off when you sign out or a different account signs in. Expenses and income you already confirmed stay in your records until you delete them.</p>
 </section>
 
 <section class="clause" id="retention">
-  <h2 class="clause-title"><span class="num">06</span>Data retention</h2>
+  <h2 class="clause-title"><span class="num">07</span>Data retention</h2>
   <p>Local data stays on your device until you delete it, choose to remove HomeBook's data when signing out, or uninstall the app. Cloud data is kept while your account exists. When you delete your account (see <a href="../delete-account/">Delete Account</a>), your sign-in, account profile and profile photo are removed immediately, and — when you are the household's only member — so are the household's cloud records and attached files; a small amount of information may be retained where we are legally required to (for example, financial or security logs required for fraud prevention), but this does not apply to ordinary household records, which are deleted as described on that page.</p>
 </section>
 
 <section class="clause" id="thirdparty">
-  <h2 class="clause-title"><span class="num">07</span>Third-party services we use</h2>
+  <h2 class="clause-title"><span class="num">08</span>Third-party services we use</h2>
   <p>HomeBook uses these Google Firebase services. <strong>Always, signed in or not:</strong> <strong>Firebase Crashlytics</strong> (crash diagnostics), <strong>Firebase Analytics</strong> (anonymous usage events) and <strong>Firebase Remote Config</strong> (app version and feature settings — no personal data). <strong>Only when you sign in:</strong> <strong>Firebase Authentication</strong> and <strong>Google Sign-In</strong> (account creation and login), <strong>Cloud Firestore</strong> (household record sync) and <strong>Firebase Storage</strong> (photo and document file sync).</p>
 </section>
 
 <section class="clause" id="advertising">
-  <h2 class="clause-title"><span class="num">08</span>Advertising</h2>
+  <h2 class="clause-title"><span class="num">09</span>Advertising</h2>
   <p>HomeBook shows no ads and includes no advertising SDK. We do not use an Advertising ID for tracking or personalization. Google Play's Data Safety form may still list Advertising ID as a technically-available identifier because Firebase Analytics' underlying library can access it on the device — HomeBook does not read or use it for any purpose.</p>
 </section>
 
 <section class="clause" id="choices">
-  <h2 class="clause-title"><span class="num">09</span>Your choices &amp; rights</h2>
+  <h2 class="clause-title"><span class="num">10</span>Your choices &amp; rights</h2>
   <p>You can use HomeBook fully offline without ever creating an account. You can sign out at any time, and choose then whether to keep HomeBook's data on this phone or remove it (useful on a shared or handed-down phone). Uninstalling the app also deletes all local data from your device. You can request a copy or deletion of your cloud account and data at any time — see <a href="../delete-account/">Delete Account</a> for exactly how.</p>
 </section>
 
 <section class="clause" id="children">
-  <h2 class="clause-title"><span class="num">10</span>Children's privacy</h2>
+  <h2 class="clause-title"><span class="num">11</span>Children's privacy</h2>
   <p>HomeBook is not directed at children and we do not knowingly collect information from children.</p>
 </section>
 
 <section class="clause" id="changes">
-  <h2 class="clause-title"><span class="num">11</span>Changes to this policy</h2>
+  <h2 class="clause-title"><span class="num">12</span>Changes to this policy</h2>
   <p>We may update this policy from time to time. Material changes will be reflected here with an updated effective date.</p>
 </section>
 
@@ -130,7 +140,7 @@
 </div>
 
 <section class="clause" id="contact">
-  <h2 class="clause-title"><span class="num">12</span>Contact us</h2>
+  <h2 class="clause-title"><span class="num">13</span>Contact us</h2>
   <p>Questions about this policy, or a request to access or delete your cloud account and data? Reach out at <a href="mailto:support@homebook.app">support@homebook.app</a>.</p>
 </section>
 
@@ -145,7 +155,7 @@
       <a href="../terms/">Terms</a>
       <a href="../contact/">Contact</a>
     </div>
-    <span class="mono">v1.2.0</span>
+    <span class="mono">v1.4.0</span>
   </div>
 </footer>
 
