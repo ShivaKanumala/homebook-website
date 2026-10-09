@@ -104,10 +104,10 @@
 
   <main>
     <div class="manual-intro">
-      <p class="eyebrow mono">Reference · v1.4.0</p>
+      <p class="eyebrow mono">Reference · v1.5.0</p>
       <h1 class="page-title">HomeBook User Manual</h1>
       <p class="lede" style="max-width:62ch;font-size:18px;color:var(--ink-soft);">Every screen in HomeBook, what it shows, and how to get there. Organized in the order you'd actually meet each screen — start with how the app is laid out, then work through each module.</p>
-      <p style="max-width:62ch;font-size:14px;color:var(--ink-soft);margin-top:10px;">Updated for version 1.4 — anything added since 1.0 is marked <span class="new-tag">NEW</span>.</p>
+      <p style="max-width:62ch;font-size:14px;color:var(--ink-soft);margin-top:10px;">Updated for version 1.5 — anything added since 1.0 is marked <span class="new-tag">NEW</span>.</p>
       <select class="jump" style="margin-top:16px;" onchange="if(this.value) location.hash=this.value">
         <option value="">Jump to screen…</option>
         <option value="#nav-structure">How the app is organized</option>
@@ -365,15 +365,15 @@
       <div class="screen">
         <div class="screen-head"><h3>Expenses list</h3></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Month switcher · Budget progress card</li><li>"Category budgets" link</li><li>Category breakdown · day-grouped list with daily totals</li><li>Header buttons: Spending analytics and PDF statement <span class="new-tag">NEW</span></li><li>Well-known merchants show their initials, and rows show "Category · Subcategory" <span class="new-tag">NEW</span></li><li>"Filter" button <span class="new-tag">NEW</span> — active filters show as removable chips with a "N expenses · ₹total" summary</li></ul></div>
-          <div class="col"><p class="lbl">Filter sheet <span class="new-tag">NEW</span></p><ul><li>Category · Subcategory</li><li>Amount range (min / max)</li><li>Payment method · Merchant name</li><li>Related Thing/Vehicle · Paid by</li><li>Added from: Manually / Shared / Receipt / Recurring</li><li>"Reset" / "Show N expenses"</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Month switcher · Budget progress card</li><li>"Category budgets" link</li><li>Category breakdown · day-grouped list with daily totals</li><li>Header buttons: Spending analytics and PDF statement <span class="new-tag">NEW</span></li><li>Each row shows an icon for what it was (Swiggy → food delivery, Airtel → mobile) — never a company logo — and "Category · Subcategory" <span class="new-tag">NEW</span></li><li>List | Notebook switch — Notebook View writes the month out day by day, like an expense notebook, with your notes and each day's total; the choice is remembered on your phone <span class="new-tag">NEW</span></li><li>"Filter" button <span class="new-tag">NEW</span> — active filters show as removable chips with a "N expenses · ₹total" summary</li></ul></div>
+          <div class="col"><p class="lbl">Filter sheet <span class="new-tag">NEW</span></p><ul><li>Category · Subcategory</li><li>Amount range (min / max)</li><li>Payment method · Merchant name or note</li><li>Related Thing/Vehicle · Paid by</li><li>Added from: Manually / Shared / Receipt / Recurring</li><li>"Reset" / "Show N expenses"</li></ul></div>
         </div>
         <div class="from-line">Only choices that actually appear in this month's expenses are offered, so the sheet stays short.</div>
       </div>
       <div class="screen">
         <div class="screen-head"><h3>Add / Edit Expense</h3><span class="route-tag">addExpense</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">Fields</p><ul><li>Amount · Merchant · Category (dropdown)</li><li>More detail (optional) — subcategory chips, e.g. Food → Restaurant / Cafe / Delivery <span class="new-tag">NEW</span></li><li>Date · Part of a plan (when a planned expense covers that date) <span class="new-tag">NEW</span></li><li>Paid with — Cash, UPI, Credit card, Debit card, Bank transfer, Net banking, Other, or Not specified <span class="new-tag">NEW</span></li><li>Paid by — shown once the household has two or more members <span class="new-tag">NEW</span></li><li>Related to — Thing/Vehicle (optional)</li><li>Odometer (fuel entries only) · Notes</li><li>Attachments — receipt or bill <span class="new-tag">NEW</span></li></ul></div>
+          <div class="col"><p class="lbl">Fields</p><ul><li>Amount · Merchant · Category — a grid of large category icons, including Loans &amp; Debt and Personal <span class="new-tag">NEW</span></li><li>More detail (optional) — subcategory chips, e.g. Food → Restaurant / Cafe / Delivery <span class="new-tag">NEW</span></li><li>Date · Part of a plan (when a planned expense covers that date) <span class="new-tag">NEW</span></li><li>Paid with — Cash, UPI, Credit card, Debit card, Bank transfer, Net banking, Other, or Not specified <span class="new-tag">NEW</span></li><li>Paid by — shown once the household has two or more members <span class="new-tag">NEW</span></li><li>Related to — Thing/Vehicle (optional)</li><li>Odometer (fuel entries only) · Notes</li><li>Attachments — receipt or bill <span class="new-tag">NEW</span></li></ul></div>
           <div class="col"><p class="lbl">Actions</p><ul><li>"Save / Update Expense"</li></ul></div>
         </div>
       </div>
@@ -388,15 +388,15 @@
         <div class="screen-head"><h3>Spending analytics</h3><span class="route-tag">expenseAnalytics</span><span class="new-tag">NEW</span></div>
         <div class="screen-cols">
           <div class="col"><p class="lbl">On this screen</p><ul><li>Month switcher (back to your first month with expenses)</li><li>Month total · transactions · average per day · highest expense · no-spend days</li><li>Change from last month, shown only once there's enough history; a month in progress is compared with the same days of last month</li><li>Six-month trend (tap a month to open it)</li><li>Categories chart with a ranked list</li><li>Top merchants · Monthly insights</li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>Tap a category → its expenses for the month</li><li>Tap a merchant → its whole history: total, count, average, last paid, trend</li><li>"Statement" → PDF statement for what you're looking at</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Tap a category → its expenses for the month, with a "By type" breakdown (e.g. Loans &amp; Debt → Home Loan EMI) <span class="new-tag">NEW</span></li><li>Tap a merchant → its whole history: total, count, average, last paid, trend</li><li>"Statement" → PDF statement for what you're looking at</li></ul></div>
         </div>
         <div class="from-line">Opened from Money → Spending analytics, or the chart icon on Expenses. Everything is worked out on your phone, offline.</div>
       </div>
       <div class="screen">
         <div class="screen-head"><h3>PDF statement</h3><span class="route-tag">expenseStatement</span><span class="new-tag">NEW</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">Choose</p><ul><li>Period: this month, last month, an earlier month, custom dates, or all time</li><li>Filters: the same as the Expenses filter sheet</li><li>Live count and total as you change them</li></ul></div>
-          <div class="col"><p class="lbl">The statement</p><ul><li>Summary, categories and merchants, then every expense with page numbers</li><li>"Preview" opens it in your phone's PDF viewer</li><li>"Share" · "Save"</li></ul></div>
+          <div class="col"><p class="lbl">Choose</p><ul><li>Period: this month, last month, an earlier month, custom dates, or all time</li><li>Filters: the same as the Expenses filter sheet</li><li>Live count and total as you change them</li><li>Style: Professional, or Notebook — expenses written out by day <span class="new-tag">NEW</span></li></ul></div>
+          <div class="col"><p class="lbl">The statement</p><ul><li>Summary, categories and merchants, then every expense with page numbers</li><li>Each expense shows its date, merchant, "Category · Payment" and your note <span class="new-tag">NEW</span></li><li>"Preview" opens it in your phone's PDF viewer</li><li>"Share" · "Save"</li></ul></div>
         </div>
         <div class="from-line">Created on your phone in its temporary storage. It leaves the phone only if you share it or save it somewhere.</div>
       </div>
@@ -425,12 +425,12 @@
           <div class="col"><p class="lbl">On this screen</p><ul><li>Switch with status: Off · On — watching for payment notifications · "Notification access is currently disabled." with Enable</li><li>How it works</li><li>Privacy — notification text processed in memory on the phone, never saved or uploaded; only amount, merchant, date, payment method, category and a hashed reference kept until you review</li><li>Turn off (when on)</li></ul></div>
           <div class="col"><p class="lbl">Actions</p><ul><li>Switch on → HomeBook's explanation sheet → "Enable Notification Access" opens Android's Notification access page for "HomeBook payment detection"; "Not now" changes nothing</li><li>Enable → Android's page again (only when you tap it)</li><li>Turn off → stops immediately; a snackbar offers Android Settings to also remove the access</li></ul></div>
         </div>
-        <div class="from-line">Off by default; Android only. Reached from Settings or the Smart Capture screen. Only notifications from supported payment and bank apps (Google Pay, PhonePe, Paytm, BHIM, Amazon, CRED, MobiKwik and major banks) are looked at; chat notifications and SMS are never read. Detected payments appear under "Needs review". It turns off when you sign out or another account signs in.</div>
+        <div class="from-line">Off by default; Android only. Reached from Settings or the Smart Capture screen. Only notifications from supported payment and bank apps (Google Pay, PhonePe, Paytm, BHIM, Amazon, CRED, MobiKwik and major banks) are looked at; chat notifications and SMS are never read. Detected payments appear under "Needs review", and as a "New expense detected" notification with Review &amp; Add and Ignore — also while HomeBook is closed <span class="new-tag">NEW</span>. It turns off when you sign out or another account signs in.</div>
       </div>
       <div class="screen">
         <div class="screen-head"><h3>Review capture</h3><span class="route-tag">smartCaptureReview</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Confidence label — or, for a payment notification, what it looks like: Expense / Income / Refund / Transfer detected, or "Review transaction" <span class="new-tag">NEW</span></li><li>"Source: payment notification" line, and a hint for transfers and refunds <span class="new-tag">NEW</span></li><li>Duplicate-detection banner if flagged</li><li>Editable pre-filled fields: Amount, Merchant, Category, Subcategory, Date, Payment method, Notes</li><li>Payment method read from the message — UPI, credit or debit card, NEFT/IMPS/RTGS as bank transfer <span class="new-tag">NEW</span></li><li>Merchant memory: a merchant you've categorised before comes pre-filled with the same category and subcategory <span class="new-tag">NEW</span></li><li>"Suggested category — please check" when the category guess is uncertain <span class="new-tag">NEW</span></li><li>Raw source text shown in a muted box (pasted/shared/scanned only — notification text is never kept)</li><li>Money received from a notification is reviewed as Income: Amount, Source, Date, Notes <span class="new-tag">NEW</span></li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Confidence label — or, for a payment notification, what it looks like: Expense / Income / Refund / Transfer detected, or "Review transaction" <span class="new-tag">NEW</span></li><li>"Source: payment notification" line, and a hint for transfers and refunds <span class="new-tag">NEW</span></li><li>Duplicate-detection banner if flagged</li><li>Editable pre-filled fields: Amount, Merchant, Category, Subcategory, Date, Payment method, Notes</li><li>Payment method read from the message — UPI, credit or debit card, NEFT/IMPS/RTGS as bank transfer; UPI is filled in for payments from UPI apps <span class="new-tag">NEW</span></li><li>Merchant is optional: leave it blank and the expense is saved under its category name; a merchant you add is remembered for next time <span class="new-tag">NEW</span></li><li>Merchant memory: a merchant you've categorised before comes pre-filled with the same category and subcategory <span class="new-tag">NEW</span></li><li>"Suggested category — please check" when the category guess is uncertain <span class="new-tag">NEW</span></li><li>Raw source text shown in a muted box (pasted/shared/scanned only — notification text is never kept)</li><li>Money received from a notification is reviewed as Income: Amount, Source, Date, Notes <span class="new-tag">NEW</span></li></ul></div>
           <div class="col"><p class="lbl">Actions</p><ul><li>"Ignore"</li><li>"Confirm &amp; Add" (or "Add anyway" if a duplicate was flagged) · "Add income" for money received</li><li>Duplicate banner: "View existing" / "Use existing" <span class="new-tag">NEW</span></li></ul></div>
         </div>
       </div>
@@ -449,7 +449,7 @@
       <div class="screen">
         <div class="screen-head"><h3>Add / Edit Recurring</h3><span class="route-tag">addRecurring / editRecurring</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">Fields</p><ul><li>Name · Amount · Category · Frequency</li><li>Due day (1–31) · Start date · End date (optional)</li><li>Recipient/Provider · Notes</li></ul></div>
+          <div class="col"><p class="lbl">Fields</p><ul><li>Name · Amount · Category · Frequency</li><li>More detail (optional) — e.g. Loan / EMI → Home Loan EMI; the expenses it creates are recorded under it <span class="new-tag">NEW</span></li><li>Due day (1–31) · Start date · End date (optional)</li><li>Recipient/Provider · Notes</li></ul></div>
           <div class="col"><p class="lbl">Switches</p><ul><li>"Reminder enabled" (+ days-before dropdown)</li><li>"Auto-create expense"</li></ul></div>
         </div>
       </div>
@@ -724,7 +724,7 @@
       <a href="../delete-account/">Delete Account</a>
       <a href="../contact/">Contact</a>
     </div>
-    <span class="mono">v1.4.0</span>
+    <span class="mono">v1.5.0</span>
   </div>
 </footer>
 

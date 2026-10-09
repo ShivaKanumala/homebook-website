@@ -43,7 +43,7 @@
     <p class="eyebrow mono">Legal · HomeBook</p>
     <h1 class="page-title">Privacy Policy</h1>
     <div class="meta-row mono">
-      <span>Effective 22 September 2026 · Updated 6 October 2026</span>
+      <span>Effective 22 September 2026 · Updated 9 October 2026</span>
       <span>&middot;</span>
       <span><a href="mailto:support@homebook.app">support@homebook.app</a></span>
     </div>
@@ -100,7 +100,8 @@
   <h2 class="clause-title"><span class="num">06</span>Notification-based transaction detection</h2>
   <p><strong>Optional and off by default.</strong> Smart Expense Detection works on Android only, and only after you turn it on in HomeBook, read HomeBook's in-app explanation, and then allow HomeBook's notification access in Android Settings. HomeBook uses this access for one purpose: to help you record your household's transactions.</p>
   <p><strong>What HomeBook looks at.</strong> Only notifications from supported payment and banking apps (such as Google Pay, PhonePe, Paytm, BHIM and bank apps). Notifications from any other app are skipped without their content being read. Chat and conversation notifications are excluded, notifications you already had before turning the feature on are not read, and HomeBook does not read SMS.</p>
-  <p><strong>What happens on your phone.</strong> A supported app's notification is checked on your device, in memory, for a completed payment. OTPs, offers, payment requests, and pending or failed payments are skipped. For a detected payment, HomeBook keeps only the amount, the merchant or payee name, the date, the payment method, a suggested category and type (for example expense or refund), and a one-way scrambled (hashed) copy of the transaction reference number, used only to avoid showing the same payment twice. The notification's text is never saved. Account numbers, card numbers and UPI IDs are not kept. Detected payments wait on your device for you to review them; they are not uploaded or synced.</p>
+  <p><strong>What happens on your phone.</strong> A supported app's notification is checked on your device, in memory, for a completed payment. OTPs, offers, payment requests, and pending or failed payments are skipped. For a detected payment, HomeBook keeps only the amount, the merchant or payee name, the date, the payment method, a suggested category and type (for example expense or refund), and a one-way scrambled (hashed) copy of the transaction reference number, used only to avoid showing the same payment twice. The notification's text is never saved. Account numbers, card numbers and UPI IDs are not kept. Detected payments wait on your device for you to review them; they are not uploaded or synced. The name of the app that posted the notification is used, in memory, only to recognise a UPI payment, and is not kept.</p>
+  <p><strong>Review notifications.</strong> When a payment is detected, HomeBook shows its own notification on your phone ("New expense detected"), with Review &amp; Add and Ignore. This can happen shortly after the payment even when HomeBook is closed: Android lets HomeBook check the payment notification on your phone, briefly, in the background. On a locked screen the notification's content is hidden, and if you turn off "show amounts in notifications" it shows neither the amount nor the payee. A merchant name you add while reviewing is remembered on your phone to recognise that merchant next time; it is not synced.</p>
   <p><strong>What leaves your phone.</strong> Nothing is added automatically. Only an expense or income you review and confirm is saved, just like one you entered yourself. If you are signed in, it is then synced to your household's cloud copy (see <a href="#collect">Information we collect</a>), with its source shown as "payment notification". Notification content is never sent to HomeBook's servers, to analytics, to crash reports, or to any AI service.</p>
   <p><strong>Turning it off.</strong> Turn Smart Expense Detection off in HomeBook's Settings: HomeBook stops receiving notifications immediately and discards anything not yet processed. You can also remove HomeBook's notification access in Android Settings at any time. The feature also turns off when you sign out or a different account signs in. Expenses and income you already confirmed stay in your records until you delete them.</p>
 </section>
@@ -155,7 +156,7 @@
       <a href="../terms/">Terms</a>
       <a href="../contact/">Contact</a>
     </div>
-    <span class="mono">v1.4.0</span>
+    <span class="mono">v1.5.0</span>
   </div>
 </footer>
 
