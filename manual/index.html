@@ -80,7 +80,7 @@
       <li><a href="#g06"><span class="n">06</span>Warranties</a></li>
       <li><a href="#g07"><span class="n">07</span>Maintenance</a></li>
       <li><a href="#g08"><span class="n">08</span>Reminders</a></li>
-      <li><a href="#g09"><span class="n">09</span>Money hub</a></li>
+      <li><a href="#g09"><span class="n">09</span>Money hub &amp; Cards</a></li>
       <li><a href="#g10"><span class="n">10</span>Expenses</a></li>
       <li><a href="#g11"><span class="n">11</span>Smart Capture</a></li>
       <li><a href="#g12"><span class="n">12</span>Recurring</a></li>
@@ -104,10 +104,10 @@
 
   <main>
     <div class="manual-intro">
-      <p class="eyebrow mono">Reference · v1.5.0</p>
+      <p class="eyebrow mono">Reference · v1.6.0</p>
       <h1 class="page-title">HomeBook User Manual</h1>
       <p class="lede" style="max-width:62ch;font-size:18px;color:var(--ink-soft);">Every screen in HomeBook, what it shows, and how to get there. Organized in the order you'd actually meet each screen — start with how the app is laid out, then work through each module.</p>
-      <p style="max-width:62ch;font-size:14px;color:var(--ink-soft);margin-top:10px;">Updated for version 1.5 — anything added since 1.0 is marked <span class="new-tag">NEW</span>.</p>
+      <p style="max-width:62ch;font-size:14px;color:var(--ink-soft);margin-top:10px;">Updated for version 1.6 — anything added since 1.0 is marked <span class="new-tag">NEW</span>.</p>
       <select class="jump" style="margin-top:16px;" onchange="if(this.value) location.hash=this.value">
         <option value="">Jump to screen…</option>
         <option value="#nav-structure">How the app is organized</option>
@@ -119,7 +119,7 @@
         <option value="#g06">06 · Warranties</option>
         <option value="#g07">07 · Maintenance</option>
         <option value="#g08">08 · Reminders</option>
-        <option value="#g09">09 · Money hub</option>
+        <option value="#g09">09 · Money hub &amp; Cards</option>
         <option value="#g10">10 · Expenses</option>
         <option value="#g11">11 · Smart Expense Capture</option>
         <option value="#g12">12 · Recurring Payments</option>
@@ -348,14 +348,37 @@
     </section>
 
     <section id="g09" class="grp">
-      <div class="grp-head"><span class="n mono">09</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-wallet"/></svg></div><h2>Money hub</h2><span class="route-tag">money</span></div>
-      <p class="grp-purpose">The one screen that ties all your household money together for the month. It's the Money tab <span class="new-tag">NEW</span> (also reachable from Profile → Money).</p>
+      <div class="grp-head"><span class="n mono">09</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-wallet"/></svg></div><h2>Money hub &amp; Cards</h2><span class="route-tag">money</span></div>
+      <p class="grp-purpose">The one screen that ties all your household money together for the month — or for your salary cycle. It's the Money tab <span class="new-tag">NEW</span> (also reachable from Profile → Money).</p>
       <div class="screen">
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Month switcher (can't advance past current month)</li><li>Monthly Overview — Available, Income, Committed, Saved, Spent</li><li>Budget progress card · Insights</li></ul></div>
-          <div class="col"><p class="lbl">Link rows</p><ul><li>Upcoming Money · Next 7 days (with the amount to keep aside) <span class="new-tag">NEW</span></li><li>Planned expenses <span class="new-tag">NEW</span></li><li>Money Calendar · Money Timeline <span class="new-tag">NEW</span></li><li>Expenses · Spending analytics <span class="new-tag">NEW</span> · Recurring · Savings · Income</li><li>Transfers <span class="new-tag">NEW</span></li><li>Money waiting for you · Money you owe <span class="new-tag">NEW</span></li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Period switcher — a calendar month, or a salary cycle that starts on the day you choose (e.g. the 25th to the 24th) <span class="new-tag">NEW</span></li><li>Monthly Overview — net cash flow (money in minus money out, not your bank balance), income received and income still to come, what's still due, and what's left after it <span class="new-tag">NEW</span></li><li>Balance now — only if you add an opening balance on this device; worked out from your records, not read from your bank <span class="new-tag">NEW</span></li><li>Budget progress card — a budget carries forward to the next period until you change it, marked "Carried over" <span class="new-tag">NEW</span> · Insights</li></ul></div>
+          <div class="col"><p class="lbl">Link rows</p><ul><li>Upcoming Money · Next 7 days (with the amount to keep aside) <span class="new-tag">NEW</span></li><li>Cards &amp; Wallet <span class="new-tag">NEW</span></li><li>Planned expenses <span class="new-tag">NEW</span></li><li>Money Calendar · Money Timeline <span class="new-tag">NEW</span></li><li>Expenses · Spending analytics <span class="new-tag">NEW</span> · Recurring · Savings · Income</li><li>Transfers <span class="new-tag">NEW</span></li><li>Money waiting for you · Money you owe <span class="new-tag">NEW</span></li></ul></div>
         </div>
-        <div class="from-line">Tap the budget card to set this month's budget.</div>
+        <div class="from-line">Tap the budget card to set this period's budget. A rent or EMI you record by hand is matched to its recurring payment, so it is counted once, not twice <span class="new-tag">NEW</span>. The salary-cycle day and opening balance are set in Settings → Money and apply to this phone.</div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Cards &amp; Wallet</h3><span class="route-tag">cards</span><span class="new-tag">NEW</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Your cards as a swipeable stack of card faces — credit, debit and prepaid; Visa, Mastercard, RuPay, Amex, Maestro or Other</li><li>Each face shows the bank, card name and "•••• 1234" — the last four digits only</li><li>Available credit across your credit cards, from the balances you've recorded</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Add card" · tap a card → its details</li></ul></div>
+        </div>
+        <div class="from-line">HomeBook isn't connected to your bank. It stores the last four digits only — never the full number, CVV, PIN or OTP.</div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Add / Edit card</h3><span class="new-tag">NEW</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">Fields</p><ul><li>Bank (optional shortcut) · Bank / issuer · Card type · Network</li><li>Card product · Nickname · Name on card · Last 4 digits · Expiry — all optional</li><li>A card style, with a live preview of the card face</li><li>Credit cards only: Credit limit, Outstanding balance (recorded by you), Statement day, Payment due day, Bill reminder, Annual fee, Rewards notes</li><li>Notes</li></ul></div>
+          <div class="col"><p class="lbl">Good to know</p><ul><li>Switching a card to debit or prepaid hides the credit fields and drops them on save</li><li>Text that looks like a full card number is refused, with the field marked</li><li>Bill reminder: if the card's bill is already a recurring payment, pick it, so the bill shows once in Upcoming, not twice</li></ul></div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Card detail</h3><span class="new-tag">NEW</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>The card face · Details</li><li>Credit: limit, manually recorded outstanding balance, available credit and how much of the limit is used</li><li>Statement &amp; payment: next statement and payment due</li><li>Fees &amp; rewards · Paid with this card — expenses linked to it</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Record payment" — lowers the recorded balance; it is not an expense, so nothing is counted twice</li><li>Edit · Delete</li></ul></div>
+        </div>
+        <div class="from-line">Purchases stay ordinary expenses: when an expense is paid by credit or debit card, Add Expense lets you pick which card. A credit card's payment due date appears in Upcoming Money.</div>
       </div>
     </section>
 
@@ -365,7 +388,7 @@
       <div class="screen">
         <div class="screen-head"><h3>Expenses list</h3></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Month switcher · Budget progress card</li><li>"Category budgets" link</li><li>Category breakdown · day-grouped list with daily totals</li><li>Header buttons: Spending analytics and PDF statement <span class="new-tag">NEW</span></li><li>Each row shows an icon for what it was (Swiggy → food delivery, Airtel → mobile) — never a company logo — and "Category · Subcategory" <span class="new-tag">NEW</span></li><li>List | Notebook switch — Notebook View writes the month out day by day, like an expense notebook, with your notes and each day's total; the choice is remembered on your phone <span class="new-tag">NEW</span></li><li>"Filter" button <span class="new-tag">NEW</span> — active filters show as removable chips with a "N expenses · ₹total" summary</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Month switcher · Budget progress card</li><li>"Category budgets" link</li><li>Category breakdown · day-grouped list with daily totals</li><li>Header buttons: Spending analytics and PDF statement <span class="new-tag">NEW</span></li><li>Each row shows an icon for what it was (Swiggy → food delivery, Airtel → mobile) — never a company logo — and "Category · Subcategory" <span class="new-tag">NEW</span>; a payment with no category shows the merchant's initial, and each day's rows share one card <span class="new-tag">NEW</span></li><li>List | Notebook switch — Notebook View writes the month out day by day, like an expense notebook, with your notes and each day's total; the choice is remembered on your phone <span class="new-tag">NEW</span></li><li>"Filter" button <span class="new-tag">NEW</span> — active filters show as removable chips with a "N expenses · ₹total" summary</li></ul></div>
           <div class="col"><p class="lbl">Filter sheet <span class="new-tag">NEW</span></p><ul><li>Category · Subcategory</li><li>Amount range (min / max)</li><li>Payment method · Merchant name or note</li><li>Related Thing/Vehicle · Paid by</li><li>Added from: Manually / Shared / Receipt / Recurring</li><li>"Reset" / "Show N expenses"</li></ul></div>
         </div>
         <div class="from-line">Only choices that actually appear in this month's expenses are offered, so the sheet stays short.</div>
@@ -373,9 +396,10 @@
       <div class="screen">
         <div class="screen-head"><h3>Add / Edit Expense</h3><span class="route-tag">addExpense</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">Fields</p><ul><li>Amount · Merchant · Category — a grid of large category icons, including Loans &amp; Debt and Personal <span class="new-tag">NEW</span></li><li>More detail (optional) — subcategory chips, e.g. Food → Restaurant / Cafe / Delivery <span class="new-tag">NEW</span></li><li>Date · Part of a plan (when a planned expense covers that date) <span class="new-tag">NEW</span></li><li>Paid with — Cash, UPI, Credit card, Debit card, Bank transfer, Net banking, Other, or Not specified <span class="new-tag">NEW</span></li><li>Paid by — shown once the household has two or more members <span class="new-tag">NEW</span></li><li>Related to — Thing/Vehicle (optional)</li><li>Odometer (fuel entries only) · Notes</li><li>Attachments — receipt or bill <span class="new-tag">NEW</span></li></ul></div>
+          <div class="col"><p class="lbl">Fields</p><ul><li>Amount · Merchant · Category — a grid of large category icons, including Loans &amp; Debt and Personal <span class="new-tag">NEW</span></li><li>More detail (optional) — subcategory chips, e.g. Food → Restaurant / Cafe / Delivery <span class="new-tag">NEW</span></li><li>Date · Part of a plan (when a planned expense covers that date) <span class="new-tag">NEW</span></li><li>Paid with — Cash, UPI, Credit card, Debit card, Bank transfer, Net banking, Other, or Not specified <span class="new-tag">NEW</span>; for a card, which of your saved cards paid (optional) <span class="new-tag">NEW</span></li><li>Paid by — shown once the household has two or more members <span class="new-tag">NEW</span></li><li>Related to — Thing/Vehicle (optional)</li><li>Odometer (fuel entries only) · Notes</li><li>Attachments — receipt or bill <span class="new-tag">NEW</span></li></ul></div>
           <div class="col"><p class="lbl">Actions</p><ul><li>"Save / Update Expense"</li></ul></div>
         </div>
+        <div class="from-line">Choosing Loans &amp; Debt → Credit Card Payment shows a note: if you already recorded the card's purchases as expenses, record the bill in Cards &amp; Wallet instead, so the same spending isn't counted twice <span class="new-tag">NEW</span>.</div>
       </div>
       <div class="screen">
         <div class="screen-head"><h3>Expense detail</h3><span class="route-tag">expenseDetail</span></div>
@@ -403,8 +427,8 @@
       <div class="screen">
         <div class="screen-head"><h3>Category budgets</h3><span class="route-tag">categoryBudgets</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>One row per active category — icon, spent-of-budget (red if over)</li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>Inline amount field + checkmark to save, per row</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>One row per active category — icon, spent-of-budget (red if over)</li><li>Follows the month or salary cycle you're looking at, and adds up with your overall budget for the same dates <span class="new-tag">NEW</span></li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Inline amount field (starting from the budget you saved) + checkmark to save, per row</li><li>Remove a category's budget <span class="new-tag">NEW</span></li></ul></div>
         </div>
       </div>
     </section>
@@ -498,7 +522,7 @@
       <p class="grp-purpose">What's coming up, and how much money to keep aside for it.</p>
       <div class="screen">
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Toggle: Next 7 days / Next 30 days</li><li>"Money to keep aside" total</li><li>Items grouped by day ("In 2 days · Mon, 28 Sep")</li><li>Recurring payments due, scheduled services with a cost, money you owe that's due</li><li>Listed without an amount: insurance &amp; PUC renewals, warranties ending, reminders, festivals, family occasions</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Toggle: Next 7 days / Next 30 days</li><li>"Money to keep aside" total</li><li>Items grouped by day ("In 2 days · Mon, 28 Sep")</li><li>Recurring payments due, scheduled services with a cost, money you owe that's due</li><li>Credit card bills, on each card's payment due day, with the balance you recorded <span class="new-tag">NEW</span></li><li>Listed without an amount: insurance &amp; PUC renewals, warranties ending, reminders, festivals, family occasions</li></ul></div>
           <div class="col"><p class="lbl">Actions</p><ul><li>Tap an item → its screen (a festival or occasion opens Add Savings, to set money aside)</li></ul></div>
         </div>
         <div class="from-line">The total is an estimate from bills, services and dues you've recorded — never a prediction. Items with no known amount are listed but not counted, and the screen says how many.</div>
@@ -666,15 +690,15 @@
         <div class="screen-head"><h3>Profile</h3></div>
         <div class="screen-cols">
           <div class="col"><p class="lbl">On this screen</p><ul><li>Avatar (tappable if signed in) + home name</li></ul></div>
-          <div class="col"><p class="lbl">Rows</p><ul><li>My Home (rename) · Warranties · Maintenance · Money</li><li>Sign in &amp; sync (or Sync now/Sign out if signed in) — shows "Everything is synced ✓" or "N changes waiting to sync" <span class="new-tag">NEW</span></li><li>Family members · Backup &amp; restore · App lock · Settings</li></ul></div>
+          <div class="col"><p class="lbl">Rows</p><ul><li>My Home (rename) · Warranties · Maintenance · Money</li><li>Sign in &amp; sync (or Sync now/Sign out if signed in) — shows "Everything is synced ✓" or "N changes waiting to sync" <span class="new-tag">NEW</span></li><li>Family members · Backup &amp; restore · Settings ("Theme, notifications, privacy &amp; security") — App lock now lives in Settings only <span class="new-tag">NEW</span></li></ul></div>
         </div>
         <div class="from-line">Signing in on a phone that already has records keeps them: they're merged into your cloud household, never replaced. A different account signing in on the same phone gets its own household — records are never merged across accounts <span class="new-tag">NEW</span>. Sign out asks whether to also remove HomeBook's data from this phone <span class="new-tag">NEW</span>.</div>
       </div>
       <div class="screen">
         <div class="screen-head"><h3>Settings</h3></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">Preferences</p><ul><li>Language (English/Telugu/Hindi)</li><li>Reminder defaults · Notifications (switch)</li><li>Notification types — one switch each, plus Quiet hours and "Show amounts and names" <span class="new-tag">NEW</span> (see Notifications)</li><li>Smart Expense Detection — Off / On / "Notification access is currently disabled." → its own screen <span class="new-tag">NEW</span> (see Smart Expense Capture)</li><li>Appearance (System/Light/Dark)</li></ul></div>
-          <div class="col"><p class="lbl">Security, storage &amp; account</p><ul><li>App lock · Storage usage (read-only)</li><li>About HomeBook · Privacy Policy · Terms &amp; Conditions</li><li>Delete account (signed-in users only) — also removes your household's cloud backup and files; records on this phone stay <span class="new-tag">NEW</span></li></ul></div>
+          <div class="col"><p class="lbl">Preferences</p><ul><li>Language (English/Telugu/Hindi)</li><li>Reminder defaults · Notifications (switch)</li><li>Notification types — one switch each, plus Quiet hours and "Show amounts and names" <span class="new-tag">NEW</span> (see Notifications)</li><li>Smart Expense Detection — Off / On / "Notification access is currently disabled." → its own screen <span class="new-tag">NEW</span> (see Smart Expense Capture)</li><li>Theme — a sheet with a preview and Light / Dark / System; it changes at once and is remembered <span class="new-tag">NEW</span></li><li>Money — budget period (calendar month or salary cycle, with its start day) and opening balance, on this device <span class="new-tag">NEW</span></li></ul></div>
+          <div class="col"><p class="lbl">Privacy &amp; security, storage &amp; account</p><ul><li>App lock <span class="new-tag">NEW</span> (moved here from Profile) · Storage usage (read-only)</li><li>About HomeBook · Privacy Policy · Terms &amp; Conditions</li><li>Delete account (signed-in users only) — also removes your household's cloud backup and files; records on this phone stay <span class="new-tag">NEW</span></li></ul></div>
         </div>
       </div>
     </section>
@@ -724,7 +748,7 @@
       <a href="../delete-account/">Delete Account</a>
       <a href="../contact/">Contact</a>
     </div>
-    <span class="mono">v1.5.0</span>
+    <span class="mono">v1.6.0</span>
   </div>
 </footer>
 
