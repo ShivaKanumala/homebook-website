@@ -104,10 +104,10 @@
 
   <main>
     <div class="manual-intro">
-      <p class="eyebrow mono">Reference · v1.6.0</p>
+      <p class="eyebrow mono">Reference · v1.7.0</p>
       <h1 class="page-title">HomeBook User Manual</h1>
       <p class="lede" style="max-width:62ch;font-size:18px;color:var(--ink-soft);">Every screen in HomeBook, what it shows, and how to get there. Organized in the order you'd actually meet each screen — start with how the app is laid out, then work through each module.</p>
-      <p style="max-width:62ch;font-size:14px;color:var(--ink-soft);margin-top:10px;">Updated for version 1.6 — anything added since 1.0 is marked <span class="new-tag">NEW</span>.</p>
+      <p style="max-width:62ch;font-size:14px;color:var(--ink-soft);margin-top:10px;">Updated for version 1.7 — anything added since 1.0 is marked <span class="new-tag">NEW</span>.</p>
       <select class="jump" style="margin-top:16px;" onchange="if(this.value) location.hash=this.value">
         <option value="">Jump to screen…</option>
         <option value="#nav-structure">How the app is organized</option>
@@ -198,7 +198,7 @@
         <div class="screen-head"><h3>Success</h3><span class="route-tag">success</span></div>
         <div class="screen-cols">
           <div class="col"><p class="lbl">On this screen</p><ul><li>Illustration + title + message</li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>Single CTA button (e.g. "Go to Home")</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Main button (e.g. "Go to Home")</li><li>After onboarding: "Set up money (optional)" → Money Setup <span class="new-tag">NEW</span></li></ul></div>
         </div>
         <div class="from-line">A reusable confirmation screen — shown at the end of onboarding, and reserved for other first-run moments.</div>
       </div>
@@ -352,10 +352,10 @@
       <p class="grp-purpose">The one screen that ties all your household money together for the month — or for your salary cycle. It's the Money tab <span class="new-tag">NEW</span> (also reachable from Profile → Money).</p>
       <div class="screen">
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Period switcher — a calendar month, or a salary cycle that starts on the day you choose (e.g. the 25th to the 24th) <span class="new-tag">NEW</span></li><li>Monthly Overview — net cash flow (money in minus money out, not your bank balance), income received and income still to come, what's still due, and what's left after it <span class="new-tag">NEW</span></li><li>Balance now — only if you add an opening balance on this device; worked out from your records, not read from your bank <span class="new-tag">NEW</span></li><li>Budget progress card — a budget carries forward to the next period until you change it, marked "Carried over" <span class="new-tag">NEW</span> · Insights</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Period switcher — a calendar month, or a salary cycle that starts on the day you choose (e.g. the 25th to the 24th) <span class="new-tag">NEW</span></li><li>Monthly Overview — net cash flow (money in minus money out, not your bank balance), income received and income still to come, what's still due, and what's left after it <span class="new-tag">NEW</span></li><li>Balance now — only if you add an opening balance on this device; worked out from your records, not read from your bank <span class="new-tag">NEW</span></li><li>"Set up your money plan" card, until you run Money Setup or tap "Not now" (that hides it on this phone) <span class="new-tag">NEW</span></li><li>Bills reserve — once you have a plan (see below) <span class="new-tag">NEW</span></li><li>Budget progress card — a budget carries forward to the next period until you change it, marked "Carried over" <span class="new-tag">NEW</span> · Insights</li></ul></div>
           <div class="col"><p class="lbl">Link rows</p><ul><li>Upcoming Money · Next 7 days (with the amount to keep aside) <span class="new-tag">NEW</span></li><li>Cards &amp; Wallet <span class="new-tag">NEW</span></li><li>Planned expenses <span class="new-tag">NEW</span></li><li>Money Calendar · Money Timeline <span class="new-tag">NEW</span></li><li>Expenses · Spending analytics <span class="new-tag">NEW</span> · Recurring · Savings · Income</li><li>Transfers <span class="new-tag">NEW</span></li><li>Money waiting for you · Money you owe <span class="new-tag">NEW</span></li></ul></div>
         </div>
-        <div class="from-line">Tap the budget card to set this period's budget. A rent or EMI you record by hand is matched to its recurring payment, so it is counted once, not twice <span class="new-tag">NEW</span>. The salary-cycle day and opening balance are set in Settings → Money and apply to this phone.</div>
+        <div class="from-line">Tap the budget card to set this period's budget. A rent or EMI you record by hand is matched to its recurring payment, so it is counted once, not twice <span class="new-tag">NEW</span>. The salary-cycle day is set in Settings → Money and shared with your household's other phones when you're signed in <span class="new-tag">NEW</span>; the opening balance stays on this phone.</div>
       </div>
       <div class="screen">
         <div class="screen-head"><h3>Cards &amp; Wallet</h3><span class="route-tag">cards</span><span class="new-tag">NEW</span></div>
@@ -379,6 +379,22 @@
           <div class="col"><p class="lbl">Actions</p><ul><li>"Record payment" — lowers the recorded balance; it is not an expense, so nothing is counted twice</li><li>Edit · Delete</li></ul></div>
         </div>
         <div class="from-line">Purchases stay ordinary expenses: when an expense is paid by credit or debit card, Add Expense lets you pick which card. A credit card's payment due date appears in Upcoming Money.</div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Money Setup</h3><span class="route-tag">moneySetup</span><span class="new-tag">NEW</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">Steps (all optional)</p><ul><li>Your pay — take-home pay, how often (Monthly, Every 2 weeks, Weekly, Varies) and payday; monthly pay can be added to Income as one monthly salary from the next payday</li><li>Budget view — Calendar month or Salary cycle (needs a monthly payday), on this phone</li><li>Bills reserve — a target, when you move it (after payday, on a set day, or not planned) and account names</li><li>Regular commitments — tick the recurring payments the reserve covers, or add rent, EMIs, insurance, utilities and bills</li><li>Opening balance — optional, on this phone; not your salary and not a budget</li><li>Review → Save</li></ul></div>
+          <div class="col"><p class="lbl">Good to know</p><ul><li>"Skip" leaves at any step; nothing is saved</li><li>A commitment already in Recurring is linked, not copied; new ones start at their next due date</li><li>Account names only — anything that looks like an account number is refused</li><li>Run it again any time from Settings → Money → Money setup to change your answers</li></ul></div>
+        </div>
+        <div class="from-line">Offered after onboarding, as a card on Money, and in Settings. Payday, the reserve plan and covered commitments are shared with your household's other phones when you're signed in.</div>
+      </div>
+      <div class="screen">
+        <div class="screen-head"><h3>Bills reserve</h3><span class="new-tag">NEW</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this card</p><ul><li>Reserve target · Planned transfer and its date</li><li>Bills covered this period · Paid so far · Still due</li><li>A note when the bills are more than the target</li><li>Set aside (as you recorded) · Left in reserve (estimate)</li><li>Your account names, e.g. "Salary account → Bills account"</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"I've set money aside" — note how much you moved this period</li><li>"Edit plan" → Money Setup</li></ul></div>
+        </div>
+        <div class="from-line">A plan, not a bank balance. Nothing here is counted as spending — bills count once, when they're paid — and HomeBook never moves money.</div>
       </div>
     </section>
 
@@ -697,7 +713,7 @@
       <div class="screen">
         <div class="screen-head"><h3>Settings</h3></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">Preferences</p><ul><li>Language (English/Telugu/Hindi)</li><li>Reminder defaults · Notifications (switch)</li><li>Notification types — one switch each, plus Quiet hours and "Show amounts and names" <span class="new-tag">NEW</span> (see Notifications)</li><li>Smart Expense Detection — Off / On / "Notification access is currently disabled." → its own screen <span class="new-tag">NEW</span> (see Smart Expense Capture)</li><li>Theme — a sheet with a preview and Light / Dark / System; it changes at once and is remembered <span class="new-tag">NEW</span></li><li>Money — budget period (calendar month or salary cycle, with its start day) and opening balance, on this device <span class="new-tag">NEW</span></li></ul></div>
+          <div class="col"><p class="lbl">Preferences</p><ul><li>Language (English/Telugu/Hindi)</li><li>Reminder defaults · Notifications (switch)</li><li>Notification types — one switch each, plus Quiet hours and "Show amounts and names" <span class="new-tag">NEW</span> (see Notifications)</li><li>Smart Expense Detection — Off / On / "Notification access is currently disabled." → its own screen <span class="new-tag">NEW</span> (see Smart Expense Capture)</li><li>Theme — a sheet with a preview and Light / Dark / System; it changes at once and is remembered <span class="new-tag">NEW</span></li><li>Money — Money setup <span class="new-tag">NEW</span> · Budget period (the salary-cycle start day, shared with your household) · Opening balance on this device</li></ul></div>
           <div class="col"><p class="lbl">Privacy &amp; security, storage &amp; account</p><ul><li>App lock <span class="new-tag">NEW</span> (moved here from Profile) · Storage usage (read-only)</li><li>About HomeBook · Privacy Policy · Terms &amp; Conditions</li><li>Delete account (signed-in users only) — also removes your household's cloud backup and files; records on this phone stay <span class="new-tag">NEW</span></li></ul></div>
         </div>
       </div>
@@ -748,7 +764,7 @@
       <a href="../delete-account/">Delete Account</a>
       <a href="../contact/">Contact</a>
     </div>
-    <span class="mono">v1.6.0</span>
+    <span class="mono">v1.7.0</span>
   </div>
 </footer>
 
