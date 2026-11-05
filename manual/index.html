@@ -33,6 +33,7 @@
     <g id="i-repeat"><path d="M4 8h11a3 3 0 0 1 3 3v1M9 5L4 8l5 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M20 16H9a3 3 0 0 1-3-3v-1M15 19l5-3-5-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
     <g id="i-piggy"><path d="M4.5 12a5.5 5.5 0 0 1 5.5-5.5h5c2.5 0 4.5 2 4.5 4.5v.3l2 .7-2 .7A4.6 4.6 0 0 1 15.5 16H14v2.5h-2.5V16H10a5.5 5.5 0 0 1-5.5-4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/><circle cx="14.5" cy="10.5" r=".9" fill="currentColor"/><path d="M6.5 9.5L5 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></g>
     <g id="i-trend"><path d="M4 16l5-5 4 3 7-8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M15 6h5v5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
+    <g id="i-spark"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" fill="none"/><path d="M18.5 15.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7z" fill="currentColor"/></g>
     <g id="i-search"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="1.7" fill="none"/><path d="M20 20l-5-5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></g>
     <g id="i-family"><circle cx="8.5" cy="8" r="3" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="16" cy="9" r="2.4" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M3.2 19.5c.5-3.4 2.6-5 5.3-5s4.8 1.6 5.3 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/><path d="M14.5 14.8c2.2.2 3.9 1.7 4.3 4.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></g>
     <g id="i-cloud"><path d="M7 18a4 4 0 0 1-.5-7.97A5 5 0 0 1 16.2 8.1 4.5 4.5 0 0 1 17 18H7z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" fill="none"/><path d="M12 11v6M9.5 14.5L12 12l2.5 2.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
@@ -80,7 +81,7 @@
       <li><a href="#g06"><span class="n">06</span>Warranties</a></li>
       <li><a href="#g07"><span class="n">07</span>Maintenance</a></li>
       <li><a href="#g08"><span class="n">08</span>Reminders</a></li>
-      <li><a href="#g09"><span class="n">09</span>Money hub &amp; Cards</a></li>
+      <li><a href="#g09"><span class="n">09</span>Money &amp; Cards</a></li>
       <li><a href="#g10"><span class="n">10</span>Expenses</a></li>
       <li><a href="#g11"><span class="n">11</span>Smart Capture</a></li>
       <li><a href="#g12"><span class="n">12</span>Recurring</a></li>
@@ -93,12 +94,13 @@
       <li><a href="#debts"><span class="n">19</span>Lending &amp; Borrowing</a></li>
       <li><a href="#attachments"><span class="n">20</span>Attachments</a></li>
       <li><a href="#notifications"><span class="n">21</span>Notifications</a></li>
-      <li><a href="#g15"><span class="n">22</span>Search</a></li>
-      <li><a href="#g16"><span class="n">23</span>Family &amp; Occasions</a></li>
-      <li><a href="#g17"><span class="n">24</span>Backup &amp; Restore</a></li>
-      <li><a href="#g18"><span class="n">25</span>Settings &amp; Profile</a></li>
-      <li><a href="#g19"><span class="n">26</span>App Lock</a></li>
-      <li><a href="#g20"><span class="n">27</span>Legal</a></li>
+      <li><a href="#assistant"><span class="n">22</span>Smart assistant</a></li>
+      <li><a href="#g15"><span class="n">23</span>Search</a></li>
+      <li><a href="#g16"><span class="n">24</span>Family &amp; Occasions</a></li>
+      <li><a href="#g17"><span class="n">25</span>Backup &amp; Restore</a></li>
+      <li><a href="#g18"><span class="n">26</span>Settings &amp; Profile</a></li>
+      <li><a href="#g19"><span class="n">27</span>App Lock</a></li>
+      <li><a href="#g20"><span class="n">28</span>Legal</a></li>
     </ol>
   </aside>
 
@@ -107,7 +109,7 @@
       <p class="eyebrow mono">Reference · v2.0.0</p>
       <h1 class="page-title">HomeBook User Manual</h1>
       <p class="lede" style="max-width:62ch;font-size:18px;color:var(--ink-soft);">Every screen in HomeBook, what it shows, and how to get there. Organized in the order you'd actually meet each screen — start with how the app is laid out, then work through each module.</p>
-      <p style="max-width:62ch;font-size:14px;color:var(--ink-soft);margin-top:10px;">Updated for version 1.7 — anything added since 1.0 is marked <span class="new-tag">NEW</span>. Version 2.0 gives every screen a new look with hand-drawn doodles, so some screens may be laid out differently from the descriptions here; what each one does is the same. New in 2.0: the Smart assistant, reminders that ring at their own time with Done and Snooze, reminder categories and "Snooze 1 day".</p>
+      <p style="max-width:62ch;font-size:14px;color:var(--ink-soft);margin-top:10px;">Updated for version 2.0, which redraws every screen with calm colours and hand-drawn doodles. Anything new or changed in 2.0 is marked <span class="new-tag">NEW</span>.</p>
       <select class="jump" style="margin-top:16px;" onchange="if(this.value) location.hash=this.value">
         <option value="">Jump to screen…</option>
         <option value="#nav-structure">How the app is organized</option>
@@ -119,7 +121,7 @@
         <option value="#g06">06 · Warranties</option>
         <option value="#g07">07 · Maintenance</option>
         <option value="#g08">08 · Reminders</option>
-        <option value="#g09">09 · Money hub &amp; Cards</option>
+        <option value="#g09">09 · Money &amp; Cards</option>
         <option value="#g10">10 · Expenses</option>
         <option value="#g11">11 · Smart Expense Capture</option>
         <option value="#g12">12 · Recurring Payments</option>
@@ -132,32 +134,33 @@
         <option value="#debts">19 · Lending &amp; Borrowing</option>
         <option value="#attachments">20 · Attachments</option>
         <option value="#notifications">21 · Notifications</option>
-        <option value="#g15">22 · Search</option>
-        <option value="#g16">23 · Family &amp; Occasions</option>
-        <option value="#g17">24 · Backup &amp; Restore</option>
-        <option value="#g18">25 · Settings &amp; Profile</option>
-        <option value="#g19">26 · App Lock</option>
-        <option value="#g20">27 · Legal</option>
+        <option value="#assistant">22 · Smart assistant</option>
+        <option value="#g15">23 · Search</option>
+        <option value="#g16">24 · Family &amp; Occasions</option>
+        <option value="#g17">25 · Backup &amp; Restore</option>
+        <option value="#g18">26 · Settings &amp; Profile</option>
+        <option value="#g19">27 · App Lock</option>
+        <option value="#g20">28 · Legal</option>
       </select>
     </div>
 
     <section id="nav-structure" class="grp" style="border-top:none; padding-top:0;">
       <div class="grp-head"><div class="grp-icon"><svg width="19" height="19"><use href="#i-home"/></svg></div><h2>How the app is organized</h2></div>
-      <p class="grp-purpose">Five tabs anchor everything. A floating "+" on Home opens Quick Add — the fastest way into any module without hunting through menus.</p>
+      <p class="grp-purpose">Five tabs anchor everything. The floating "+" opens Quick Add — the fastest way into any module without hunting through menus.</p>
       <div class="nav-card">
         <h2>Bottom navigation — 5 tabs, always visible</h2>
         <div class="tab-row">
           <span class="tab-chip"><svg width="14" height="14"><use href="#i-home"/></svg>Home</span>
-          <span class="tab-chip"><svg width="14" height="14"><use href="#i-wallet"/></svg>Money <span class="new-tag">NEW</span></span>
           <span class="tab-chip"><svg width="14" height="14"><use href="#i-box"/></svg>Things</span>
+          <span class="tab-chip"><svg width="14" height="14"><use href="#i-wallet"/></svg>Money</span>
           <span class="tab-chip"><svg width="14" height="14"><use href="#i-bell"/></svg>Reminders</span>
           <span class="tab-chip"><svg width="14" height="14"><use href="#i-family"/></svg>Profile</span>
         </div>
-        <p style="font-size:13px;color:var(--ink-soft);margin-bottom:18px;">Pressing system Back from Money, Things, Reminders, or Profile returns to Home first — it never closes the app from those tabs.</p>
-        <h2>Quick Add sheet — the floating "+" (Home tab only)</h2>
+        <p style="font-size:13px;color:var(--ink-soft);margin-bottom:18px;">Things now comes before Money <span class="new-tag">NEW</span>. Pressing system Back from Things, Money, Reminders, or Profile returns to Home first — it never closes the app from those tabs.</p>
+        <h2>Quick Add sheet — the floating "+" on every tab except Profile <span class="new-tag">NEW</span></h2>
         <div class="qa-grid">
           <div class="qa-group"><p class="qg-label">Home</p><ul><li>Thing</li><li>Vehicle</li><li>Document</li><li>Warranty</li><li>Service</li></ul></div>
-          <div class="qa-group"><p class="qg-label">Money</p><ul><li>Expense</li><li>Recurring Payment</li><li>Income</li><li>Savings</li><li>Transfer <span class="new-tag">NEW</span></li><li>Lent · Borrowed <span class="new-tag">NEW</span></li></ul></div>
+          <div class="qa-group"><p class="qg-label">Money</p><ul><li>Expense</li><li>Recurring payment</li><li>Income</li><li>Savings</li><li>Transfer</li><li>Lent · Borrowed</li></ul></div>
           <div class="qa-group"><p class="qg-label">Planning</p><ul><li>Reminder</li></ul></div>
           <div class="qa-group"><p class="qg-label">Smart</p><ul><li>Smart Capture</li></ul></div>
         </div>
@@ -167,12 +170,19 @@
     <section id="g01" class="grp">
       <div class="grp-head"><span class="n mono">01</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-door"/></svg></div><h2>Onboarding &amp; Auth</h2></div>
       <p class="grp-purpose">What you see before you're using the app day to day. Sign-in is opt-in throughout — HomeBook works fully without ever reaching Login.</p>
+      <div class="screen">
+        <div class="screen-head"><h3>Launch screen</h3><span class="new-tag">NEW</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>The HomeBook logo on deep green</li><li>The logo lifts, the name appears, and the app opens out from the centre — a little over a second</li></ul></div>
+          <div class="col"><p class="lbl">Good to know</p><ul><li>Shown each time HomeBook starts</li><li>Skipped when your phone is set to remove animations</li></ul></div>
+        </div>
+      </div>
 
       <div class="screen">
         <div class="screen-head"><h3>Welcome</h3><span class="route-tag">welcome</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>House illustration, "HomeBook" title, tagline</li><li>5 checkmarked value props (track things, warranties, maintenance, documents, family sharing)</li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>"Get Started" → Onboarding</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>A doodle scene <span class="new-tag">NEW</span>, "My HomeBook", the headline "A Smarter Home. A Worry-Free You." and the tagline</li><li>Five value props: track your things, manage warranties, never miss a maintenance date, keep important documents, keep your family organised</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Get started" → Onboarding</li></ul></div>
         </div>
         <div class="from-line">First screen on install.</div>
       </div>
@@ -180,15 +190,15 @@
       <div class="screen">
         <div class="screen-head"><h3>Onboarding</h3><span class="route-tag">onboarding</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>4-page swipeable carousel (Home / Organize / Money / Family themes)</li><li>Dot page indicator</li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>"Skip" (hidden on last page)</li><li>"Next" → advances; "Get started" on last page → Success</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Four pages, each with its own doodle scene <span class="new-tag">NEW</span>: "Everything about your home, in one place" · "Never lose a warranty again" · "See where your money goes" · "Made for your family"</li><li>Dot page indicator</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Skip" (hidden on the last page)</li><li>"Next" → advances; "Get started" on the last page → Success</li></ul></div>
         </div>
       </div>
 
       <div class="screen">
         <div class="screen-head"><h3>Login</h3><span class="route-tag">login</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Email, Password fields (show/hide toggle)</li><li>Mode toggle: Login ↔ Create Account</li><li>"Continue with Google" (real Google logo)</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Drawn on the same doodle background <span class="new-tag">NEW</span></li><li>Email, Password fields (show/hide toggle)</li><li>Mode toggle: Login ↔ Create account</li><li>"Continue with Google"</li></ul></div>
           <div class="col"><p class="lbl">Actions</p><ul><li>"Forgot password?" → reset-link dialog</li><li>Submit → pops back on success; errors show in a red banner</li></ul></div>
         </div>
         <div class="from-line">Reached only from <strong>Profile → Sign in &amp; sync</strong> — never forced on you.</div>
@@ -197,48 +207,49 @@
       <div class="screen">
         <div class="screen-head"><h3>Success</h3><span class="route-tag">success</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Illustration + title + message</li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>Main button (e.g. "Go to Home")</li><li>After onboarding: "Set up money (optional)" → Money Setup <span class="new-tag">NEW</span></li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>"All set!" on a doodle scene <span class="new-tag">NEW</span>, with "Your home is organized for a better tomorrow."</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Go to Home"</li><li>After onboarding: "Set up money (optional)" → Money Setup</li></ul></div>
         </div>
-        <div class="from-line">A reusable confirmation screen — shown at the end of onboarding, and reserved for other first-run moments.</div>
+        <div class="from-line">Shown at the end of onboarding.</div>
       </div>
     </section>
 
     <section id="g02" class="grp">
-      <div class="grp-head"><span class="n mono">02</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-home"/></svg></div><h2>Home dashboard</h2><span class="route-tag">home</span></div>
+      <div class="grp-head"><span class="n mono">02</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-home"/></svg></div><h2>Home dashboard</h2><span class="route-tag">home</span><span class="new-tag">NEW</span></div>
       <p class="grp-purpose">Tab 1. A rolled-up view of your whole household — every section below only appears when it has something to show.</p>
       <div class="screen">
         <div class="screen-cols">
-          <div class="col"><p class="lbl">Header</p><ul><li>Time-of-day greeting + "Your Home"</li><li>Bell → Notifications <span class="new-tag">NEW</span> (dot when something is unread)</li><li>Search icon → Search</li><li>"Needs attention" badge when things are overdue</li></ul></div>
-          <div class="col"><p class="lbl">Sections, top to bottom</p><ul><li>Keep your HomeBook safe / sync status card <span class="new-tag">NEW</span> — suggests signing in when you have data only on this phone; after sign-in shows "Syncing…" or "Waiting to sync" with Retry, and disappears once everything is synced</li><li>Home banner — around a festival or family occasion it turns into a warm festive card <span class="new-tag">NEW</span> (see Family &amp; Occasions)</li><li>Needs attention (overdue reminders)</li><li>Smart Capture pending review — with a line saying how many came from payment notifications <span class="new-tag">NEW</span></li><li>Quick access (Things/Vehicles/Documents/Reminders counts)</li><li>Money overview + monthly spending + insights</li><li>Upcoming reminders · Recent purchases</li><li>Active recurring payments · Savings goals</li><li>Recently added things</li></ul></div>
+          <div class="col"><p class="lbl">Header</p><ul><li>Greeting with your first name, e.g. "Good morning, Priya"</li><li>Today's date · your home's name (rename it in Profile)</li><li>Spark → Smart assistant <span class="new-tag">NEW</span></li><li>Bell → Notifications (dot when something is unread)</li><li>Search icon → Search</li></ul></div>
+          <div class="col"><p class="lbl">Sections, top to bottom</p><ul><li>Keep your HomeBook safe / sync status card — suggests signing in when your data is only on this phone; after sign-in shows "Syncing…" or "Waiting to sync" with Retry, and disappears once everything is synced</li><li>Festival or family occasion card, when one is near (see Family &amp; Occasions)</li><li>Four counts: Things · Vehicles · Documents · Reminders <span class="new-tag">NEW</span></li><li>Monthly overview — spent so far, what's left from what you've earned, and bills still due <span class="new-tag">NEW</span></li><li>Monthly spending — your budget, then the last 7 days as bars (tap a bar for that day) or by category <span class="new-tag">NEW</span></li><li>Insights — the top three from the Smart assistant; "See all" opens it <span class="new-tag">NEW</span></li><li>Upcoming payments · Pending reminders · Recent transactions</li><li>Expiring soon — insurance, PUC and warranties, with "Show more" <span class="new-tag">NEW</span></li><li>Asset highlights — your things and vehicles <span class="new-tag">NEW</span></li><li>Needs review — Smart Capture items waiting for you, with how many came from payment notifications</li><li>Savings goals</li></ul></div>
         </div>
-        <div class="from-line">Each section has a "See all" link to its full screen. This is where the Quick Add "+" lives. When a new version is on Google Play, HomeBook offers the update in-app <span class="new-tag">NEW</span>.</div>
+        <div class="from-line">Most sections have a "See all" link to their full screen. The "+" opens Quick Add. When a new version is on Google Play, HomeBook offers the update in-app.</div>
       </div>
     </section>
 
     <section id="g03" class="grp">
       <div class="grp-head"><span class="n mono">03</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-box"/></svg></div><h2>Things</h2><span class="route-tag">things</span></div>
-      <p class="grp-purpose">Tab 2. Appliances, furniture, electronics — anything you own that's worth tracking.</p>
+      <p class="grp-purpose">Tab 2. Appliances, furniture, electronics — anything you own that's worth tracking, with your vehicles, documents and warranties one tap away.</p>
+      <div class="screen">
+        <div class="screen-head"><h3>Things tab</h3><span class="new-tag">NEW</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>"Things" with a summary, e.g. "12 items · 2 need attention"</li><li>Shelves as doodle rows: All things, one shelf for each kind of thing you have (with its count), then Vehicles, Documents and Warranties</li><li>A shelf says "2 expired" or "1 due soon" when something on it is</li><li>Needs attention — insurance, PUC and warranties that are due or past</li><li>The list — every thing and vehicle, or just the chosen shelf's</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Search button → a search box for your things</li><li>"+" → Add a thing</li><li>Tap a kind of thing → the list narrows to it (tap again, or "Clear all")</li><li>Vehicles, Documents and Warranties shelves → their own screens</li><li>Tap a row → its detail</li></ul></div>
+        </div>
+      </div>
 
       <div class="screen">
-        <div class="screen-head"><h3>Things list</h3></div>
+        <div class="screen-head"><h3>Add / Edit thing</h3><span class="route-tag">addThing</span><span class="new-tag">NEW</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Search field</li><li>Category filter chips: All / Appliances / Electronics / Vehicles (jumps to Vehicles) / Furniture / Other</li><li>Filtered card list</li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>Header "+" → Add Thing</li><li>Tap a card → Thing detail</li></ul></div>
+          <div class="col"><p class="lbl">Three steps</p><ul><li>1 · Category — "What are you adding?" as doodle cards: Vehicles (opens Add vehicle), Electronics, Appliances, Furniture, Kitchen, Home, Documents, Other</li><li>2 · Details — Name · Brand · Model, then Purchase date and Purchase price side by side</li><li>3 · Papers — add the bill, warranty card or photos now, or later from the thing's page</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Continue" once a category is picked</li><li>"Next: papers" saves the thing</li><li>"Done" finishes</li><li>Back returns to the step before</li><li>Editing opens straight at Details</li></ul></div>
         </div>
       </div>
-      <div class="screen">
-        <div class="screen-head"><h3>Add / Edit Thing</h3><span class="route-tag">addThing</span></div>
-        <div class="screen-cols">
-          <div class="col"><p class="lbl">Fields</p><ul><li>Name · Category (dropdown)</li><li>Brand · Model</li><li>Purchase date · Purchase price</li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>"Save / Update Thing"</li></ul></div>
-        </div>
-      </div>
+
       <div class="screen">
         <div class="screen-head"><h3>Thing detail</h3><span class="route-tag">thingDetail</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Photo hero, name, brand/model</li><li>"Active" warranty pill if applicable</li><li>Purchase · Warranty · Maintenance (last/next service) sections</li><li>Linked Expenses (total + recent 3)</li><li>Documents · Reminders sections</li><li>Attachments — photos and PDFs <span class="new-tag">NEW</span></li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>"Add service" / "Edit thing"</li><li>Per-section "+ Add" (warranty/expense/document/reminder)</li><li>"Add file" in Attachments</li><li>AppBar delete</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Your first photo as the header (or the thing's doodle), name, brand/model</li><li>"Active" warranty pill if applicable</li><li>A strip: Owned for · Purchase price · Spent on it <span class="new-tag">NEW</span></li><li>Warranty · Maintenance (last/next service) · Documents · Reminders · Expenses</li><li>Attachments — product photos, invoice, manual, receipts</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Pencil → Edit thing; ⋮ → Delete <span class="new-tag">NEW</span></li><li>"Add service"</li><li>Per-section "+ Add" (warranty, document, reminder, expense)</li><li>"Add file" in Attachments</li></ul></div>
         </div>
       </div>
     </section>
@@ -250,8 +261,8 @@
       <div class="screen">
         <div class="screen-head"><h3>Vehicles list</h3></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Vehicle cards</li><li>"Upcoming" section — insurance/PUC expiries sorted by date</li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>Header "+" → Add Vehicle</li><li>Tap a card → Vehicle detail</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Each vehicle draws its own doodle — a scooter or motorbike when its name, make or model says so <span class="new-tag">NEW</span></li><li>"Upcoming" — insurance and PUC expiries, soonest first</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Header "+" → Add vehicle</li><li>Tap a vehicle → Vehicle detail</li></ul></div>
         </div>
       </div>
       <div class="screen">
@@ -264,8 +275,8 @@
       <div class="screen">
         <div class="screen-head"><h3>Vehicle detail</h3><span class="route-tag">vehicleDetail</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Photo hero, name, registration number</li><li>"Vehicle health" — Insurance/PUC status</li><li>5 tabs: Overview · Service · Documents · Expenses · Reminders</li><li>Overview tab: Attachments — RC, insurance papers, photos <span class="new-tag">NEW</span></li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>"Add service" / "Edit vehicle"</li><li>Per-tab "+ Add"</li><li>AppBar delete</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Photo header, name, registration number</li><li>A strip: Owned for · Odometer · Spent on it <span class="new-tag">NEW</span></li><li>"Vehicle health" — Insurance and PUC status</li><li>5 tabs: Overview · Service · Documents · Expenses · Reminders</li><li>Overview: make, model, purchase date, fuel this month, and Attachments — RC, insurance papers, photos</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Pencil → Edit vehicle; ⋮ → Delete <span class="new-tag">NEW</span></li><li>"Add service"</li><li>Per-tab "+ Add"</li></ul></div>
         </div>
       </div>
     </section>
@@ -303,7 +314,7 @@
       <div class="screen">
         <div class="screen-head"><h3>Add / Edit Warranty</h3><span class="route-tag">addWarranty</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">Fields</p><ul><li>Thing (dropdown — locked if opened from a Thing, or editing)</li><li>Provider</li><li>Start date · End date</li><li>Warranty number (optional)</li><li>Attachments — warranty card or invoice <span class="new-tag">NEW</span></li></ul></div>
+          <div class="col"><p class="lbl">Fields</p><ul><li>Thing (dropdown — locked if opened from a Thing, or editing)</li><li>Provider</li><li>Start date · End date</li><li>Warranty number (optional)</li><li>Attachments — warranty card or invoice</li></ul></div>
           <div class="col"><p class="lbl">Actions</p><ul><li>"Save / Update Warranty"</li></ul></div>
         </div>
       </div>
@@ -322,43 +333,64 @@
       <div class="screen">
         <div class="screen-head"><h3>Add / Edit Service</h3><span class="route-tag">addService</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">Fields</p><ul><li>Thing / Vehicle (combined dropdown — locked if preset or editing)</li><li>Service date · Service type · Cost</li><li>Provider · Notes</li><li>Attachments — service bill or job card <span class="new-tag">NEW</span></li></ul></div>
+          <div class="col"><p class="lbl">Fields</p><ul><li>Thing / Vehicle (combined dropdown — locked if preset or editing)</li><li>Service date · Service type · Cost</li><li>Provider · Notes</li><li>Attachments — service bill or job card</li></ul></div>
           <div class="col"><p class="lbl">Actions</p><ul><li>"Save / Update Service"</li></ul></div>
         </div>
       </div>
     </section>
 
     <section id="g08" class="grp">
-      <div class="grp-head"><span class="n mono">08</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-bell"/></svg></div><h2>Reminders</h2><span class="route-tag">reminders</span></div>
-      <p class="grp-purpose">Tab 3. Renewal dates, service due dates — anything with a deadline.</p>
+      <div class="grp-head"><span class="n mono">08</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-bell"/></svg></div><h2>Reminders</h2><span class="route-tag">reminders</span><span class="new-tag">NEW</span></div>
+      <p class="grp-purpose">Tab 4. Renewal dates, bills, service due dates — anything with a deadline, with a notification at the time you choose.</p>
       <div class="screen">
-        <div class="screen-head"><h3>Reminders list</h3></div>
+        <div class="screen-head"><h3>Reminders tab</h3></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Segmented toggle: Upcoming / Completed</li><li>Cards with a mark-complete circle toggle</li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>Header "+" → Add Reminder</li><li>Tap card → edit; toggle → complete/reopen; swipe → delete</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Tabs with counts: Today · Upcoming · Overdue · Completed</li><li>Reminders in one card, each with a tick circle and its category's doodle</li><li>Each row says when, e.g. "Today, 19:00 · Every month" — "Overdue" in red, "Snoozed" when snoozed</li><li>Bell → Notifications</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"+" → Add reminder</li><li>Tick → done (or not done), with Undo</li><li>Tap → the reminder's page</li><li>Long press → Edit or Delete</li></ul></div>
         </div>
       </div>
+
       <div class="screen">
-        <div class="screen-head"><h3>Add / Edit Reminder</h3><span class="route-tag">addReminder</span></div>
+        <div class="screen-head"><h3>Reminder page</h3><span class="route-tag">reminderDetail</span><span class="new-tag">NEW</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">Fields</p><ul><li>Title · Date</li><li>Remind me (minutes-before dropdown)</li><li>Repeat (stored for future use, not yet acted on)</li><li>Related to — Thing/Vehicle (locked if preset)</li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>"Save / Update Reminder"</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Title, category, and a "Snoozed" chip when snoozed</li><li>When — date and time; "Originally" shows the date it had before a snooze</li><li>Repeat · Remind me · Notes</li><li>Linked to — the thing or vehicle, tap to open it</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Mark as done" / "Mark as not done"</li><li>"Snooze 1 day" — an overdue reminder moves to tomorrow, an upcoming one a day later</li><li>"Edit" · pencil and bin in the top bar</li></ul></div>
         </div>
+        <div class="from-line">A snooze moves only when you're reminded: the reminder's own date and repeat stay as they were. Marking it done, or changing its date or time, ends the snooze.</div>
+      </div>
+
+      <div class="screen">
+        <div class="screen-head"><h3>Add / Edit reminder</h3><span class="route-tag">addReminder</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">Fields</p><ul><li>"What should we remind you about?" — the title</li><li>Category <span class="new-tag">NEW</span>: Bills · Insurance · Service · Vehicle · Documents · Health · Home · Family, or None</li><li>Date · Time (optional, can be removed) <span class="new-tag">NEW</span></li><li>Repeat: Does not repeat · Daily · Weekly · Monthly · Yearly</li><li>Remind me: On the day · 1, 3 or 7 days before · 1 month before</li><li>Notes <span class="new-tag">NEW</span></li><li>Linked thing (locked when opened from a thing or vehicle)</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Save reminder" / "Save changes"</li></ul></div>
+        </div>
+        <div class="from-line">Repeat is shown on the reminder, but HomeBook doesn't yet create the next one when you mark it done.</div>
+      </div>
+
+      <div class="screen">
+        <div class="screen-head"><h3>Reminder notifications</h3><span class="new-tag">NEW</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">When</p><ul><li>At the reminder's time — 9 AM if it has none — less what "Remind me" says</li><li>On its new day when snoozed with "Snooze 1 day"</li><li>Still on time after the phone restarts or HomeBook updates</li></ul></div>
+          <div class="col"><p class="lbl">On the notification</p><ul><li>"Done" — marks it done, and the change syncs to your other phones</li><li>"Snooze 1 hour" — on this phone only</li><li>Tap → the reminder</li></ul></div>
+        </div>
+        <div class="from-line">Needs notification permission. HomeBook uses Android's ordinary (inexact) alarms, so a notification can arrive a few minutes late on some phones.</div>
       </div>
     </section>
 
     <section id="g09" class="grp">
-      <div class="grp-head"><span class="n mono">09</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-wallet"/></svg></div><h2>Money hub &amp; Cards</h2><span class="route-tag">money</span></div>
-      <p class="grp-purpose">The one screen that ties all your household money together for the month — or for your salary cycle. It's the Money tab <span class="new-tag">NEW</span> (also reachable from Profile → Money).</p>
+      <div class="grp-head"><span class="n mono">09</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-wallet"/></svg></div><h2>Money &amp; Cards</h2><span class="route-tag">money</span></div>
+      <p class="grp-purpose">The one screen that ties all your household money together for the month — or for your salary cycle. It's Tab 3 (also reachable from Profile → Money).</p>
       <div class="screen">
+        <div class="screen-head"><h3>Money tab</h3><span class="new-tag">NEW</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Period switcher — a calendar month, or a salary cycle that starts on the day you choose (e.g. the 25th to the 24th) <span class="new-tag">NEW</span></li><li>Monthly Overview — net cash flow (money in minus money out, not your bank balance), income received and income still to come, what's still due, and what's left after it <span class="new-tag">NEW</span></li><li>Balance now — only if you add an opening balance on this device; worked out from your records, not read from your bank <span class="new-tag">NEW</span></li><li>"Set up your money plan" card, until you run Money Setup or tap "Not now" (that hides it on this phone) <span class="new-tag">NEW</span></li><li>Bills reserve — once you have a plan (see below) <span class="new-tag">NEW</span></li><li>Budget progress card — a budget carries forward to the next period until you change it, marked "Carried over" <span class="new-tag">NEW</span> · Insights</li></ul></div>
-          <div class="col"><p class="lbl">Link rows</p><ul><li>Upcoming Money · Next 7 days (with the amount to keep aside) <span class="new-tag">NEW</span></li><li>Cards &amp; Wallet <span class="new-tag">NEW</span></li><li>Planned expenses <span class="new-tag">NEW</span></li><li>Money Calendar · Money Timeline <span class="new-tag">NEW</span></li><li>Expenses · Spending analytics <span class="new-tag">NEW</span> · Recurring · Savings · Income</li><li>Transfers <span class="new-tag">NEW</span></li><li>Money waiting for you · Money you owe <span class="new-tag">NEW</span></li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>"Money" with the period under it; calendar button → Money Calendar, download button → PDF statement</li><li>Period switcher — a calendar month, or a salary cycle that starts on the day you choose (e.g. the 25th to the 24th)</li><li>Earned · Spent · Left, then the net cash flow card — money in minus money out, not your bank balance: income received, transfers (net), still due, income still to come, and what's left after it</li><li>Balance now — only if you add an opening balance on this device</li><li>"Set up your money plan" card, until you run Money Setup or tap "Not now"</li><li>Spending — bars by Daily, Weekly or Monthly; tap a bar for it, "See entries" for the list</li><li>Spending by day — a grid from less to more, with the daily average and the highest day</li><li>Where it went — a ring with colour keys per category; "Explore" opens the Breakdown</li><li>Budget pace — two rings, time passed and budget spent: "On pace", above an even pace, or over budget</li><li>Bills reserve, once you have a plan · Smart insights</li></ul></div>
+          <div class="col"><p class="lbl">More in Money</p><ul><li>Track — Expenses · Income · Transfers · Spending analytics</li><li>Plan — Upcoming Money (next 7 days) · Recurring · Planned expenses · Savings</li><li>Cards and dues — Cards &amp; Wallet · Money waiting for you · Money you owe</li><li>Views — Money Calendar · Money Timeline</li></ul></div>
         </div>
-        <div class="from-line">Tap the budget card to set this period's budget. A rent or EMI you record by hand is matched to its recurring payment, so it is counted once, not twice <span class="new-tag">NEW</span>. The salary-cycle day is set in Settings → Money and shared with your household's other phones when you're signed in <span class="new-tag">NEW</span>; the opening balance stays on this phone.</div>
+        <div class="from-line">A budget carries forward to the next period until you change it; set it from Expenses. A rent or EMI you record by hand is matched to its recurring payment, so it is counted once, not twice. The salary-cycle day is set in Settings → Money and shared with your household's other phones when you're signed in; the opening balance stays on this phone.</div>
       </div>
       <div class="screen">
-        <div class="screen-head"><h3>Cards &amp; Wallet</h3><span class="route-tag">cards</span><span class="new-tag">NEW</span></div>
+        <div class="screen-head"><h3>Cards &amp; Wallet</h3><span class="route-tag">cards</span></div>
         <div class="screen-cols">
           <div class="col"><p class="lbl">On this screen</p><ul><li>Your cards as a swipeable stack of card faces — credit, debit and prepaid; Visa, Mastercard, RuPay, Amex, Maestro or Other</li><li>Each face shows the bank, card name and "•••• 1234" — the last four digits only</li><li>Available credit across your credit cards, from the balances you've recorded</li></ul></div>
           <div class="col"><p class="lbl">Actions</p><ul><li>"Add card" · tap a card → its details</li></ul></div>
@@ -366,14 +398,14 @@
         <div class="from-line">HomeBook isn't connected to your bank. It stores the last four digits only — never the full number, CVV, PIN or OTP.</div>
       </div>
       <div class="screen">
-        <div class="screen-head"><h3>Add / Edit card</h3><span class="new-tag">NEW</span></div>
+        <div class="screen-head"><h3>Add / Edit card</h3></div>
         <div class="screen-cols">
           <div class="col"><p class="lbl">Fields</p><ul><li>Bank (optional shortcut) · Bank / issuer · Card type · Network</li><li>Card product · Nickname · Name on card · Last 4 digits · Expiry — all optional</li><li>A card style, with a live preview of the card face</li><li>Credit cards only: Credit limit, Outstanding balance (recorded by you), Statement day, Payment due day, Bill reminder, Annual fee, Rewards notes</li><li>Notes</li></ul></div>
           <div class="col"><p class="lbl">Good to know</p><ul><li>Switching a card to debit or prepaid hides the credit fields and drops them on save</li><li>Text that looks like a full card number is refused, with the field marked</li><li>Bill reminder: if the card's bill is already a recurring payment, pick it, so the bill shows once in Upcoming, not twice</li></ul></div>
         </div>
       </div>
       <div class="screen">
-        <div class="screen-head"><h3>Card detail</h3><span class="new-tag">NEW</span></div>
+        <div class="screen-head"><h3>Card detail</h3></div>
         <div class="screen-cols">
           <div class="col"><p class="lbl">On this screen</p><ul><li>The card face · Details</li><li>Credit: limit, manually recorded outstanding balance, available credit and how much of the limit is used</li><li>Statement &amp; payment: next statement and payment due</li><li>Fees &amp; rewards · Paid with this card — expenses linked to it</li></ul></div>
           <div class="col"><p class="lbl">Actions</p><ul><li>"Record payment" — lowers the recorded balance; it is not an expense, so nothing is counted twice</li><li>Edit · Delete</li></ul></div>
@@ -381,7 +413,7 @@
         <div class="from-line">Purchases stay ordinary expenses: when an expense is paid by credit or debit card, Add Expense lets you pick which card. A credit card's payment due date appears in Upcoming Money.</div>
       </div>
       <div class="screen">
-        <div class="screen-head"><h3>Money Setup</h3><span class="route-tag">moneySetup</span><span class="new-tag">NEW</span></div>
+        <div class="screen-head"><h3>Money Setup</h3><span class="route-tag">moneySetup</span></div>
         <div class="screen-cols">
           <div class="col"><p class="lbl">Steps (all optional)</p><ul><li>Your pay — take-home pay, how often (Monthly, Every 2 weeks, Weekly, Varies) and payday; monthly pay can be added to Income as one monthly salary from the next payday</li><li>Budget view — Calendar month or Salary cycle (needs a monthly payday), on this phone</li><li>Bills reserve — a target, when you move it (after payday, on a set day, or not planned) and account names</li><li>Regular commitments — tick the recurring payments the reserve covers, or add rent, EMIs, insurance, utilities and bills</li><li>Opening balance — optional, on this phone; not your salary and not a budget</li><li>Review → Save</li></ul></div>
           <div class="col"><p class="lbl">Good to know</p><ul><li>"Skip" leaves at any step; nothing is saved</li><li>A commitment already in Recurring is linked, not copied; new ones start at their next due date</li><li>Account names only — anything that looks like an account number is refused</li><li>Run it again any time from Settings → Money → Money setup to change your answers</li></ul></div>
@@ -389,7 +421,7 @@
         <div class="from-line">Offered after onboarding, as a card on Money, and in Settings. Payday, the reserve plan and covered commitments are shared with your household's other phones when you're signed in.</div>
       </div>
       <div class="screen">
-        <div class="screen-head"><h3>Bills reserve</h3><span class="new-tag">NEW</span></div>
+        <div class="screen-head"><h3>Bills reserve</h3></div>
         <div class="screen-cols">
           <div class="col"><p class="lbl">On this card</p><ul><li>Reserve target · Planned transfer and its date</li><li>Bills covered this period · Paid so far · Still due</li><li>A note when the bills are more than the target</li><li>Set aside (as you recorded) · Left in reserve (estimate)</li><li>Your account names, e.g. "Salary account → Bills account"</li></ul></div>
           <div class="col"><p class="lbl">Actions</p><ul><li>"I've set money aside" — note how much you moved this period</li><li>"Edit plan" → Money Setup</li></ul></div>
@@ -400,51 +432,54 @@
 
     <section id="g10" class="grp">
       <div class="grp-head"><span class="n mono">10</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-receipt"/></svg></div><h2>Expenses</h2><span class="route-tag">expenses</span></div>
-      <p class="grp-purpose">Every expense, grouped by day, against your budget.</p>
+      <p class="grp-purpose">Every expense on one screen — as a List, a Notebook or a Breakdown, all narrowed by the same filters.</p>
       <div class="screen">
-        <div class="screen-head"><h3>Expenses list</h3></div>
+        <div class="screen-head"><h3>Expense Explorer</h3><span class="route-tag">expenses</span><span class="new-tag">NEW</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Month switcher · Budget progress card</li><li>"Category budgets" link</li><li>Category breakdown · day-grouped list with daily totals</li><li>Header buttons: Spending analytics and PDF statement <span class="new-tag">NEW</span></li><li>Each row shows an icon for what it was (Swiggy → food delivery, Airtel → mobile) — never a company logo — and "Category · Subcategory" <span class="new-tag">NEW</span>; a payment with no category shows the merchant's initial, and each day's rows share one card <span class="new-tag">NEW</span></li><li>List | Notebook switch — Notebook View writes the month out day by day, like an expense notebook, with your notes and each day's total; the choice is remembered on your phone <span class="new-tag">NEW</span></li><li>"Filter" button <span class="new-tag">NEW</span> — active filters show as removable chips with a "N expenses · ₹total" summary</li></ul></div>
-          <div class="col"><p class="lbl">Filter sheet <span class="new-tag">NEW</span></p><ul><li>Category · Subcategory</li><li>Amount range (min / max)</li><li>Payment method · Merchant name or note</li><li>Related Thing/Vehicle · Paid by</li><li>Added from: Manually / Shared / Receipt / Recurring</li><li>"Reset" / "Show N expenses"</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Period switcher · budget card (tap to set this period's budget) · "Category budgets" link</li><li>List | Notebook | Breakdown switch; your choice is remembered on this phone</li><li>List — day by day with daily totals; each day's expenses share one card, each with an icon for what it was (never a company logo) and "Category · Subcategory"</li><li>Notebook — the period written out like an expense notebook, with your notes and each day's total</li><li>Breakdown — totals, trends, categories and merchants (see below)</li><li>"Filter" button — active filters show as removable chips with a "N expenses · ₹total" summary, over every view</li><li>Download button → PDF statement</li></ul></div>
+          <div class="col"><p class="lbl">Filter sheet</p><ul><li>Category · Subcategory</li><li>Amount range (min / max)</li><li>Payment method · Merchant name or note</li><li>Related thing/vehicle · Paid by</li><li>Added from: Manually / Shared / Receipt / Recurring</li><li>"Reset" / "Show N expenses"</li></ul></div>
         </div>
-        <div class="from-line">Only choices that actually appear in this month's expenses are offered, so the sheet stays short.</div>
+        <div class="from-line">Only choices that actually appear in the period's expenses are offered, so the sheet stays short.</div>
       </div>
+
       <div class="screen">
-        <div class="screen-head"><h3>Add / Edit Expense</h3><span class="route-tag">addExpense</span></div>
+        <div class="screen-head"><h3>Add / Edit expense</h3><span class="route-tag">addExpense</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">Fields</p><ul><li>Amount · Merchant · Category — a grid of large category icons, including Loans &amp; Debt and Personal <span class="new-tag">NEW</span></li><li>More detail (optional) — subcategory chips, e.g. Food → Restaurant / Cafe / Delivery <span class="new-tag">NEW</span></li><li>Date · Part of a plan (when a planned expense covers that date) <span class="new-tag">NEW</span></li><li>Paid with — Cash, UPI, Credit card, Debit card, Bank transfer, Net banking, Other, or Not specified <span class="new-tag">NEW</span>; for a card, which of your saved cards paid (optional) <span class="new-tag">NEW</span></li><li>Paid by — shown once the household has two or more members <span class="new-tag">NEW</span></li><li>Related to — Thing/Vehicle (optional)</li><li>Odometer (fuel entries only) · Notes</li><li>Attachments — receipt or bill <span class="new-tag">NEW</span></li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>"Save / Update Expense"</li></ul></div>
+          <div class="col"><p class="lbl">Fields</p><ul><li>Amount first, large — "₹ 0" with + ₹150 · + ₹500 · + ₹1,000 · + ₹2,000 buttons that add to it <span class="new-tag">NEW</span></li><li>Category — a grid of large category icons — then More detail chips (e.g. Food → Restaurant / Cafe / Delivery), then Merchant <span class="new-tag">NEW</span></li><li>Date · Part of a plan (when a planned expense covers that date)</li><li>Paid with — Cash, UPI, Credit card, Debit card, Bank transfer, Net banking, Other, or Not specified; for a card, which of your saved cards (optional)</li><li>Paid by — shown once the household has two or more members</li><li>Related to — thing/vehicle (optional) · Odometer (fuel only) · Notes</li><li>Attachments — receipt or bill</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Save expense" / update</li></ul></div>
         </div>
-        <div class="from-line">Choosing Loans &amp; Debt → Credit Card Payment shows a note: if you already recorded the card's purchases as expenses, record the bill in Cards &amp; Wallet instead, so the same spending isn't counted twice <span class="new-tag">NEW</span>.</div>
+        <div class="from-line">Choosing Loans &amp; Debt → Credit Card Payment shows a note: if you already recorded the card's purchases as expenses, record the bill in Cards &amp; Wallet instead, so the same spending isn't counted twice.</div>
       </div>
+
       <div class="screen">
         <div class="screen-head"><h3>Expense detail</h3><span class="route-tag">expenseDetail</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Category icon + amount header</li><li>Merchant, date, payment method, odometer</li><li>Subcategory · Paid by <span class="new-tag">NEW</span></li><li>Related record card (tappable) · Notes</li><li>Attachments <span class="new-tag">NEW</span></li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Category icon + amount header</li><li>Merchant, date, payment method, odometer</li><li>Subcategory · Paid by</li><li>Related record card (tappable) · Notes</li><li>Attachments</li></ul></div>
           <div class="col"><p class="lbl">Actions</p><ul><li>AppBar edit · AppBar delete</li></ul></div>
         </div>
       </div>
       <div class="screen">
-        <div class="screen-head"><h3>Spending analytics</h3><span class="route-tag">expenseAnalytics</span><span class="new-tag">NEW</span></div>
+        <div class="screen-head"><h3>Breakdown (Spending analytics)</h3><span class="route-tag">expenseAnalytics</span><span class="new-tag">NEW</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Month switcher (back to your first month with expenses)</li><li>Month total · transactions · average per day · highest expense · no-spend days</li><li>Change from last month, shown only once there's enough history; a month in progress is compared with the same days of last month</li><li>Six-month trend (tap a month to open it)</li><li>Categories chart with a ranked list</li><li>Top merchants · Monthly insights</li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>Tap a category → its expenses for the month, with a "By type" breakdown (e.g. Loans &amp; Debt → Home Loan EMI) <span class="new-tag">NEW</span></li><li>Tap a merchant → its whole history: total, count, average, last paid, trend</li><li>"Statement" → PDF statement for what you're looking at</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Total expenses · transactions · average per day · highest expense · top category · no-spend days</li><li>Change from last month (or cycle), only once there's enough history; a period in progress is compared with the same days of the last one</li><li>Last 6 months</li><li>Where it went — categories, ranked</li><li>Top merchants</li><li>An empty period shows how the last few months went</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Tap a category → its page: Total, Transactions, Average, Last expense, Last 6 months, "By type" (e.g. Loans &amp; Debt → Home Loan EMI) and every transaction</li><li>Tap a merchant → the same for that merchant</li><li>Download → PDF statement</li></ul></div>
         </div>
-        <div class="from-line">Opened from Money → Spending analytics, or the chart icon on Expenses. Everything is worked out on your phone, offline.</div>
+        <div class="from-line">Now part of the Expense Explorer. Opened from Expenses → Breakdown, Money → Spending analytics, or "Explore" on Money's Where it went. Worked out on your phone, offline.</div>
       </div>
+
       <div class="screen">
-        <div class="screen-head"><h3>PDF statement</h3><span class="route-tag">expenseStatement</span><span class="new-tag">NEW</span></div>
+        <div class="screen-head"><h3>PDF statement</h3><span class="route-tag">expenseStatement</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">Choose</p><ul><li>Period: this month, last month, an earlier month, custom dates, or all time</li><li>Filters: the same as the Expenses filter sheet</li><li>Live count and total as you change them</li><li>Style: Professional, or Notebook — expenses written out by day <span class="new-tag">NEW</span></li></ul></div>
-          <div class="col"><p class="lbl">The statement</p><ul><li>Summary, categories and merchants, then every expense with page numbers</li><li>Each expense shows its date, merchant, "Category · Payment" and your note <span class="new-tag">NEW</span></li><li>"Preview" opens it in your phone's PDF viewer</li><li>"Share" · "Save"</li></ul></div>
+          <div class="col"><p class="lbl">Choose</p><ul><li>Period: this month, last month, an earlier month, custom dates, or all time</li><li>Filters: the same as the Expenses filter sheet</li><li>Live count and total as you change them</li><li>Style: Professional, or Notebook — expenses written out by day</li></ul></div>
+          <div class="col"><p class="lbl">The statement</p><ul><li>Summary, categories and merchants, then every expense with page numbers</li><li>Each expense shows its date, merchant, "Category · Payment" and your note</li><li>"Preview" opens it in your phone's PDF viewer</li><li>"Share" · "Save"</li></ul></div>
         </div>
         <div class="from-line">Created on your phone in its temporary storage. It leaves the phone only if you share it or save it somewhere.</div>
       </div>
       <div class="screen">
         <div class="screen-head"><h3>Category budgets</h3><span class="route-tag">categoryBudgets</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>One row per active category — icon, spent-of-budget (red if over)</li><li>Follows the month or salary cycle you're looking at, and adds up with your overall budget for the same dates <span class="new-tag">NEW</span></li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>Inline amount field (starting from the budget you saved) + checkmark to save, per row</li><li>Remove a category's budget <span class="new-tag">NEW</span></li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>One row per active category — icon, spent-of-budget (red if over)</li><li>Follows the month or salary cycle you're looking at, and adds up with your overall budget for the same dates</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Inline amount field (starting from the budget you saved) + checkmark to save, per row</li><li>Remove a category's budget</li></ul></div>
         </div>
       </div>
     </section>
@@ -455,23 +490,23 @@
       <div class="screen">
         <div class="screen-head"><h3>Capture entry</h3></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>2×2 action grid: Scan Receipt · Paste Transaction · Share to HomeBook · Add Manually</li><li>"Detect payment notifications" row with its status (Android) <span class="new-tag">NEW</span></li><li>"Needs review" list of pending candidates</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>2×2 action grid: Scan Receipt · Paste Transaction · Share to HomeBook · Add Manually</li><li>"Detect payment notifications" row with its status (Android)</li><li>"Needs review" list of pending candidates</li></ul></div>
           <div class="col"><p class="lbl">Actions</p><ul><li>Scan Receipt → camera/gallery → OCR parse</li><li>Paste Transaction → text dialog</li><li>Share to HomeBook → instructions (actually triggered from another app's share sheet)</li><li>Add Manually → Add Expense</li><li>Detect payment notifications → Smart Expense Detection</li></ul></div>
         </div>
       </div>
       <div class="screen">
-        <div class="screen-head"><h3>Smart Expense Detection <span class="new-tag">NEW</span></h3><span class="route-tag">smartDetection</span></div>
+        <div class="screen-head"><h3>Smart Expense Detection</h3><span class="route-tag">smartDetection</span></div>
         <div class="screen-cols">
           <div class="col"><p class="lbl">On this screen</p><ul><li>Switch with status: Off · On — watching for payment notifications · "Notification access is currently disabled." with Enable</li><li>How it works</li><li>Privacy — notification text processed in memory on the phone, never saved or uploaded; only amount, merchant, date, payment method, category and a hashed reference kept until you review</li><li>Turn off (when on)</li></ul></div>
           <div class="col"><p class="lbl">Actions</p><ul><li>Switch on → HomeBook's explanation sheet → "Enable Notification Access" opens Android's Notification access page for "HomeBook payment detection"; "Not now" changes nothing</li><li>Enable → Android's page again (only when you tap it)</li><li>Turn off → stops immediately; a snackbar offers Android Settings to also remove the access</li></ul></div>
         </div>
-        <div class="from-line">Off by default; Android only. Reached from Settings or the Smart Capture screen. Only notifications from supported payment and bank apps (Google Pay, PhonePe, Paytm, BHIM, Amazon, CRED, MobiKwik and major banks) are looked at; chat notifications and SMS are never read. Detected payments appear under "Needs review", and as a "New expense detected" notification with Review &amp; Add and Ignore — also while HomeBook is closed <span class="new-tag">NEW</span>. It turns off when you sign out or another account signs in.</div>
+        <div class="from-line">Off by default; Android only. Reached from Settings or the Smart Capture screen. Only notifications from supported payment and bank apps (Google Pay, PhonePe, Paytm, BHIM, Amazon, CRED, MobiKwik and major banks) are looked at; chat notifications and SMS are never read. Detected payments appear under "Needs review", and as a "New expense detected" notification with Review &amp; Add and Ignore — also while HomeBook is closed. It turns off when you sign out or another account signs in.</div>
       </div>
       <div class="screen">
         <div class="screen-head"><h3>Review capture</h3><span class="route-tag">smartCaptureReview</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Confidence label — or, for a payment notification, what it looks like: Expense / Income / Refund / Transfer detected, or "Review transaction" <span class="new-tag">NEW</span></li><li>"Source: payment notification" line, and a hint for transfers and refunds <span class="new-tag">NEW</span></li><li>Duplicate-detection banner if flagged</li><li>Editable pre-filled fields: Amount, Merchant, Category, Subcategory, Date, Payment method, Notes</li><li>Payment method read from the message — UPI, credit or debit card, NEFT/IMPS/RTGS as bank transfer; UPI is filled in for payments from UPI apps <span class="new-tag">NEW</span></li><li>Merchant is optional: leave it blank and the expense is saved under its category name; a merchant you add is remembered for next time <span class="new-tag">NEW</span></li><li>Merchant memory: a merchant you've categorised before comes pre-filled with the same category and subcategory <span class="new-tag">NEW</span></li><li>"Suggested category — please check" when the category guess is uncertain <span class="new-tag">NEW</span></li><li>Raw source text shown in a muted box (pasted/shared/scanned only — notification text is never kept)</li><li>Money received from a notification is reviewed as Income: Amount, Source, Date, Notes <span class="new-tag">NEW</span></li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>"Ignore"</li><li>"Confirm &amp; Add" (or "Add anyway" if a duplicate was flagged) · "Add income" for money received</li><li>Duplicate banner: "View existing" / "Use existing" <span class="new-tag">NEW</span></li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Confidence label — or, for a payment notification, what it looks like: Expense / Income / Refund / Transfer detected, or "Review transaction"</li><li>"Source: payment notification" line, and a hint for transfers and refunds</li><li>Duplicate-detection banner if flagged</li><li>Editable pre-filled fields: Amount, Merchant, Category, Subcategory, Date, Payment method, Notes</li><li>Payment method read from the message — UPI, credit or debit card, NEFT/IMPS/RTGS as bank transfer; UPI is filled in for payments from UPI apps</li><li>Merchant is optional: leave it blank and the expense is saved under its category name; a merchant you add is remembered for next time</li><li>Merchant memory: a merchant you've categorised before comes pre-filled with the same category and subcategory</li><li>"Suggested category — please check" when the category guess is uncertain</li><li>Raw source text shown in a muted box (pasted/shared/scanned only — notification text is never kept)</li><li>Money received from a notification is reviewed as Income: Amount, Source, Date, Notes</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Ignore"</li><li>"Confirm &amp; Add" (or "Add anyway" if a duplicate was flagged) · "Add income" for money received</li><li>Duplicate banner: "View existing" / "Use existing"</li></ul></div>
         </div>
       </div>
     </section>
@@ -489,7 +524,7 @@
       <div class="screen">
         <div class="screen-head"><h3>Add / Edit Recurring</h3><span class="route-tag">addRecurring / editRecurring</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">Fields</p><ul><li>Name · Amount · Category · Frequency</li><li>More detail (optional) — e.g. Loan / EMI → Home Loan EMI; the expenses it creates are recorded under it <span class="new-tag">NEW</span></li><li>Due day (1–31) · Start date · End date (optional)</li><li>Recipient/Provider · Notes</li></ul></div>
+          <div class="col"><p class="lbl">Fields</p><ul><li>Name · Amount · Category · Frequency</li><li>More detail (optional) — e.g. Loan / EMI → Home Loan EMI; the expenses it creates are recorded under it</li><li>Due day (1–31) · Start date · End date (optional)</li><li>Recipient/Provider · Notes</li></ul></div>
           <div class="col"><p class="lbl">Switches</p><ul><li>"Reminder enabled" (+ days-before dropdown)</li><li>"Auto-create expense"</li></ul></div>
         </div>
       </div>
@@ -534,11 +569,11 @@
     </section>
 
     <section id="upcoming" class="grp">
-      <div class="grp-head"><span class="n mono">15</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-upcoming"/></svg></div><h2>Upcoming Money</h2><span class="route-tag">upcomingMoney</span><span class="new-tag">NEW</span></div>
+      <div class="grp-head"><span class="n mono">15</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-upcoming"/></svg></div><h2>Upcoming Money</h2><span class="route-tag">upcomingMoney</span></div>
       <p class="grp-purpose">What's coming up, and how much money to keep aside for it.</p>
       <div class="screen">
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Toggle: Next 7 days / Next 30 days</li><li>"Money to keep aside" total</li><li>Items grouped by day ("In 2 days · Mon, 28 Sep")</li><li>Recurring payments due, scheduled services with a cost, money you owe that's due</li><li>Credit card bills, on each card's payment due day, with the balance you recorded <span class="new-tag">NEW</span></li><li>Listed without an amount: insurance &amp; PUC renewals, warranties ending, reminders, festivals, family occasions</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Toggle: Next 7 days / Next 30 days</li><li>"Money to keep aside" total</li><li>Items grouped by day ("In 2 days · Mon, 28 Sep")</li><li>Recurring payments due, scheduled services with a cost, money you owe that's due</li><li>Credit card bills, on each card's payment due day, with the balance you recorded</li><li>Listed without an amount: insurance &amp; PUC renewals, warranties ending, reminders, festivals, family occasions</li></ul></div>
           <div class="col"><p class="lbl">Actions</p><ul><li>Tap an item → its screen (a festival or occasion opens Add Savings, to set money aside)</li></ul></div>
         </div>
         <div class="from-line">The total is an estimate from bills, services and dues you've recorded — never a prediction. Items with no known amount are listed but not counted, and the screen says how many.</div>
@@ -546,7 +581,7 @@
     </section>
 
     <section id="planned" class="grp">
-      <div class="grp-head"><span class="n mono">16</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-plan"/></svg></div><h2>Planned expenses</h2><span class="route-tag">plannedExpenses</span><span class="new-tag">NEW</span></div>
+      <div class="grp-head"><span class="n mono">16</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-plan"/></svg></div><h2>Planned expenses</h2><span class="route-tag">plannedExpenses</span></div>
       <p class="grp-purpose">Plan for something ahead — a festival, a trip, a service — then compare what you expected with what you actually spent.</p>
       <div class="screen">
         <div class="screen-head"><h3>Plans list</h3></div>
@@ -573,7 +608,7 @@
     </section>
 
     <section id="calendar" class="grp">
-      <div class="grp-head"><span class="n mono">17</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-calendar"/></svg></div><h2>Money Calendar &amp; Timeline</h2><span class="route-tag">moneyCalendar / moneyTimeline</span><span class="new-tag">NEW</span></div>
+      <div class="grp-head"><span class="n mono">17</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-calendar"/></svg></div><h2>Money Calendar &amp; Timeline</h2><span class="route-tag">moneyCalendar / moneyTimeline</span></div>
       <p class="grp-purpose">Two ways to look back at a month: as a calendar, or as a running story.</p>
       <div class="screen">
         <div class="screen-head"><h3>Money Calendar</h3></div>
@@ -592,7 +627,7 @@
     </section>
 
     <section id="transfers" class="grp">
-      <div class="grp-head"><span class="n mono">18</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-arrows"/></svg></div><h2>Transfers</h2><span class="route-tag">transfers</span><span class="new-tag">NEW</span></div>
+      <div class="grp-head"><span class="n mono">18</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-arrows"/></svg></div><h2>Transfers</h2><span class="route-tag">transfers</span></div>
       <p class="grp-purpose">Money sent or received outside your everyday spending — to family, from a friend — so it doesn't distort your expenses.</p>
       <div class="screen">
         <div class="screen-cols">
@@ -604,7 +639,7 @@
     </section>
 
     <section id="debts" class="grp">
-      <div class="grp-head"><span class="n mono">19</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-hand"/></svg></div><h2>Lending &amp; Borrowing</h2><span class="route-tag">debts</span><span class="new-tag">NEW</span></div>
+      <div class="grp-head"><span class="n mono">19</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-hand"/></svg></div><h2>Lending &amp; Borrowing</h2><span class="route-tag">debts</span></div>
       <p class="grp-purpose">Who owes you, and who you owe — including partial repayments.</p>
       <div class="screen">
         <div class="screen-cols">
@@ -616,7 +651,7 @@
     </section>
 
     <section id="attachments" class="grp">
-      <div class="grp-head"><span class="n mono">20</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-clip"/></svg></div><h2>Attachments</h2><span class="new-tag">NEW</span></div>
+      <div class="grp-head"><span class="n mono">20</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-clip"/></svg></div><h2>Attachments</h2></div>
       <p class="grp-purpose">Photos and PDFs on Things, Vehicles, Documents, Warranties, Services and Expenses — all handled the same way.</p>
       <div class="screen">
         <div class="screen-cols">
@@ -628,7 +663,7 @@
     </section>
 
     <section id="notifications" class="grp">
-      <div class="grp-head"><span class="n mono">21</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-bell"/></svg></div><h2>Notifications</h2><span class="route-tag">notificationCenter</span><span class="new-tag">NEW</span></div>
+      <div class="grp-head"><span class="n mono">21</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-bell"/></svg></div><h2>Notifications</h2><span class="route-tag">notificationCenter</span></div>
       <p class="grp-purpose">Gentle, useful nudges worked out on your phone — never a feed to monitor.</p>
       <div class="screen">
         <div class="screen-head"><h3>Notification Center</h3></div>
@@ -641,37 +676,75 @@
       <div class="screen">
         <div class="screen-head"><h3>What HomeBook can tell you about</h3></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">Types</p><ul><li>Budget alerts — once each at 70%, 80%, 90% and 100%</li><li>Upcoming payments · Reminders</li><li>Vehicle insurance/PUC · Warranties ending</li><li>Debt reminders</li><li>Festivals &amp; family occasions — with "Set aside" and "Maybe later"</li><li>Spending insights — an occasional end-of-day note</li><li>Backup reminders</li></ul></div>
+          <div class="col"><p class="lbl">Types</p><ul><li>Budget alerts — once each at 70%, 80%, 90% and 100%</li><li>Upcoming payments</li><li>Reminders — at the reminder's own time, with Done and Snooze 1 hour <span class="new-tag">NEW</span></li><li>Vehicle insurance/PUC · Warranties ending</li><li>Debt reminders</li><li>Festivals &amp; family occasions — with "Set aside" and "Maybe later"</li><li>Spending insights — an occasional end-of-day note</li><li>Backup reminders</li></ul></div>
           <div class="col"><p class="lbl">Your controls (Settings)</p><ul><li>Switch each type on or off</li><li>Quiet hours — nothing between 10 PM and 7 AM</li><li>"Show amounts and names" — off keeps money notifications vague on the lock screen</li></ul></div>
         </div>
         <div class="from-line">"Set aside" only opens Add Savings — nothing is saved until you confirm. Several events due together arrive as one summary rather than a stack of notifications.</div>
       </div>
     </section>
 
+    <section id="assistant" class="grp">
+      <div class="grp-head"><span class="n mono">22</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-spark"/></svg></div><h2>Smart assistant</h2><span class="route-tag">assistant</span><span class="new-tag">NEW</span></div>
+      <p class="grp-purpose">Ask about your home in English, Hindi or Telugu, and see short insights — worked out on your phone from your own records. Nothing leaves the phone.</p>
+      <div class="screen">
+        <div class="screen-head"><h3>Smart assistant</h3></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>"Ask the assistant" — a box ("Ask about your home…") with suggested questions: What is due this week? · How much did I spend in October? · Which warranties end soon? · When does my insurance expire?</li><li>Recent questions</li><li>Insights (N) — or "Nothing needs your attention right now."</li><li>A note: everything it says comes from your own records</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Ask" → the answer</li><li>Tap an insight → Insight</li><li>Settings icon → Assistant settings</li><li>When it's off: "Turn on"</li></ul></div>
+        </div>
+        <div class="from-line">Opened from the spark on Home, or "See all" on Home's Insights card.</div>
+      </div>
+
+      <div class="screen">
+        <div class="screen-head"><h3>Answers</h3></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">It can tell you</p><ul><li>What's due — bills and open reminders, e.g. this week</li><li>How much you spent in a period, overall or on one category</li><li>Where most of your money went</li><li>How your budget is doing</li><li>When insurance, PUC or a warranty expires; which warranties end soon</li><li>When something was last serviced</li></ul></div>
+          <div class="col"><p class="lbl">Good to know</p><ul><li>Each answer says "From records on this phone"</li><li>Some answers offer a button to the screen they're about</li><li>A question it can't answer yet gets "I can't answer that yet" with questions to try</li></ul></div>
+        </div>
+      </div>
+
+      <div class="screen">
+        <div class="screen-head"><h3>Insight</h3></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">Insights about</p><ul><li>Insurance, PUC or a warranty ending soon, or already ended</li><li>Payments due this week</li><li>A category's spending rising</li><li>The month's budget nearly used, or over</li><li>One category taking a large share of spending</li><li>Nothing recorded yesterday · a day that cost more than usual</li></ul></div>
+          <div class="col"><p class="lbl">On the Insight page</p><ul><li>What this means</li><li>Recommended action — e.g. "Add a reminder", which asks you to confirm first</li><li>"Dismiss insight"</li></ul></div>
+        </div>
+      </div>
+
+      <div class="screen">
+        <div class="screen-head"><h3>Assistant settings</h3></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">Switches</p><ul><li>Use the assistant</li><li>Unusual spending alerts</li><li>Expiry alerts — insurance, PUC and warranties</li></ul></div>
+          <div class="col"><p class="lbl">Data</p><ul><li>"Clear assistant history" — removes your saved questions</li></ul></div>
+        </div>
+        <div class="from-line">It reads titles, dates and amounts only — never document files, photos or notes. Your questions stay on this phone: they're not synced, not in backups, and cleared when you sign out.</div>
+      </div>
+    </section>
+
     <section id="g15" class="grp">
-      <div class="grp-head"><span class="n mono">22</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-search"/></svg></div><h2>Search</h2><span class="route-tag">search</span></div>
+      <div class="grp-head"><span class="n mono">23</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-search"/></svg></div><h2>Search</h2><span class="route-tag">search</span></div>
       <p class="grp-purpose">One search box across everything in your home.</p>
       <div class="screen">
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Autofocus search field</li><li>Results grouped by type: Things / Vehicles / Documents / Warranties / Service / Reminders</li><li>Also Expenses, Transfers and Lending &amp; Borrowing <span class="new-tag">NEW</span></li><li>Status chips where relevant</li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>Tap a result → its detail screen, or the matching tab</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Search field, ready to type</li><li>Results grouped by type: Things · Vehicles · Documents · Warranties · Service · Reminders · Expenses · Transfers · Lending &amp; Borrowing</li><li>Status chips where relevant — a completed reminder shows none <span class="new-tag">NEW</span></li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Tap a result → its detail screen; a reminder opens its Reminder page <span class="new-tag">NEW</span></li></ul></div>
         </div>
-        <div class="from-line">Reached from the search icon on Home.</div>
+        <div class="from-line">Reached from the search icon on Home. The Things tab has its own search for your things.</div>
       </div>
     </section>
 
     <section id="g16" class="grp">
-      <div class="grp-head"><span class="n mono">23</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-family"/></svg></div><h2>Family &amp; Occasions</h2><span class="route-tag">family</span></div>
+      <div class="grp-head"><span class="n mono">24</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-family"/></svg></div><h2>Family &amp; Occasions</h2><span class="route-tag">family</span></div>
       <p class="grp-purpose">The people in your household, for your records (like who paid) — and the family days worth remembering. Adding a member doesn't give them access to your HomeBook.</p>
       <div class="screen">
         <div class="screen-head"><h3>Family members</h3></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Member list — avatar initial, name, role</li><li>Members now sync, so "Paid by" is the same on every device <span class="new-tag">NEW</span></li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>Header "+" or tap a member → Member sheet (Name, Email, Role — a label only; it doesn't grant access)</li><li>Footer: "Adding someone doesn't give them access to your HomeBook." <span class="new-tag">NEW</span></li><li>Delete button per row</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Member list — avatar initial, name, role</li><li>Members now sync, so "Paid by" is the same on every device</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>Header "+" or tap a member → Member sheet (Name, Email, Role — a label only; it doesn't grant access)</li><li>Footer: "Adding someone doesn't give them access to your HomeBook."</li><li>Delete button per row</li></ul></div>
         </div>
       </div>
       <div class="screen">
-        <div class="screen-head"><h3>Family occasions</h3><span class="new-tag">NEW</span></div>
+        <div class="screen-head"><h3>Family occasions</h3></div>
         <div class="screen-cols">
           <div class="col"><p class="lbl">On this screen</p><ul><li>Birthdays, anniversaries, housewarmings and other yearly days, soonest first</li><li>Each shows its type, date, "In 5 days" / "Today", and years completed (e.g. "25 years")</li></ul></div>
           <div class="col"><p class="lbl">Add / Edit occasion</p><ul><li>Occasion: 🎂 Birthday · 💐 Anniversary · 🏡 Housewarming · 🎉 Other</li><li>Name (e.g. "Amma's birthday") · Date</li><li>Mention it: 1 / 3 / 7 / 14 days before</li><li>Save · Delete</li></ul></div>
@@ -679,7 +752,7 @@
         <div class="from-line">Occasions repeat every year (a 29 February date falls on 28 February in other years). HomeBook mentions them ahead with an offer to set money aside, lists them in Upcoming Money, and marks the day on Home.</div>
       </div>
       <div class="screen">
-        <div class="screen-head"><h3>The festive touch on Home</h3><span class="new-tag">NEW</span></div>
+        <div class="screen-head"><h3>The festive touch on Home</h3></div>
         <div class="screen-cols">
           <div class="col"><p class="lbl">When</p><ul><li>A festival within the next week (Sankranti, Ugadi, Vinayaka Chavithi, Dussehra, Diwali, Holi, Eid, Christmas, Republic Day, Independence Day)</li><li>A family occasion within the next 3 days</li><li>The day itself: "Happy Diwali!" or "🎂 Amma's birthday is today"</li></ul></div>
           <div class="col"><p class="lbl">What changes</p><ul><li>Only Home's banner — a warm card with a greeting and illustration</li><li>Before the day: a "Set aside" link to Add Savings</li><li>Everything else in HomeBook stays exactly as usual</li></ul></div>
@@ -688,39 +761,49 @@
     </section>
 
     <section id="g17" class="grp">
-      <div class="grp-head"><span class="n mono">24</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-cloud"/></svg></div><h2>Backup &amp; Restore</h2><span class="route-tag">backup</span></div>
+      <div class="grp-head"><span class="n mono">25</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-cloud"/></svg></div><h2>Backup &amp; Restore</h2><span class="route-tag">backup</span></div>
       <p class="grp-purpose">A portable export of your records — independent of cloud sync.</p>
       <div class="screen">
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>"Last backup" card (date + record/file count)</li><li>Illustration shown only if never backed up</li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>"Back up now" → exports and shares a file</li><li>"Restore from backup" → pick file → confirm (shows home name, record count, export date) → restore</li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>"Last backup" card — date, and records • files</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Back up now" → a file to save or share</li><li>"Restore from backup" → pick the file → see what it holds, e.g. "This backup holds: 4 things, 2 vehicles, 86 expenses." → Restore <span class="new-tag">NEW</span></li></ul></div>
         </div>
-        <div class="from-line">Restoring is additive/overwrite-matching — it never deletes existing records. Photos and files aren't included in the backup file; when you're signed in they're kept safe in your household's cloud storage instead. HomeBook gently reminds you to back up if you haven't in a while <span class="new-tag">NEW</span>.</div>
+        <div class="from-line">A backup now also holds transfers, debts and their repayments, category budgets, cards and your merchant choices <span class="new-tag">NEW</span>, and a list of files already uploaded to your household's cloud storage — those download when you open them. Files that were never uploaded aren't in the backup. Restoring never deletes existing records, and backups from earlier versions still restore. HomeBook gently reminds you to back up if you haven't in a while.</div>
       </div>
     </section>
 
     <section id="g18" class="grp">
-      <div class="grp-head"><span class="n mono">25</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-gear"/></svg></div><h2>Settings &amp; Profile</h2><span class="route-tag">profile / settings</span></div>
-      <p class="grp-purpose">Tab 4, plus everything nested one level under it.</p>
+      <div class="grp-head"><span class="n mono">26</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-gear"/></svg></div><h2>Settings &amp; Profile</h2><span class="route-tag">profile / settings</span></div>
+      <p class="grp-purpose">Tab 5, plus everything nested one level under it.</p>
       <div class="screen">
-        <div class="screen-head"><h3>Profile</h3></div>
+        <div class="screen-head"><h3>Profile</h3><span class="new-tag">NEW</span></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">On this screen</p><ul><li>Avatar (tappable if signed in) + home name</li></ul></div>
-          <div class="col"><p class="lbl">Rows</p><ul><li>My Home (rename) · Warranties · Maintenance · Money</li><li>Sign in &amp; sync (or Sync now/Sign out if signed in) — shows "Everything is synced ✓" or "N changes waiting to sync" <span class="new-tag">NEW</span></li><li>Family members · Backup &amp; restore · Settings ("Theme, notifications, privacy &amp; security") — App lock now lives in Settings only <span class="new-tag">NEW</span></li></ul></div>
+          <div class="col"><p class="lbl">On this screen</p><ul><li>A large ringed photo, your name and email, and "Edit"</li><li>Tap the photo to change it (when signed in)</li></ul></div>
+          <div class="col"><p class="lbl">Rows, in three groups</p><ul><li>Household — My home (rename) · Family members · Warranties · Maintenance · Money</li><li>Data and safety — Sign in &amp; sync (or Sync now / Sign out) with "Everything is synced ✓" or "N changes waiting to sync" · Sync conflicts, only when something needs review · Backup &amp; restore, with the last backup date</li><li>App — Settings ("Theme, notifications, privacy &amp; security")</li></ul></div>
         </div>
-        <div class="from-line">Signing in on a phone that already has records keeps them: they're merged into your cloud household, never replaced. A different account signing in on the same phone gets its own household — records are never merged across accounts <span class="new-tag">NEW</span>. Sign out asks whether to also remove HomeBook's data from this phone <span class="new-tag">NEW</span>.</div>
+        <div class="from-line">Signing in on a phone that already has records keeps them: they're merged into your cloud household, never replaced. A different account signing in on the same phone gets its own household — records are never merged across accounts. Sign out asks whether to also remove HomeBook's data from this phone.</div>
       </div>
+
+      <div class="screen">
+        <div class="screen-head"><h3>Sync conflicts</h3><span class="route-tag">syncConflicts</span><span class="new-tag">NEW</span></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">On this screen</p><ul><li>Money changes that lost to a newer edit on another device: "Your change from [date] was replaced by a newer one from another device."</li><li>"Yours" and "Now" amounts side by side</li><li>Covers expenses, income, recurring payments, savings goals, transfers, debts, budgets, planned expenses and cards</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Keep mine" — puts your version back and syncs it to every device</li><li>"Dismiss"</li></ul></div>
+        </div>
+        <div class="from-line">When two devices change the same money record, the newer change wins and the other is kept here, on this phone, for you to review — so nothing is lost silently.</div>
+      </div>
+
       <div class="screen">
         <div class="screen-head"><h3>Settings</h3></div>
         <div class="screen-cols">
-          <div class="col"><p class="lbl">Preferences</p><ul><li>Language (English/Telugu/Hindi)</li><li>Reminder defaults · Notifications (switch)</li><li>Notification types — one switch each, plus Quiet hours and "Show amounts and names" <span class="new-tag">NEW</span> (see Notifications)</li><li>Smart Expense Detection — Off / On / "Notification access is currently disabled." → its own screen <span class="new-tag">NEW</span> (see Smart Expense Capture)</li><li>Theme — a sheet with a preview and Light / Dark / System; it changes at once and is remembered <span class="new-tag">NEW</span></li><li>Money — Money setup <span class="new-tag">NEW</span> · Budget period (the salary-cycle start day, shared with your household) · Opening balance on this device</li></ul></div>
-          <div class="col"><p class="lbl">Privacy &amp; security, storage &amp; account</p><ul><li>App lock <span class="new-tag">NEW</span> (moved here from Profile) · Storage usage (read-only)</li><li>About HomeBook · Privacy Policy · Terms &amp; Conditions</li><li>Delete account (signed-in users only) — also removes your household's cloud backup and files; records on this phone stay <span class="new-tag">NEW</span></li></ul></div>
+          <div class="col"><p class="lbl">Preferences</p><ul><li>Language (English/Telugu/Hindi)</li><li>Reminder defaults · Notifications (switch)</li><li>Notification types — one switch each, plus Quiet hours and "Show amounts and names" (see Notifications)</li><li>Smart Expense Detection — Off / On / "Notification access is currently disabled." → its own screen (see Smart Expense Capture)</li><li>Theme — a sheet with a preview and Light / Dark / System; it changes at once and is remembered</li><li>Money — Money setup · Budget period (the salary-cycle start day, shared with your household) · Opening balance on this device</li></ul></div>
+          <div class="col"><p class="lbl">Privacy &amp; security, storage &amp; account</p><ul><li>App lock (moved here from Profile) · Storage usage (read-only)</li><li>About HomeBook · Privacy Policy · Terms &amp; Conditions</li><li>Delete account (signed-in users only) — also removes your household's cloud backup and files; records on this phone stay</li></ul></div>
         </div>
       </div>
     </section>
 
     <section id="g19" class="grp">
-      <div class="grp-head"><span class="n mono">26</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-lock"/></svg></div><h2>App Lock</h2><span class="route-tag">appLock</span></div>
+      <div class="grp-head"><span class="n mono">27</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-lock"/></svg></div><h2>App Lock</h2><span class="route-tag">appLock</span></div>
       <p class="grp-purpose">An on-device PIN gate — separate from and unrelated to your cloud sign-in.</p>
       <div class="screen">
         <div class="screen-head"><h3>App lock settings</h3></div>
@@ -740,7 +823,7 @@
     </section>
 
     <section id="g20" class="grp">
-      <div class="grp-head"><span class="n mono">27</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-scale"/></svg></div><h2>Legal</h2><span class="route-tag">privacyPolicy / termsOfService</span></div>
+      <div class="grp-head"><span class="n mono">28</span><div class="grp-icon"><svg width="19" height="19"><use href="#i-scale"/></svg></div><h2>Legal</h2><span class="route-tag">privacyPolicy / termsOfService</span></div>
       <p class="grp-purpose">One reusable screen for both documents.</p>
       <div class="screen">
         <div class="screen-cols">
