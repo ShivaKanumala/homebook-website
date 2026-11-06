@@ -106,10 +106,10 @@
 
   <main>
     <div class="manual-intro">
-      <p class="eyebrow mono">Reference · v2.0.0</p>
+      <p class="eyebrow mono">Reference · v2.1.0</p>
       <h1 class="page-title">HomeBook User Manual</h1>
       <p class="lede" style="max-width:62ch;font-size:18px;color:var(--ink-soft);">Every screen in HomeBook, what it shows, and how to get there. Organized in the order you'd actually meet each screen — start with how the app is laid out, then work through each module.</p>
-      <p style="max-width:62ch;font-size:14px;color:var(--ink-soft);margin-top:10px;">Updated for version 2.0, which redraws every screen with calm colours and hand-drawn doodles. Anything new or changed in 2.0 is marked <span class="new-tag">NEW</span>.</p>
+      <p style="max-width:62ch;font-size:14px;color:var(--ink-soft);margin-top:10px;">Updated for version 2.1. Version 2.0 redrew every screen with calm colours and hand-drawn doodles; 2.1 lets the Smart assistant search all your records. Anything new or changed in 2.0 or 2.1 is marked <span class="new-tag">NEW</span>.</p>
       <select class="jump" style="margin-top:16px;" onchange="if(this.value) location.hash=this.value">
         <option value="">Jump to screen…</option>
         <option value="#nav-structure">How the app is organized</option>
@@ -690,7 +690,7 @@
         <div class="screen-head"><h3>Smart assistant</h3></div>
         <div class="screen-cols">
           <div class="col"><p class="lbl">On this screen</p><ul><li>"Ask the assistant" — a box ("Ask about your home…") with suggested questions: What is due this week? · How much did I spend in October? · Which warranties end soon? · When does my insurance expire?</li><li>Recent questions</li><li>Insights (N) — or "Nothing needs your attention right now."</li><li>A note: everything it says comes from your own records</li></ul></div>
-          <div class="col"><p class="lbl">Actions</p><ul><li>"Ask" → the answer</li><li>Tap an insight → Insight</li><li>Settings icon → Assistant settings</li><li>When it's off: "Turn on"</li></ul></div>
+          <div class="col"><p class="lbl">Actions</p><ul><li>"Ask" → the answer</li><li>Tap an insight → Insight</li><li>Settings icon → Assistant settings</li><li>"New conversation" (the + at the top) — starts over, forgetting the last search <span class="new-tag">NEW</span></li><li>When it's off: "Turn on"</li></ul></div>
         </div>
         <div class="from-line">Opened from the spark on Home, or "See all" on Home's Insights card.</div>
       </div>
@@ -701,6 +701,15 @@
           <div class="col"><p class="lbl">It can tell you</p><ul><li>What's due — bills and open reminders, e.g. this week</li><li>How much you spent in a period, overall or on one category</li><li>Where most of your money went</li><li>How your budget is doing</li><li>When insurance, PUC or a warranty expires; which warranties end soon</li><li>When something was last serviced</li></ul></div>
           <div class="col"><p class="lbl">Good to know</p><ul><li>Each answer says "From records on this phone"</li><li>Some answers offer a button to the screen they're about</li><li>A question it can't answer yet gets "I can't answer that yet" with questions to try</li></ul></div>
         </div>
+      </div>
+
+      <div class="screen">
+        <div class="screen-head"><h3>Search your records <span class="new-tag">NEW</span></h3></div>
+        <div class="screen-cols">
+          <div class="col"><p class="lbl">Ask for things like</p><ul><li>"UPI payments above ₹500 last week" · "Where did I spend around ₹600?"</li><li>"Bills due this month" · "What do I need to pay?" — overdue bills included</li><li>"Income expected this month" · "Expenses with a receipt"</li><li>Expenses, income, bills, reminders, things, warranties, vehicles, documents, transfers and family records</li><li>Amounts (exact, around, between), dates (yesterday, last Monday, weekends, a date, a range), payment method, who paid, receipts, notes and words</li></ul></div>
+          <div class="col"><p class="lbl">In the answer</p><ul><li>A short summary with the count and total — the same total the Expenses screen shows for those filters</li><li>Chips for each filter it used — tap × to drop one</li><li>Cards with a notes preview and badges: receipt · overdue · not synced</li><li>"Show more" · tap a card → that record</li><li>Follow up: "only UPI", "just this month", "open the second one"; a new question starts a new search</li></ul></div>
+        </div>
+        <div class="from-line">Questions about your budget, top category or expiry dates still get the short answers above; it searches when you ask for something specific.</div>
       </div>
 
       <div class="screen">
@@ -717,7 +726,7 @@
           <div class="col"><p class="lbl">Switches</p><ul><li>Use the assistant</li><li>Unusual spending alerts</li><li>Expiry alerts — insurance, PUC and warranties</li></ul></div>
           <div class="col"><p class="lbl">Data</p><ul><li>"Clear assistant history" — removes your saved questions</li></ul></div>
         </div>
-        <div class="from-line">It reads titles, dates and amounts only — never document files, photos or notes. Your questions stay on this phone: they're not synced, not in backups, and cleared when you sign out.</div>
+        <div class="from-line">It reads titles, dates, amounts and notes in your records, on this phone — never document files or photos. Your questions stay on this phone: they're not synced, not in backups, and cleared when you sign out.</div>
       </div>
     </section>
 
@@ -847,7 +856,7 @@
       <a href="../delete-account/">Delete Account</a>
       <a href="../contact/">Contact</a>
     </div>
-    <span class="mono">v2.0.0</span>
+    <span class="mono">v2.1.0</span>
   </div>
 </footer>
 
