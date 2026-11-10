@@ -14,6 +14,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="motion.css">
+<script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.hbMotion)document.documentElement.classList.remove('js')},2500);</script>
 </head>
 <body>
 
@@ -61,9 +63,10 @@
 <div class="shell">
 
   <section class="hero" style="border-top:none;">
+    <div class="hero-glow" aria-hidden="true"><span class="g1"></span><span class="g2"></span><span class="g3"></span></div>
     <div>
       <p class="eyebrow">A household ledger, built for one home</p>
-      <h1>A Smarter Home. A Worry-Free You.</h1>
+      <h1><span class="w">A</span> <span class="w accent">Smarter Home.</span> <span class="w">A</span> <span class="w">Worry-Free</span> <span class="w">You.</span></h1>
       <p class="tagline">HomeBook keeps everything about your home in one place — the things you own, the vehicles you drive, the documents you'd hate to lose, and the money that keeps it all running.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="#modules">See what's inside</a>
@@ -71,67 +74,107 @@
       </div>
       <p class="caption-line"><span class="dot"></span>Every record starts on your device. Sync is optional, never required.</p>
     </div>
-    <div class="card-stack" aria-hidden="true">
-      <div class="idx-card c1"><div class="cap"><svg width="16" height="16"><use href="#i-car"/></svg>Vehicles</div><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
-      <div class="idx-card c2"><div class="cap"><svg width="16" height="16"><use href="#i-wallet"/></svg>Money</div><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
-      <div class="idx-card c3"><div class="cap"><svg width="16" height="16"><use href="#i-box"/></svg>Things</div><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="phone">
+        <div class="ph-screen">
+          <div class="ph-greet"><strong>Good evening, Priya</strong><small>Tue, 10 Nov · Our Home</small></div>
+          <div class="ph-slides">
+            <div class="ph-card today"><div class="ph-tile"><svg><use href="#i-calendar"/></svg></div><div><div class="k">What's today? · Tue, 10 Nov</div><span class="pill">International day</span><div class="t">World Science Day</div><div class="b">A UNESCO day on science for peace and development.</div></div></div>
+            <div class="ph-card fest"><div class="ph-tile"><svg><use href="#i-cake"/></svg></div><div><div class="k">Festival</div><span class="pill">Today</span><div class="t">Diwali</div><div class="b">Wishing your home joy and light.</div></div></div>
+            <div class="ph-card lend"><div class="ph-tile"><svg><use href="#i-arrows"/></svg></div><div><div class="k">Lent to Suresh</div><span class="pill">Partly repaid</span><div class="t">₹1,200 left</div><div class="bar"><i></i></div><div class="b">₹800 of ₹2,000 repaid</div></div></div>
+          </div>
+          <div class="ph-counts"><div><b>12</b><span>Things</span></div><div><b>2</b><span>Vehicles</span></div><div><b>9</b><span>Docs</span></div><div><b>4</b><span>Reminders</span></div></div>
+          <div class="ph-money"><small>November so far</small><div class="big" data-count="38450" data-prefix="₹">₹38,450</div><small>left from ₹62,000 earned</small><div class="row"><span>Spent ₹23,550</span><span>Bills due 2</span></div></div>
+          <div class="ph-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+      <div class="float-chip a"><span class="ic"><svg><use href="#i-wallet"/></svg></span><span>₹842 · Groceries<small>Added from a receipt</small></span></div>
+      <div class="float-chip b"><span class="ic"><svg><use href="#i-arrows"/></svg></span><span>Suresh paid back ₹800<small>₹1,200 left</small></span></div>
+      <div class="float-chip c"><span class="ic"><svg><use href="#i-bell"/></svg></span><span>PUC renews in 3 days<small>Reminder</small></span></div>
     </div>
   </section>
 
   <section id="whats-new">
-    <div class="section-head">
+    <div class="section-head" data-reveal>
       <p class="eyebrow">What's new · versions 1.1 – 2.2</p>
       <h2>See where your money goes, spot payments, plan ahead, and keep every file.</h2>
       <p>Everything below is in the latest HomeBook on Google Play. The <a href="manual/">user manual</a> marks each addition since 1.0 as <span class="new-tag">NEW</span>.</p>
     </div>
-    <ul class="news-list">
+    <ul class="news-list reveal-group">
       <li><svg><use href="#i-calendar"/></svg><div><strong>What's today? <span class="new-tag">NEW</span></strong><span>In 2.2, when no festival or family occasion is near, Home shows what today is in India — a national holiday, a festival, an awareness day, something from history, or a fact about India — and says which it is. "Explore more" opens Today in India, with each item's source. It's built into the app, works offline and changes at midnight India time.</span></div></li>
       <li><svg><use href="#i-arrows"/></svg><div><strong>Lending and borrowing, properly tracked <span class="new-tag">NEW</span></strong><span>In 2.2, each loan has its own page: what's left, every repayment (with Undo), what was agreed, and a "Remind me" that can record the payment when you mark it done. Ask the assistant "Who owes me money?" or say "Suresh paid me back 500" — nothing is saved until you confirm.</span></div></li>
       <li><svg><use href="#i-wallet"/></svg><div><strong>Say it, or type a sentence <span class="new-tag">NEW</span></strong><span>In 2.2, add an expense by saying or typing "Spent 800 at a restaurant using UPI", in English, Hindi or Telugu. A scanned receipt now shows its photo and bill details, and the same bill scanned twice is caught. Money also shows a month-end estimate.</span></div></li>
       <li><svg><use href="#i-filter"/></svg><div><strong>Ask the assistant about anything you've saved <span class="new-tag">NEW</span></strong><span>In 2.1, search your records in plain words — "UPI payments above ₹500 last week", "bills due this month", "when does my insurance expire?" — across expenses, income, bills, reminders, things, warranties, vehicles, documents, transfers and family. Follow up with "only UPI", "show more" or "open the second one". "What do I need to pay?" now includes overdue bills. It still works only on your phone, from your own records.</span></div></li>
       <li><svg><use href="#i-wallet"/></svg><div><strong>Steadier Home and Money <span class="new-tag">NEW</span></strong><span>In 2.1, Home and Money no longer jump while you scroll. Daily, Weekly and Monthly — and Last 7 days or By category — switch smoothly, without going blank, and stay the way you left them.</span></div></li>
       <li><svg><use href="#i-filter"/></svg><div><strong>HomeBook 2.0 — a fresh new look <span class="new-tag">NEW</span></strong><span>Every screen is redrawn with calm colours, one clear type scale and hand-drawn doodles — from the welcome screens to Home, Money, Things, Reminders and Profile. A new launch screen opens straight into your home.</span></div></li>
-      <li><svg><use href="#i-bolt"/></svg><div><strong>Smart assistant <span class="new-tag">NEW</span></strong><span>Ask about your spending in English, Hindi or Telugu — "how much did I spend on groceries last month?" — and see short insights on Home. It works on your phone from your own records; your questions are not sent anywhere.</span></div></li>
-      <li><svg><use href="#i-bell"/></svg><div><strong>Reminders that ring on time <span class="new-tag">NEW</span></strong><span>A reminder notifies at its own time, with Done and Snooze right on the notification. Give a reminder a category, open it for its full details, or tap "Snooze 1 day" — its own date and repeat stay as they were.</span></div></li>
-      <li><svg><use href="#i-wallet"/></svg><div><strong>Quicker to add <span class="new-tag">NEW</span></strong><span>Add an expense on a large amount with one-tap ₹150, ₹500, ₹1,000 and ₹2,000, and add a thing in three easy steps: category, details, papers.</span></div></li>
-      <li><svg><use href="#i-wrench"/></svg><div><strong>Sync you can trust <span class="new-tag">NEW</span></strong><span>Something deleted on one phone is deleted on your other phones too, only what changed is downloaded, and a newer change is never overwritten by an older one. Backups now also hold transfers, debts, category budgets and cards, and show what they hold before you restore.</span></div></li>
-      <li><svg><use href="#i-bolt"/></svg><div><strong>Opens fast on any network</strong><span>Your records show straight away, even on a slow or patchy connection — sync and online checks carry on in the background. On a stalled network HomeBook used to take about 11 seconds to open; now it's about a third of a second.</span></div></li>
-      <li><svg><use href="#i-plan"/></svg><div><strong>Money Setup</strong><span>Optional, about two minutes: your payday, a bills reserve and your regular bills. Skip any step, or the whole thing — no bank details needed. Your monthly salary can go into Income, and bills already in Recurring are linked, never copied.</span></div></li>
-      <li><svg><use href="#i-wallet"/></svg><div><strong>Bills reserve</strong><span>See what to keep aside for rent, EMIs and bills, which ones are paid and what's still due, and whether your reserve covers them. It's a plan, not a bank balance — never counted as spending, and HomeBook never moves money.</span></div></li>
-      <li><svg><use href="#i-wrench"/></svg><div><strong>Fits your screen, counts right</strong><span>In 1.7.1, HomeBook uses the full display on newer Android phones while keeping everything clear of the status bar, camera cut-out and navigation bar. The Things count on Home also no longer includes your vehicles, which keep their own count.</span></div></li>
-      <li><svg><use href="#i-card"/></svg><div><strong>Cards &amp; Wallet</strong><span>Keep your credit, debit and prepaid cards in one place, in Money. Only the last 4 digits are saved — never the full number, CVV or PIN — and HomeBook doesn't connect to your bank. A credit card's due date shows in Upcoming.</span></div></li>
-      <li><svg><use href="#i-calendar"/></svg><div><strong>Budget by salary cycle</strong><span>Start your money month on payday — say the 25th to the 24th — instead of the 1st. Budgets carry forward to the next month until you change them.</span></div></li>
-      <li><svg><use href="#i-wallet"/></svg><div><strong>A truer picture of your money</strong><span>Rent and EMIs you've already paid are no longer counted twice, income counts once it arrives, and you can add an opening balance to see what you really have left.</span></div></li>
-      <li><svg><use href="#i-filter"/></svg><div><strong>Category budgets, fixed</strong><span>Category budgets open again, show the limits you saved, follow the month you're looking at, and add up with your overall budget.</span></div></li>
-      <li><svg><use href="#i-moon"/></svg><div><strong>Dark theme</strong><span>Choose Light, Dark or System in Settings. The dark theme keeps HomeBook's calm colours and stays easy to read.</span></div></li>
-      <li><svg><use href="#i-doc"/></svg><div><strong>Tidier lists</strong><span>Each day's expenses share one card on Expenses and the Money Timeline, and a payment with no category shows the merchant's initial.</span></div></li>
-      <li><svg><use href="#i-bell"/></svg><div><strong>Review payments as you pay</strong><span>With Smart Expense Detection on, a UPI payment brings a "New expense detected" notification — even when HomeBook is closed. Tap Review &amp; Add, or Ignore. Nothing is added without your OK.</span></div></li>
-      <li><svg><use href="#i-doc"/></svg><div><strong>Notebook View</strong><span>See your expenses written out day by day, like your own expense notebook, with your notes and each day's total. Switch between List and Notebook any time.</span></div></li>
-      <li><svg><use href="#i-wallet"/></svg><div><strong>Loans &amp; Debt and Personal categories</strong><span>Home, car, two-wheeler and personal loan EMIs, credit card bills and more. A recurring EMI records each payment under its loan type, and analytics break a category down by type.</span></div></li>
-      <li><svg><use href="#i-doc"/></svg><div><strong>Notes on statements</strong><span>PDF statements show each expense's note under its merchant, and can be written out in a notebook style.</span></div></li>
-      <li><svg><use href="#i-filter"/></svg><div><strong>A calmer, clearer look</strong><span>Softer category icons, a tidier Quick Add, a category picker with large icons, search that finds your notes, and your home's name on the Home screen.</span></div></li>
-      <li><svg><use href="#i-wallet"/></svg><div><strong>Money tab &amp; spending analytics</strong><span>Money now has its own tab. See each month's total, trends over six months, spending by category, and your top merchants. Tap any of them for the expenses behind it.</span></div></li>
-      <li><svg><use href="#i-doc"/></svg><div><strong>PDF statements</strong><span>Make a statement for a month, a date range, a category or a merchant, then preview, share or save it. It's created on your phone.</span></div></li>
-      <li><svg><use href="#i-filter"/></svg><div><strong>Monthly insights</strong><span>A few plain notes on what changed this month, such as a category that went up or down, or an unusually large expense. Comparisons only appear once there's enough history.</span></div></li>
-      <li><svg><use href="#i-bell"/></svg><div><strong>Smart Expense Detection</strong><span>Optional, on Android: turn it on and HomeBook suggests expenses from payment notifications of supported payment and bank apps. You review each one before it's added; notification text never leaves your phone, and SMS is never read.</span></div></li>
-      <li><svg><use href="#i-plan"/></svg><div><strong>Planned expenses</strong><span>Set an expected amount for Diwali, a trip or a service, link expenses to it, and see expected vs actual.</span></div></li>
-      <li><svg><use href="#i-calendar"/></svg><div><strong>Upcoming Money</strong><span>What's due in the next 7 or 30 days, and how much to keep aside — from bills you've actually recorded.</span></div></li>
-      <li><svg><use href="#i-clip"/></svg><div><strong>Photos &amp; PDFs everywhere</strong><span>Attach receipts, bills and papers to things, vehicles, documents, warranties, services and expenses. Saved on your phone first, synced when you're signed in.</span></div></li>
-      <li><svg><use href="#i-filter"/></svg><div><strong>Expense filters</strong><span>Narrow a month by category, subcategory, amount, payment method, merchant, who paid, or where it came from.</span></div></li>
-      <li><svg><use href="#i-arrows"/></svg><div><strong>Transfers, lending &amp; borrowing</strong><span>Money sent to family, lent to a friend, or borrowed — with partial repayments, kept apart from your spending.</span></div></li>
-      <li><svg><use href="#i-cake"/></svg><div><strong>Family occasions &amp; festivals</strong><span>Birthdays, anniversaries and housewarmings, reminded ahead — plus a quiet festive touch on Home around Diwali, Sankranti and more.</span></div></li>
-      <li><svg><use href="#i-wallet"/></svg><div><strong>Clearer money details</strong><span>Subcategories (Food → Restaurant, Delivery…), "Paid by", and payment methods: Cash, UPI, credit card, debit card, bank transfer, net banking.</span></div></li>
-      <li><svg><use href="#i-bell"/></svg><div><strong>Smarter notifications</strong><span>Budget alerts at 70–100%, bills, renewals, warranties and debts — with quiet hours, a notification centre, and a switch for each type.</span></div></li>
     </ul>
+    <details class="more-news">
+      <summary>Show all 37 updates since 1.1</summary>
+      <ul class="news-list">
+        <li><svg><use href="#i-bolt"/></svg><div><strong>Smart assistant <span class="new-tag">NEW</span></strong><span>Ask about your spending in English, Hindi or Telugu — "how much did I spend on groceries last month?" — and see short insights on Home. It works on your phone from your own records; your questions are not sent anywhere.</span></div></li>
+        <li><svg><use href="#i-bell"/></svg><div><strong>Reminders that ring on time <span class="new-tag">NEW</span></strong><span>A reminder notifies at its own time, with Done and Snooze right on the notification. Give a reminder a category, open it for its full details, or tap "Snooze 1 day" — its own date and repeat stay as they were.</span></div></li>
+        <li><svg><use href="#i-wallet"/></svg><div><strong>Quicker to add <span class="new-tag">NEW</span></strong><span>Add an expense on a large amount with one-tap ₹150, ₹500, ₹1,000 and ₹2,000, and add a thing in three easy steps: category, details, papers.</span></div></li>
+        <li><svg><use href="#i-wrench"/></svg><div><strong>Sync you can trust <span class="new-tag">NEW</span></strong><span>Something deleted on one phone is deleted on your other phones too, only what changed is downloaded, and a newer change is never overwritten by an older one. Backups now also hold transfers, debts, category budgets and cards, and show what they hold before you restore.</span></div></li>
+        <li><svg><use href="#i-bolt"/></svg><div><strong>Opens fast on any network</strong><span>Your records show straight away, even on a slow or patchy connection — sync and online checks carry on in the background. On a stalled network HomeBook used to take about 11 seconds to open; now it's about a third of a second.</span></div></li>
+        <li><svg><use href="#i-plan"/></svg><div><strong>Money Setup</strong><span>Optional, about two minutes: your payday, a bills reserve and your regular bills. Skip any step, or the whole thing — no bank details needed. Your monthly salary can go into Income, and bills already in Recurring are linked, never copied.</span></div></li>
+        <li><svg><use href="#i-wallet"/></svg><div><strong>Bills reserve</strong><span>See what to keep aside for rent, EMIs and bills, which ones are paid and what's still due, and whether your reserve covers them. It's a plan, not a bank balance — never counted as spending, and HomeBook never moves money.</span></div></li>
+        <li><svg><use href="#i-wrench"/></svg><div><strong>Fits your screen, counts right</strong><span>In 1.7.1, HomeBook uses the full display on newer Android phones while keeping everything clear of the status bar, camera cut-out and navigation bar. The Things count on Home also no longer includes your vehicles, which keep their own count.</span></div></li>
+        <li><svg><use href="#i-card"/></svg><div><strong>Cards &amp; Wallet</strong><span>Keep your credit, debit and prepaid cards in one place, in Money. Only the last 4 digits are saved — never the full number, CVV or PIN — and HomeBook doesn't connect to your bank. A credit card's due date shows in Upcoming.</span></div></li>
+        <li><svg><use href="#i-calendar"/></svg><div><strong>Budget by salary cycle</strong><span>Start your money month on payday — say the 25th to the 24th — instead of the 1st. Budgets carry forward to the next month until you change them.</span></div></li>
+        <li><svg><use href="#i-wallet"/></svg><div><strong>A truer picture of your money</strong><span>Rent and EMIs you've already paid are no longer counted twice, income counts once it arrives, and you can add an opening balance to see what you really have left.</span></div></li>
+        <li><svg><use href="#i-filter"/></svg><div><strong>Category budgets, fixed</strong><span>Category budgets open again, show the limits you saved, follow the month you're looking at, and add up with your overall budget.</span></div></li>
+        <li><svg><use href="#i-moon"/></svg><div><strong>Dark theme</strong><span>Choose Light, Dark or System in Settings. The dark theme keeps HomeBook's calm colours and stays easy to read.</span></div></li>
+        <li><svg><use href="#i-doc"/></svg><div><strong>Tidier lists</strong><span>Each day's expenses share one card on Expenses and the Money Timeline, and a payment with no category shows the merchant's initial.</span></div></li>
+        <li><svg><use href="#i-bell"/></svg><div><strong>Review payments as you pay</strong><span>With Smart Expense Detection on, a UPI payment brings a "New expense detected" notification — even when HomeBook is closed. Tap Review &amp; Add, or Ignore. Nothing is added without your OK.</span></div></li>
+        <li><svg><use href="#i-doc"/></svg><div><strong>Notebook View</strong><span>See your expenses written out day by day, like your own expense notebook, with your notes and each day's total. Switch between List and Notebook any time.</span></div></li>
+        <li><svg><use href="#i-wallet"/></svg><div><strong>Loans &amp; Debt and Personal categories</strong><span>Home, car, two-wheeler and personal loan EMIs, credit card bills and more. A recurring EMI records each payment under its loan type, and analytics break a category down by type.</span></div></li>
+        <li><svg><use href="#i-doc"/></svg><div><strong>Notes on statements</strong><span>PDF statements show each expense's note under its merchant, and can be written out in a notebook style.</span></div></li>
+        <li><svg><use href="#i-filter"/></svg><div><strong>A calmer, clearer look</strong><span>Softer category icons, a tidier Quick Add, a category picker with large icons, search that finds your notes, and your home's name on the Home screen.</span></div></li>
+        <li><svg><use href="#i-wallet"/></svg><div><strong>Money tab &amp; spending analytics</strong><span>Money now has its own tab. See each month's total, trends over six months, spending by category, and your top merchants. Tap any of them for the expenses behind it.</span></div></li>
+        <li><svg><use href="#i-doc"/></svg><div><strong>PDF statements</strong><span>Make a statement for a month, a date range, a category or a merchant, then preview, share or save it. It's created on your phone.</span></div></li>
+        <li><svg><use href="#i-filter"/></svg><div><strong>Monthly insights</strong><span>A few plain notes on what changed this month, such as a category that went up or down, or an unusually large expense. Comparisons only appear once there's enough history.</span></div></li>
+        <li><svg><use href="#i-bell"/></svg><div><strong>Smart Expense Detection</strong><span>Optional, on Android: turn it on and HomeBook suggests expenses from payment notifications of supported payment and bank apps. You review each one before it's added; notification text never leaves your phone, and SMS is never read.</span></div></li>
+        <li><svg><use href="#i-plan"/></svg><div><strong>Planned expenses</strong><span>Set an expected amount for Diwali, a trip or a service, link expenses to it, and see expected vs actual.</span></div></li>
+        <li><svg><use href="#i-calendar"/></svg><div><strong>Upcoming Money</strong><span>What's due in the next 7 or 30 days, and how much to keep aside — from bills you've actually recorded.</span></div></li>
+        <li><svg><use href="#i-clip"/></svg><div><strong>Photos &amp; PDFs everywhere</strong><span>Attach receipts, bills and papers to things, vehicles, documents, warranties, services and expenses. Saved on your phone first, synced when you're signed in.</span></div></li>
+        <li><svg><use href="#i-filter"/></svg><div><strong>Expense filters</strong><span>Narrow a month by category, subcategory, amount, payment method, merchant, who paid, or where it came from.</span></div></li>
+        <li><svg><use href="#i-arrows"/></svg><div><strong>Transfers, lending &amp; borrowing</strong><span>Money sent to family, lent to a friend, or borrowed — with partial repayments, kept apart from your spending.</span></div></li>
+        <li><svg><use href="#i-cake"/></svg><div><strong>Family occasions &amp; festivals</strong><span>Birthdays, anniversaries and housewarmings, reminded ahead — plus a quiet festive touch on Home around Diwali, Sankranti and more.</span></div></li>
+        <li><svg><use href="#i-wallet"/></svg><div><strong>Clearer money details</strong><span>Subcategories (Food → Restaurant, Delivery…), "Paid by", and payment methods: Cash, UPI, credit card, debit card, bank transfer, net banking.</span></div></li>
+        <li><svg><use href="#i-bell"/></svg><div><strong>Smarter notifications</strong><span>Budget alerts at 70–100%, bills, renewals, warranties and debts — with quiet hours, a notification centre, and a switch for each type.</span></div></li>
+      </ul>
+    </details>
+  </section>
+
+  <section id="today">
+    <div class="feature-row">
+      <div data-reveal>
+        <p class="eyebrow">New in 2.2 · What's today?</p>
+        <h2>Every day, something about India.</h2>
+        <p>When no festival or family occasion is near, Home shows what today is in India — a national holiday, a festival, an awareness day, something from history, or a fact. Each one says what kind of day it is, and which state marks it if it's regional.</p>
+        <p>"Explore more" opens Today in India, with the sources behind every entry. It's built into the app, works offline, and changes at midnight India time.</p>
+        <div class="kind-row"><span>National holiday</span><span>Festival</span><span>Awareness day</span><span>International day</span><span>On this day</span><span>Did you know?</span></div>
+      </div>
+      <div data-reveal>
+        <div class="today-demo" aria-live="polite">
+          <div class="today-card"><div class="ph-tile"><svg><use href="#i-family"/></svg></div><div><div class="k">What's today? · Sat, 14 Nov</div><span class="pill">Awareness day</span><div class="t">Children's Day</div><div class="b">Celebrated on the birth anniversary of Jawaharlal Nehru, India's first Prime Minister.</div></div></div>
+          <div class="today-card"><div class="ph-tile"><svg><use href="#i-doc"/></svg></div><div><div class="k">What's today? · Thu, 26 Nov</div><span class="pill">Awareness day</span><div class="t">Constitution Day</div><div class="b">The Constitution of India was adopted on 26 November 1949.</div></div></div>
+          <div class="today-card"><div class="ph-tile"><svg><use href="#i-cake"/></svg></div><div><div class="k">What's today? · Tue, 1 Dec</div><span class="pill">Culture · Nagaland</span><div class="t">Hornbill Festival begins</div><div class="b">Ten days of the music, dance, food and crafts of Nagaland's tribes.</div></div></div>
+          <div class="today-card"><div class="ph-tile"><svg><use href="#i-plan"/></svg></div><div><div class="k">What's today? · Tue, 22 Dec</div><span class="pill">Awareness day</span><div class="t">National Mathematics Day</div><div class="b">The birth anniversary of Srinivasa Ramanujan, born in 1887.</div></div></div>
+          <div class="today-card"><div class="ph-tile"><svg><use href="#i-shield"/></svg></div><div><div class="k">What's today? · Did you know?</div><span class="pill">Did you know?</span><div class="t">24 spokes</div><div class="b">The Ashoka Chakra at the centre of the national flag has 24 spokes.</div></div></div>
+        </div>
+        <div class="today-dots"><button aria-label="Children's Day" aria-current="true"></button><button aria-label="Constitution Day" aria-current="false"></button><button aria-label="Hornbill Festival" aria-current="false"></button><button aria-label="National Mathematics Day" aria-current="false"></button><button aria-label="A fact" aria-current="false"></button></div>
+      </div>
+    </div>
   </section>
 
   <section id="modules">
-    <div class="section-head">
+    <div class="section-head" data-reveal>
       <p class="eyebrow">What's inside</p>
       <h2>Organize everything about your home.</h2>
       <p>Every entity is scoped to your home — on your phone, and in your own private cloud backup when you sign in.</p>
     </div>
-    <div class="modules">
+    <div class="modules reveal-group">
       <div class="mod-card"><div class="icon"><svg width="20" height="20"><use href="#i-box"/></svg></div><h3>Track Belongings</h3><p>Appliances, furniture, electronics — with purchase date, warranty, and where you keep the receipt.</p></div>
       <div class="mod-card"><div class="icon"><svg width="20" height="20"><use href="#i-car"/></svg></div><h3>Vehicles</h3><p>Insurance, PUC, service history, and a running-cost view of what each one actually costs you.</p></div>
       <div class="mod-card"><div class="icon"><svg width="20" height="20"><use href="#i-shield"/></svg></div><h3>Manage Warranties</h3><p>Attach the file once. Know exactly when a warranty runs out, before it does.</p></div>
@@ -157,12 +200,14 @@
         <p class="caption-line"><span class="dot"></span>Google ML Kit and simple on-device rules — not a cloud AI request. No image, message or notification text ever leaves your phone to parse it, and notification text is never saved.</p>
       </div>
       <div class="receipt">
+        <div class="scan" aria-hidden="true"></div>
         <div class="r-head">·&nbsp; RECEIPT &nbsp;·</div>
         <div class="r-line hit"><span>Merchant</span><span>Blinkit</span></div>
         <div class="r-line"><span>Date</span><span>21 Sep 2026</span></div>
         <div class="r-line"><span>Payment</span><span>UPI</span></div>
         <div class="r-line hit"><span>Category</span><span>Groceries</span></div>
         <div class="r-total"><span>Total</span><span>₹842.00</span></div>
+        <div class="added"><svg><use href="#i-plan"/></svg>Added to Groceries · ₹842</div>
       </div>
     </div>
   </section>
@@ -173,7 +218,7 @@
         <div class="gauge-card">
           <p class="g-label">September · Groceries</p>
           <div class="gauge-track"><div class="gauge-fill"></div></div>
-          <div class="gauge-nums"><span><strong>₹7,100</strong> spent</span><span>of ₹10,000</span></div>
+          <div class="gauge-nums"><span><strong data-count="7100" data-prefix="₹">₹7,100</strong> spent</span><span>of ₹10,000</span></div>
           <div class="g-note"><svg width="16" height="16"><use href="#i-bell"/></svg><span>At this pace you'll close the month around <strong>₹9,600</strong> — worth a look before month-end.</span></div>
         </div>
       </div>
@@ -182,6 +227,25 @@
         <h2>A budget that tells you before you're over.</h2>
         <p>HomeBook checks your spending against your budget and the pace you're on to finish the month — entirely with arithmetic over numbers already on your device. You hear about it once each at 70%, 80%, 90% and 100%, never more.</p>
         <p class="caption-line"><span class="dot"></span>No model, no server. Quiet hours from 10 PM to 7 AM, a switch for every kind of alert, and several events arrive as one summary — not a feed to monitor.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="lending">
+    <div class="feature-row">
+      <div data-reveal>
+        <p class="eyebrow">New in 2.2 · Lending &amp; borrowing</p>
+        <h2>Know who owes what — to the rupee.</h2>
+        <p>Every loan gets its own page: what's left, each repayment with Undo, the due date, and what was agreed. Tap "Remind me", and when the reminder is done HomeBook offers to record the payment too.</p>
+        <p>Or just ask the assistant — "Who owes me money?", "Suresh paid me back 500" — in English, Hindi or Telugu. Nothing is saved until you confirm.</p>
+      </div>
+      <div class="lend-card">
+        <div class="who"><div class="av">S</div><div><strong>Suresh</strong><small>Lent on 2 Nov · due 30 Nov</small></div></div>
+        <div class="left" data-count="1200" data-prefix="₹">₹1,200</div>
+        <div class="track"><i></i></div>
+        <div class="meta"><span>₹800 of ₹2,000 repaid</span><span>40%</span></div>
+        <ul><li><span>Repaid · 6 Nov</span><span>₹500</span></li><li><span>Repaid · 9 Nov</span><span>₹300</span></li></ul>
+        <div class="ask">"Who owes me money?" → <b>Suresh, ₹1,200 — due 30 Nov</b></div>
       </div>
     </div>
   </section>
@@ -233,5 +297,6 @@
   </div>
 </footer>
 
+<script src="motion.js"></script>
 </body>
 </html>
