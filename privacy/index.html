@@ -43,7 +43,7 @@
     <p class="eyebrow mono">Legal · HomeBook</p>
     <h1 class="page-title">Privacy Policy</h1>
     <div class="meta-row mono">
-      <span>Effective 22 September 2026 · Updated 26 October 2026</span>
+      <span>Effective 22 September 2026 · Updated 10 November 2026</span>
       <span>&middot;</span>
       <span><a href="mailto:support@homebook.app">support@homebook.app</a></span>
     </div>
@@ -95,7 +95,7 @@
 
 <section class="clause" id="storage">
   <h2 class="clause-title"><span class="num">05</span>Data storage and security</h2>
-  <p>Local data lives in an on-device SQLite database, and your records are never transmitted anywhere unless you sign in and sync. Cloud data is stored in Google Cloud Firestore and Firebase Storage (for photos/document files), protected by security rules that restrict every read and write to authenticated members of the relevant household. Receipt scanning (Smart Expense Capture) runs entirely on-device via Google ML Kit — no photo or text is ever sent anywhere to parse it. The same applies to payment messages you share or paste into HomeBook: they're read on your phone only, and so are payment notifications if you turn on Smart Expense Detection (see <a href="#notification-detection">Notification-based transaction detection</a>). Notifications (budget alerts, reminders, festival and occasion heads-ups) are worked out on your phone from your own records — no server decides or sends them. Spending analytics, monthly insights and PDF statements are worked out on your phone too. A statement is created in your phone's temporary storage and leaves your phone only if you choose to share it or save it somewhere.</p>
+  <p>Local data lives in an on-device SQLite database, and your records are never transmitted anywhere unless you sign in and sync. Cloud data is stored in Google Cloud Firestore and Firebase Storage (for photos/document files), protected by security rules that restrict every read and write to authenticated members of the relevant household. Receipt scanning (Smart Expense Capture) runs entirely on-device via Google ML Kit — no photo or text is ever sent anywhere to parse it. If you use "Say it" to add an expense by voice, HomeBook opens your phone's own speech recognition (on most Android phones, Google's speech services); that service turns your words into text and handles the audio under its own terms. HomeBook itself has no microphone permission and receives only the text, which — like a sentence you type — is read on your phone and shown to you for review before anything is saved. Money commands you give the Smart assistant are read on your phone too, and sentences that record money are not kept in its recent questions. The same applies to payment messages you share or paste into HomeBook: they're read on your phone only, and so are payment notifications if you turn on Smart Expense Detection (see <a href="#notification-detection">Notification-based transaction detection</a>). Notifications (budget alerts, reminders, festival and occasion heads-ups) are worked out on your phone from your own records — no server decides or sends them. Spending analytics, monthly insights and PDF statements are worked out on your phone too. A statement is created in your phone's temporary storage and leaves your phone only if you choose to share it or save it somewhere.</p>
 </section>
 
 <section class="clause" id="notification-detection">
