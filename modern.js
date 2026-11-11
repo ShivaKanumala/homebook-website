@@ -27,6 +27,25 @@
     });
   }
 
+  // Phones: the install bar shows once the hero is gone, and steps aside
+  // while the download panel itself is on screen.
+  var sticky = document.querySelector('.play-sticky');
+  var hero = document.querySelector('.hero');
+  var panel = document.getElementById('get-app');
+  if (sticky && hero && panel && 'IntersectionObserver' in window) {
+    var heroOut = false, panelIn = false;
+    var sync = function () { sticky.classList.toggle('show', heroOut && !panelIn); };
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (e.target === hero) heroOut = !e.isIntersecting && e.boundingClientRect.top < 0;
+        else panelIn = e.isIntersecting || e.boundingClientRect.top < 0;
+      });
+      sync();
+    });
+    io.observe(hero);
+    io.observe(panel);
+  }
+
   // A soft light that follows the pointer over the hero and the cards.
   if (still || !window.matchMedia('(hover: hover)').matches) return;
   var lit = document.querySelectorAll('.hero, .mod-card, .news-list li');
