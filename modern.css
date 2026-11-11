@@ -326,3 +326,100 @@ aside.side-nav { top: 96px; max-height: calc(100vh - 112px); }
   .btn:hover, .news-list li:hover, .mod-card:hover, .mod-card:hover .icon { transform: none; }
   ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
 }
+
+/* ---------- Google Play download ---------- */
+.topbar nav { margin-left: auto; }
+.nav-cta {
+  display: inline-flex; align-items: center; gap: 6px; flex: none;
+  padding: 8px 14px 8px 12px; border-radius: 999px; font-weight: 600; font-size: 14px;
+  background: var(--ink); color: var(--paper); text-decoration: none;
+  transition: transform 0.25s var(--ease-out), box-shadow 0.25s;
+}
+.nav-cta svg { width: 16px; height: 16px; }
+.nav-cta:hover { transform: translateY(-1px); box-shadow: 0 8px 20px -10px var(--ink); }
+@media (max-width: 760px) {
+  .brand-lockup { order: 1; }
+  .nav-cta { order: 2; margin-left: auto; padding: 7px 12px 7px 10px; font-size: 13px; }
+  .topbar nav { order: 3; margin-left: 0; }
+}
+
+/* The official badge already carries its own clear space, so it sits a
+   little larger than the buttons beside it. */
+.play-badge { display: inline-block; line-height: 0; border-radius: 12px; transition: transform 0.25s var(--ease-out), filter 0.25s; }
+.play-badge img { height: 60px; width: auto; }
+.play-badge:hover { transform: translateY(-2px); filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.35)); }
+.play-badge:focus-visible { outline: 2px solid var(--marigold); outline-offset: 2px; }
+.hero .play-badge.hero-badge { margin: -6px 0 -6px -10px; }
+.hero .play-badge.hero-badge img { height: 72px; }
+.play-badge.big img { height: 84px; }
+
+/* Download panel at the end of the home page. */
+#get-app { padding-block: 40px 24px; }
+.get-app {
+  --ink: #f2f6f3; --ink-soft: #b8cbc0;
+  position: relative; overflow: hidden; display: grid; grid-template-columns: 1fr 1.15fr; align-items: center; gap: 40px;
+  padding: 56px clamp(24px, 5vw, 64px); border-radius: 32px; color: var(--ink); border: 1px solid rgba(255, 255, 255, 0.06);
+  background: radial-gradient(70% 90% at 15% 50%, #1f4233 0%, transparent 60%), radial-gradient(50% 60% at 95% 0%, rgba(244, 195, 90, 0.16), transparent 70%), linear-gradient(160deg, var(--night-2), var(--night));
+}
+.get-app .eyebrow { background: rgba(255, 255, 255, 0.07); color: #d7e7de; border: 1px solid rgba(255, 255, 255, 0.08); }
+.get-app h2 { font-size: clamp(32px, 4.8vw, 52px); font-weight: 800; line-height: 1; letter-spacing: -0.035em; margin: 14px 0 16px; color: #fff; }
+.get-app .ga-text > p:not(.eyebrow) { color: var(--ink-soft); font-size: 17.5px; max-width: 44ch; }
+.ga-actions { margin: 22px 0 8px -12px; }
+.ga-facts { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.ga-facts li { padding: 6px 12px; border-radius: 999px; font-size: 13.5px; color: #d7e7de; background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.09); }
+.ga-visual { position: relative; width: min(100%, 340px); aspect-ratio: 1; margin-inline: auto; display: grid; place-items: center; }
+.ga-ring { position: absolute; inset: 6%; border-radius: 50%; border: 1px dashed rgba(255, 255, 255, 0.16); }
+.ga-ring::after { content: ""; position: absolute; inset: 22%; border-radius: 50%; border: 1px solid rgba(255, 255, 255, 0.07); }
+.ga-icon { position: relative; width: 42%; height: auto; border-radius: 24%; box-shadow: 0 24px 60px -18px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.08); animation: ga-float 6s var(--ease-io) infinite alternate; }
+.ga-orbit { position: absolute; inset: 6%; }
+.ga-orbit span {
+  position: absolute; top: 50%; left: 50%; width: 46px; height: 46px; margin: -23px; border-radius: 14px; display: grid; place-items: center;
+  background: rgba(255, 255, 255, 0.07); border: 1px solid rgba(255, 255, 255, 0.1); color: var(--mint);
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  transform: rotate(var(--a)) translateX(var(--r, 150px)) rotate(calc(-1 * var(--a)));
+  animation: ga-orbit 48s linear infinite;
+}
+.ga-orbit span svg { width: 22px; height: 22px; }
+.ga-orbit .o1 { --a: 0deg; } .ga-orbit .o2 { --a: 60deg; color: var(--marigold); } .ga-orbit .o3 { --a: 120deg; }
+.ga-orbit .o4 { --a: 180deg; color: var(--marigold); } .ga-orbit .o5 { --a: 240deg; } .ga-orbit .o6 { --a: 300deg; color: var(--marigold); }
+@keyframes ga-orbit { to { transform: rotate(calc(var(--a) + 360deg)) translateX(var(--r, 150px)) rotate(calc(-1 * var(--a) - 360deg)); } }
+@keyframes ga-float { from { transform: translateY(-6px); } to { transform: translateY(6px); } }
+@media (max-width: 820px) {
+  .get-app { grid-template-columns: 1fr; gap: 12px; padding: 36px 22px 32px; border-radius: 26px; text-align: left; }
+  .ga-visual { width: min(100%, 260px); }
+  .ga-orbit span { --r: 112px; width: 40px; height: 40px; margin: -20px; }
+  .play-badge.big img { height: 72px; }
+}
+
+/* Footer badge and Google's trademark line. */
+.footer-play { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 16px; padding-top: 14px; margin-top: 14px; border-top: 1px solid var(--line); }
+.footer-play .play-badge { margin-left: -8px; }
+.footer-play .play-badge img { height: 52px; }
+.footer-play small { color: var(--mono-ink, #6b7d74); font-size: 12px; }
+
+/* Phones: a small install bar once the hero has scrolled away, gone again
+   when the download panel is on screen. Only on the home page. */
+.play-sticky { display: none; }
+@media (max-width: 760px) {
+  .play-sticky {
+    display: flex; align-items: center; gap: 10px; position: fixed; z-index: 40; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom));
+    padding: 8px 8px 8px 10px; border-radius: 18px; text-decoration: none; color: #f2f6f3;
+    background: color-mix(in srgb, var(--night) 88%, transparent); border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(14px) saturate(1.3); -webkit-backdrop-filter: blur(14px) saturate(1.3);
+    box-shadow: 0 16px 40px -14px rgba(0, 0, 0, 0.55);
+    transform: translateY(calc(100% + 24px)); opacity: 0; pointer-events: none;
+    transition: transform 0.4s var(--ease-out), opacity 0.3s;
+  }
+  .play-sticky.show { transform: none; opacity: 1; pointer-events: auto; }
+  .play-sticky img { width: 38px; height: 38px; border-radius: 10px; }
+  .ps-text { display: flex; flex-direction: column; line-height: 1.2; flex: 1; }
+  .ps-text strong { font-family: var(--display); font-size: 15px; }
+  .ps-text small { font-size: 12px; color: #b8cbc0; }
+  .ps-go { padding: 9px 16px; border-radius: 12px; background: var(--marigold); color: #14231c; font-weight: 700; font-size: 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ga-orbit span, .ga-icon { animation: none; }
+  .nav-cta, .play-badge, .play-sticky { transition: none; }
+  .nav-cta:hover, .play-badge:hover { transform: none; }
+}
