@@ -12,12 +12,22 @@
 <meta property="og:image" content="assets/og-image.png">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="motion.css">
+<link rel="stylesheet" href="modern.css">
+<script>(function(r){var seen;try{seen=sessionStorage.getItem('hb-intro')}catch(e){}if(seen||(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){r.classList.add('no-intro');return}try{sessionStorage.setItem('hb-intro','1')}catch(e){}r.classList.add('intro-on');setTimeout(function(){r.classList.remove('intro-on')},1250)})(document.documentElement);</script>
 <script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.hbMotion)document.documentElement.classList.remove('js')},2500);</script>
 </head>
 <body>
+<div class="scroll-progress" aria-hidden="true"></div>
+<div class="intro" aria-hidden="true">
+  <div class="intro-inner">
+    <div class="intro-mark"><svg viewBox="0 0 24 24"><path class="roof" d="M4 11.5L12 4l8 7.5"/><path class="l1" d="M6.5 14h11"/><path class="l2" d="M6.5 17h11"/><path class="l3" d="M6.5 20h11"/></svg></div>
+    <div class="intro-word"><span>H</span><span>o</span><span>m</span><span>e</span><span>B</span><span>o</span><span>o</span><span>k</span></div>
+    <div class="intro-line"><i></i></div>
+  </div>
+</div>
 
 <svg width="0" height="0" style="position:absolute">
   <defs>
@@ -69,7 +79,7 @@
       <h1><span class="w">A</span> <span class="w accent">Smarter Home.</span> <span class="w">A</span> <span class="w">Worry-Free</span> <span class="w">You.</span></h1>
       <p class="tagline">HomeBook keeps everything about your home in one place — the things you own, the vehicles you drive, the documents you'd hate to lose, and the money that keeps it all running.</p>
       <div class="hero-ctas">
-        <a class="btn btn-primary" href="#modules">See what's inside</a>
+        <a class="btn btn-primary" href="#modules">See what's inside <span class="arr">→</span></a>
         <a class="btn btn-ghost" href="privacy/">How your data is handled</a>
       </div>
       <p class="caption-line"><span class="dot"></span>Every record starts on your device. Sync is optional, never required.</p>
@@ -93,6 +103,8 @@
       <div class="float-chip c"><span class="ic"><svg><use href="#i-bell"/></svg></span><span>PUC renews in 3 days<small>Reminder</small></span></div>
     </div>
   </section>
+
+  <div class="marquee" aria-hidden="true"><div class="track"><span>Things</span><span>Vehicles</span><span>Documents</span><span>Warranties</span><span>Reminders</span><span>Expenses</span><span>Budgets</span><span>Lending</span><span>Receipts</span><span>Cards &amp; Wallet</span><span>What's today</span><span>Assistant</span><span>English · తెలుగు · हिंदी</span><span>Offline first</span><span>No ads</span><span>Things</span><span>Vehicles</span><span>Documents</span><span>Warranties</span><span>Reminders</span><span>Expenses</span><span>Budgets</span><span>Lending</span><span>Receipts</span><span>Cards &amp; Wallet</span><span>What's today</span><span>Assistant</span><span>English · తెలుగు · हिंदी</span><span>Offline first</span><span>No ads</span></div></div>
 
   <section id="whats-new">
     <div class="section-head" data-reveal>
@@ -283,6 +295,7 @@
 </div>
 
 <footer class="site-footer">
+  <span class="footer-word" aria-hidden="true">HomeBook</span>
   <div class="shell footer-grid">
     <span>HomeBook — everything about your home, one place.</span>
     <div class="foot-links">
@@ -298,5 +311,6 @@
 </footer>
 
 <script src="motion.js"></script>
+<script src="modern.js"></script>
 </body>
 </html>
